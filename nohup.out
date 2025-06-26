@@ -1,0 +1,61 @@
+nohup: ignoring input
+Starting server, please wait...
+Control server started on ws://localhost:8011
+Data server started on ws://localhost:8012
+Initializing RealtimeSTT server with parameters:
+    model: large-v3
+    download_root: None
+    realtime_model_type: small
+    language: 
+    batch_size: 16
+    init_realtime_after_seconds: 0.2
+    realtime_batch_size: 16
+    initial_prompt_realtime: 
+    input_device_index: 1
+    silero_sensitivity: 0.05
+    silero_use_onnx: False
+    webrtc_sensitivity: 3
+    post_speech_silence_duration: 0.7
+    min_length_of_recording: 1.1
+    min_gap_between_recordings: 0
+    enable_realtime_transcription: True
+    realtime_processing_pause: 0.02
+    silero_deactivity_detection: True
+    early_transcription_on_silence: 0.2
+    beam_size: 5
+    beam_size_realtime: 3
+    initial_prompt: Incomplete thoughts should end with '...'. Examples of complete thoughts: 'The sky is blue.' 'She walked home.' Examples of incomplete thoughts: 'When the sky...' 'Because he...'
+    wake_words: 
+    wake_words_sensitivity: 0.5
+    wake_word_timeout: 5.0
+    wake_word_activation_delay: 0
+    wakeword_backend: none
+    openwakeword_model_paths: None
+    openwakeword_inference_framework: tensorflow
+    wake_word_buffer_duration: 1.0
+    use_main_model_for_realtime: False
+    spinner: False
+    use_microphone: False
+    on_realtime_transcription_update: <function make_callback.<locals>.inner_callback at 0x758a94c4cdc0>
+    on_recording_start: <function make_callback.<locals>.inner_callback at 0x758a94c4cee0>
+    on_recording_stop: <function make_callback.<locals>.inner_callback at 0x758a94c4ce50>
+    on_vad_detect_start: <function make_callback.<locals>.inner_callback at 0x758a94c4cf70>
+    on_vad_detect_stop: <function make_callback.<locals>.inner_callback at 0x758a94c4d000>
+    on_wakeword_detected: <function make_callback.<locals>.inner_callback at 0x758a94c4d090>
+    on_wakeword_detection_start: <function make_callback.<locals>.inner_callback at 0x758a94c4d120>
+    on_wakeword_detection_end: <function make_callback.<locals>.inner_callback at 0x758a94c4d1b0>
+    on_transcription_start: <function make_callback.<locals>.inner_callback at 0x758a94c4d240>
+    on_turn_detection_start: <function make_callback.<locals>.inner_callback at 0x758a94c4d2d0>
+    on_turn_detection_stop: <function make_callback.<locals>.inner_callback at 0x758a94c4d360>
+    no_log_file: True
+    use_extended_logging: False
+    level: 30
+    compute_type: default
+    gpu_device_index: 0
+    device: cuda
+    handle_buffer_overflow: False
+    suppress_tokens: [-1]
+    allowed_latency_limit: 100
+    faster_whisper_vad_filter: False
+/home/zhouzhencheng/miniconda3/envs/realtimestt/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 25 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

@@ -1,0 +1,418 @@
+nohup: ignoring input
+Starting server, please wait...
+Control server started on ws://localhost:8011
+Data server started on ws://localhost:8012
+Initializing RealtimeSTT server with parameters:
+    model: large-v3
+    download_root: None
+    realtime_model_type: small
+    language: 
+    batch_size: 16
+    init_realtime_after_seconds: 0.2
+    realtime_batch_size: 16
+    initial_prompt_realtime: 
+    input_device_index: 1
+    silero_sensitivity: 0.05
+    silero_use_onnx: False
+    webrtc_sensitivity: 3
+    post_speech_silence_duration: 0.7
+    min_length_of_recording: 1.1
+    min_gap_between_recordings: 0
+    enable_realtime_transcription: True
+    realtime_processing_pause: 0.02
+    silero_deactivity_detection: True
+    early_transcription_on_silence: 0.2
+    beam_size: 5
+    beam_size_realtime: 3
+    initial_prompt: Incomplete thoughts should end with '...'. Examples of complete thoughts: 'The sky is blue.' 'She walked home.' Examples of incomplete thoughts: 'When the sky...' 'Because he...'
+    wake_words: 
+    wake_words_sensitivity: 0.5
+    wake_word_timeout: 5.0
+    wake_word_activation_delay: 0
+    wakeword_backend: none
+    openwakeword_model_paths: None
+    openwakeword_inference_framework: tensorflow
+    wake_word_buffer_duration: 1.0
+    use_main_model_for_realtime: False
+    spinner: False
+    use_microphone: False
+    on_realtime_transcription_update: <function make_callback.<locals>.inner_callback at 0x7f3c48328dc0>
+    on_recording_start: <function make_callback.<locals>.inner_callback at 0x7f3c48328ee0>
+    on_recording_stop: <function make_callback.<locals>.inner_callback at 0x7f3c48328e50>
+    on_vad_detect_start: <function make_callback.<locals>.inner_callback at 0x7f3c48328f70>
+    on_vad_detect_stop: <function make_callback.<locals>.inner_callback at 0x7f3c48329000>
+    on_wakeword_detected: <function make_callback.<locals>.inner_callback at 0x7f3c48329090>
+    on_wakeword_detection_start: <function make_callback.<locals>.inner_callback at 0x7f3c48329120>
+    on_wakeword_detection_end: <function make_callback.<locals>.inner_callback at 0x7f3c483291b0>
+    on_transcription_start: <function make_callback.<locals>.inner_callback at 0x7f3c48329240>
+    on_turn_detection_start: <function make_callback.<locals>.inner_callback at 0x7f3c483292d0>
+    on_turn_detection_stop: <function make_callback.<locals>.inner_callback at 0x7f3c48329360>
+    no_log_file: True
+    use_extended_logging: False
+    level: 30
+    compute_type: default
+    gpu_device_index: 0
+    device: cuda
+    handle_buffer_overflow: False
+    suppress_tokens: [-1]
+    allowed_latency_limit: 100
+    faster_whisper_vad_filter: False
+RealtimeSTT initialized
+Server started. Press Ctrl+C to stop the server.
+Data client connected
+[08:01:07.656] Hello Jack.[08:01:07.711] Hello Jack.[08:01:07.766] Hello Jack.[08:01:07.821] Hello Jack.[08:01:07.874] Hello Jack.[08:01:07.929] Hello Jack.[08:01:07.984] Hello Jack.[08:01:08.039] Hello Jack.[08:01:08.101] Hello Jack.[08:01:08.158] Hello Jack.[08:01:08.213] Hello Jack.[08:01:08.268] Hello Jack.[08:01:08.323] Hello Jack.[08:01:08.378] Hello Jack.[08:01:08.433] Hello Jack.[08:01:08.487] Hello Jack.[08:01:08.543] Hello Jack.&&& stt_server on_turn_detection_start
+[08:01:08.599] Hello Jack.&&& stt_server on_turn_detection_stop
+[08:01:09.266] Sentence: Hello, cek.
+
+[08:01:10.556] Check.[08:01:10.602] Check.[08:01:10.648] Check.[08:01:10.694] Check.[08:01:10.759] Check check[08:01:10.827] Check, check[08:01:10.895] Check, check[08:01:10.962] Check, check[08:01:11.029] Check, check[08:01:11.095] Check, check[08:01:11.162] Check, check[08:01:11.229] Check, check[08:01:11.295] Check, check[08:01:11.362] Check, check[08:01:11.429] Check, check&&& stt_server on_turn_detection_start
+[08:01:11.497] Check, check&&& stt_server on_turn_detection_stop
+[08:01:12.166] Sentence: Check, check.
+
+Data client disconnected: received 1005 (no status received [internal]); then sent 1005 (no status received [internal])
+Data client connected
+Data client disconnected: received 1001 (going away); then sent 1001 (going away)
+Data client connected
+[08:02:38.290] Check.[08:02:38.364] Check check.[08:02:38.432] Check check.[08:02:38.500] Check check.[08:02:38.567] Check check.[08:02:38.636] Check check.[08:02:38.703] Check check.[08:02:38.772] Check check.[08:02:38.839] Check check.[08:02:38.909] Check check.[08:02:38.975] Check check.[08:02:39.045] Check check.[08:02:39.113] Check check.&&& stt_server on_turn_detection_start
+[08:02:39.182] Check check.&&& stt_server on_turn_detection_stop
+[08:02:39.893] Sentence: Check, check.
+
+[08:02:48.224] 好可不小[08:02:48.301] 好可不小[08:02:48.377] 好可不小[08:02:48.454] 好可不小[08:02:48.530] 好可不小[08:02:48.607] 好可不小[08:02:48.683] 好可不小[08:02:48.763] 好可不小[08:02:48.841] 好可不小[08:02:48.917] 好可不小[08:02:48.997] 好可不小&&& stt_server on_turn_detection_start
+[08:02:49.078] 好可不小&&& stt_server on_turn_detection_stop
+[08:02:49.820] Sentence: How could this be?
+
+[08:02:54.226] Cout[08:02:54.302] Cauter.[08:02:54.374] Cauter.[08:02:54.447] Cauta.[08:02:54.529] Cáutrobus.[08:02:54.606] Kau terbesar[08:02:54.684] Kau terbesar[08:02:54.761] Kauter besar.[08:02:54.838] Kau terbesar[08:02:54.919] Kau terbesar.[08:02:54.996] Kau terbesar[08:02:55.078] Kau terbesar.&&& stt_server on_turn_detection_start
+[08:02:55.160] Kau terbesar.&&& stt_server on_turn_detection_stop
+[08:02:55.871] Sentence: Kau terbesar.
+
+[08:02:57.234] So,[08:02:57.306] I'm Google.[08:02:57.394] So I'm going to stop here.[08:02:57.483] So I'm going to stop.[08:02:57.558] So I'm going to stop.[08:02:57.620] So I'm going to say[08:02:57.679] Sungubasa.[08:02:57.737] Sungubasa.[08:02:57.795] Sunggu Bazaar[08:02:57.852] Sunggu Bazaar[08:02:57.911] Sunggu Bazaar[08:02:57.969] Sunggu Bazaar[08:02:58.027] Sunggu Bazaar&&& stt_server on_turn_detection_start
+[08:02:58.085] Sunggu Bazaar&&& stt_server on_turn_detection_stop
+[08:02:58.801] Sentence: 송구구사.
+
+[08:03:01.303] Sung-[08:03:01.357] Sungu[08:03:01.410] Sungu[08:03:01.466] Sungu.[08:03:01.518] Soon Google.[08:03:01.579] Sungubus.[08:03:01.637] Sung-gu was...[08:03:01.703] Sung-goo-be-sa[08:03:01.763] Sung-gu was off.[08:03:01.821] Sungu Besant[08:03:01.881] Sungu Besak.[08:03:01.942] Sungu Besak.[08:03:02.000] Sungu Besak[08:03:02.057] Sungu Besak[08:03:02.115] Sungu Besak[08:03:02.173] Sungu Besak&&& stt_server on_turn_detection_start
+[08:03:02.231] Sungu Besak&&& stt_server on_turn_detection_stop
+[08:03:02.913] Sentence: Sungguh besar.
+
+[08:03:56.264] So...[08:03:56.321] So...[08:03:56.374] So...[08:03:56.423] So...[08:03:56.473] So...[08:03:56.523] So...[08:03:56.573] So...[08:03:56.623] So...[08:03:56.673] So...[08:03:56.723] So...[08:03:56.772] So[08:03:56.823] So[08:03:56.873] So[08:03:56.926] So...[08:03:56.976] So...[08:03:57.026] So[08:03:57.079] So[08:03:57.130] So[08:03:57.180] So&&& stt_server on_turn_detection_start
+[08:03:57.240] It's over the sun&&& stt_server on_turn_detection_stop
+[08:03:57.963] Sentence: So, the sun...
+
+[08:04:03.347] Across your enterprise now.[08:04:03.410] Across your enterprise now.[08:04:03.468] Across your enterprise now.[08:04:03.525] Across your enterprise now.[08:04:03.582] Across your enterprise now.[08:04:03.639] Across your enterprise now?[08:04:03.698] Across your enterprise now?[08:04:03.755] Across your enterprise now?[08:04:03.812] Across your enterprise now?[08:04:03.870] Across your enterprise now?[08:04:03.927] Across your enterprise now?[08:04:03.984] Across your enterprise now?[08:04:04.041] Across your enterprise now?[08:04:04.098] Across your enterprise now?[08:04:04.155] Across your enterprise now?[08:04:04.213] Across your enterprise now?&&& stt_server on_turn_detection_start
+[08:04:04.271] Across your enterprise now?&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:04:04.654] Across your enterprise now?&&& stt_server on_turn_detection_stop
+[08:04:04.749] Across your enterprise now?&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:04:04.825] Across your enterprise now, MuleSoft...[08:04:04.897] Across your enterprise now, MuleSoft...[08:04:04.974] Across your enterprise now, MuleSoft can...[08:04:05.050] Across your enterprise now, MuleSoft can...[08:04:05.130] Across your enterprise now, MuleSoft Canal.&&& stt_server on_turn_detection_start
+[08:04:05.209] Across your enterprise now, MuleSoft can help.&&& stt_server on_turn_detection_stop
+[08:04:05.915] Sentence: If you cross your enterprise now, MuleSoft can help.
+
+[08:04:06.258] It's the unit[08:04:06.315] It's the U-[08:04:06.372] It's the UFO.[08:04:06.432] It's the Unif-[08:04:06.494] It's the Unifi-[08:04:06.552] It's the unified-[08:04:06.612] It's the Unified.[08:04:06.673] It's the Unified.[08:04:06.733] It's the unified...[08:04:06.791] It's the unified...[08:04:06.859] It's the unified pla-[08:04:06.924] It's the unified pla-[08:04:06.992] It's the unified platoon.[08:04:07.055] It's the unified platform.[08:04:07.116] It's the unified platform.&&& stt_server on_turn_detection_start
+[08:04:07.176] It's the unified platform.&&& stt_server on_turn_detection_stop
+[08:04:07.243] It's the unified platform.[08:04:07.304] It's the unified platform.&&& stt_server on_turn_detection_start
+[08:04:07.367] It's the unified platform for-&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:04:07.485] It's the unified platform for-&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:04:07.963] It's the unified platform for integration.&&& stt_server on_turn_detection_stop
+[08:04:08.608] Sentence: It's the unified platform for integration.
+
+[08:04:17.648] Let's snap friggin...[08:04:17.715] Let's snap friggin Essos.[08:04:17.786] Let's snap-frag an SOS.[08:04:17.851] That's snapdragon SOC.[08:04:17.918] Let's snapfrag an SOC[08:04:17.984] Let's snapfrag an SOC[08:04:18.048] That's Snapdragon SoCs.[08:04:18.108] That's Snapdragon SoCs.[08:04:18.172] That's Snapdragon SoCs.[08:04:18.238] Let's Snapdragon SOC is full.[08:04:18.301] That Snapdragon SoC is full.[08:04:18.365] That Snapdragon SoC is full.[08:04:18.428] That Snapdragon SoC is full.[08:04:18.492] That Snapdragon SoC is for...&&& stt_server on_turn_detection_start
+[08:04:18.558] That Snapdragon SoC is for win.&&& stt_server on_turn_detection_stop
+[08:04:19.255] Sentence: That's Snapdragon SoCs for Windows.
+
+[08:04:20.019] Arm and whole fingers.[08:04:20.077] Arm and whole thing.[08:04:20.135] Arm and whole thing.[08:04:20.194] Arm and whole thing.[08:04:20.253] Arm and whole thing.[08:04:20.312] Arm and whole thing.[08:04:20.372] Arm and whole thing.[08:04:20.431] Arm and the whole thing[08:04:20.495] Arm and the whole thing was[08:04:20.561] Arm and the whole thing was[08:04:20.626] Arm and the whole thing was[08:04:20.695] Arm and the whole thing was[08:04:20.763] Arm and the whole thing was...[08:04:20.834] Arm and the whole thing was...[08:04:20.903] &&& stt_server on_turn_detection_startArm and the whole thing was...
+&&& stt_server on_turn_detection_stop
+[08:04:21.624] Sentence: And the whole thing was heavily...
+
+Data client disconnected: received 1005 (no status received [internal]); then sent 1005 (no status received [internal])
+Data client connected
+Data client disconnected: received 1005 (no status received [internal]); then sent 1005 (no status received [internal])
+Data client connected
+[08:05:53.919] Check it.[08:05:53.973] Check it.[08:05:54.050] जग्टिएप[08:05:54.105] Check it.[08:05:54.162] Check, check.[08:05:54.245] जेख जेग जेग[08:05:54.302] Check it.[08:05:54.359] Check check check.[08:05:54.416] Check check check.[08:05:54.473] Check check check.[08:05:54.530] Check check check.[08:05:54.586] Check check check.[08:05:54.643] Check check check.[08:05:54.701] Check check check.[08:05:54.757] Check check check.&&& stt_server on_turn_detection_start
+[08:05:54.842] जेख जेख जेख&&& stt_server on_turn_detection_stop
+[08:05:55.490] Sentence: Check, check, check.
+
+[08:05:58.605] Hello.[08:05:58.656] Hello.[08:05:58.706] Hola.[08:05:58.758] Hello son.[08:05:58.810] Adios.[08:05:58.867] Hello, Satu.[08:05:58.925] Hello, Satude.[08:05:58.982] Hello, something with...[08:05:59.045] Hello, is that good?[08:05:59.108] Halo, satu dua tiga.[08:05:59.171] Halo, satu dua tiga.[08:05:59.234] Halo, satu dua tiga.[08:05:59.286] Halo 123[08:05:59.342] Halo, 123.[08:05:59.398] Halo, 123.[08:05:59.461] Halo, 1,2,3&&& stt_server on_turn_detection_start
+[08:05:59.525] Halo, 1,2,3&&& stt_server on_turn_detection_stop
+[08:05:59.901] Halo, 123?[08:05:59.979] Halo, 1,2,3,1[08:06:00.059] Halo, satu, dua, tiga.[08:06:00.138] Halo, 1, 2, 3, 1, 2...[08:06:00.222] Halo, 1, 2, 3, 1, 2, 3.[08:06:00.305] Halo, 1, 2, 3, 1, 2, 3.[08:06:00.363] Halo 123123[08:06:00.427] Halo, 1,2,3&&& stt_server on_turn_detection_start
+[08:06:00.511] Halo, 1, 2, 3. 1, 2, 3.&&& stt_server on_turn_detection_stop
+[08:06:01.156] Sentence: Halo, 1, 2, 3. 1, 2, 3.
+
+[08:06:14.063] Snipering, excellent.[08:06:14.143] Snapping, excellent.[08:06:14.225] Snapping, excellent.[08:06:14.298] Snapping, excellent.[08:06:14.360] Snapping, excellent.[08:06:14.419] Snapping, excellent.[08:06:14.479] Snapping, excellent.[08:06:14.545] Snipering. Excellent. Excellent.[08:06:14.609] Snapping, excellent, excellent.[08:06:14.673] Snapping, excellent, excellent.[08:06:14.737] Snapdragon xlid x1[08:06:14.800] Snapdragon xlate x1[08:06:14.868] Snapdragon xlate x1e[08:06:14.934] Snapdragon xlate x1e&&& stt_server on_turn_detection_start
+[08:06:15.002] Snapdragon xlate x1e&&& stt_server on_turn_detection_stop
+[08:06:15.665] Sentence: Thanks for watching!
+
+[08:06:20.648] To greater than 140...[08:06:20.704] To greater 140[08:06:20.764] Integrated 140v[08:06:20.817] Integrated 140v[08:06:20.872] Integrated 140v[08:06:20.930] Integrated 140v...[08:06:20.988] Integrated 140v and[08:06:21.046] Integrated 140v and[08:06:21.106] Integrated 140v and...[08:06:21.172] Integrated 140v and...[08:06:21.236] Integrated 140v and...[08:06:21.296] Integrated 140v and...[08:06:21.359] Integrated 140v and 32...[08:06:21.422] Integrated 140v and 32...[08:06:21.488] Integrated 140V and 32GB.&&& stt_server on_turn_detection_start
+[08:06:21.555] Integrated 140b and 32gb&&& stt_server on_turn_detection_stop
+[08:06:22.246] Sentence: Thank you for watching!
+
+[08:07:36.520] Cek 1,2,3[08:07:36.580] Cek 123[08:07:36.635] Cek 123[08:07:36.691] Cek 123[08:07:36.747] Cek 123[08:07:36.804] Cek 123[08:07:36.860] Cek 123[08:07:36.915] Cek 123[08:07:36.971] Cek 123[08:07:37.028] Cek 123[08:07:37.084] Cek 123 ya[08:07:37.140] Cek 123[08:07:37.195] Cek 123[08:07:37.251] Cek 123 ya[08:07:37.308] Cek 123&&& stt_server on_turn_detection_start
+[08:07:37.364] Cek 123&&& stt_server on_turn_detection_stop
+[08:07:38.078] Sentence: Cek, 1, 2, 3.
+
+[08:07:49.766] Другая гантя![08:07:49.839] Juga tujga ganti[08:07:49.902] Terus dia ganti pengen[08:07:49.966] Terus dia ganti pengen[08:07:50.037] Terus dia ganti pengen ga?[08:07:50.108] Terus dia ganti pengen kan[08:07:50.176] Terus dia ganti pengen ganti[08:07:50.245] Terus dia ganti pengen ganti[08:07:50.317] Terus dia ganti pengen ganti[08:07:50.393] Terus dia ganti pengen ganti pong[08:07:50.473] Terus dia ganti pengen ganti panggung[08:07:50.550] Terus dia ganti, pengen ganti pongo.[08:07:50.629] Terus dia ganti, pengen ganti panggung&&& stt_server on_turn_detection_start
+[08:07:50.715] Terus dia ganti, pengen ganti panggung&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:07:51.205] Terus dia ganti pengen ganti pongo katanya gitu&&& stt_server on_turn_detection_start
+[08:07:51.301] Terus dia ganti pengen ganti pongo katanya gitu&&& stt_server on_turn_detection_stop
+[08:07:51.946] Sentence: Terima kasih telah menonton!
+
+[08:07:52.506] Nah, reviewnya oke.[08:07:52.569] Рефюня ок.[08:07:52.633] Рефюня ок.[08:07:52.702] A la refugia, ok, ok[08:07:52.786] ¡No! ¡Refiunya! ¡Okey, okey![08:07:52.886] 랩라, 랩 랩 랩 랩 랩[08:07:52.953] 那我Review一下OKOK[08:07:53.017] 那我Review一下OKOK[08:07:53.091] 那我Review一下,OKOK,終於[08:07:53.155] Okay, okay semua ini.[08:07:53.219] Okay, okay, semua ini.[08:07:53.285] Nah, reviewnya oke oke semua ini[08:07:53.362] 那我Review一下,OKOK,再玩一下[08:07:53.440] 我review一下,okok,什么玩意啊[08:07:53.518] 我review一,okok,什麼玩意啊[08:07:53.595] 我review一,okok,什麼玩意啊[08:07:53.677] 我review一,okok,終於完畢&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:07:53.759] 那我Review一下,OKOK,全部安逸一下&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:07:53.842] 那我review呢,okok,什么玩意儿啊[08:07:53.909] Okay, okay, semua ini aja.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:07:53.978] Okay, okay, semua ini aja.&&& stt_server on_turn_detection_start
+[08:07:54.045] Okay, okay, semua ini aja.&&& stt_server on_turn_detection_stop
+[08:07:54.737] Sentence: Karena reviewnya oke-oke semuanya gitu kan.
+
+[08:07:55.082] 야, 뭔...[08:07:55.144] 야..뭔게?[08:07:55.207] Ya, ¿mungkin?[08:07:55.271] Ya, ¿mungkin?[08:07:55.337] Ya, ¿mungkin?[08:07:55.399] Ya, ¿mungkin?[08:07:55.466] Ya, ¿mungkin?[08:07:55.531] Ya, ¿mungkin?[08:07:55.597] Ya, ¿mungkin?[08:07:55.663] Ya, ¿mungkin?[08:07:55.729] Ya, ¿mungkin?[08:07:55.795] Ya, ¿mungkin?[08:07:55.861] Ya, ¿mungkin?[08:07:55.927] Ya, ¿mungkin?&&& stt_server on_turn_detection_start
+[08:07:55.993] Ya, ¿mungkin?&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:07:56.741] Ya mungkin selama dua tahun&&& stt_server on_turn_detection_stop
+[08:07:56.853] Ya mungkin selama dua tahun[08:07:56.919] Ya mungkin selama dua tahun[08:07:56.982] Ya mungkin selama dua tahun[08:07:57.047] Ya mungkin selama dua tahun&&& stt_server on_turn_detection_start
+[08:07:57.113] Ya mungkin selama dua tahun ini&&& stt_server on_turn_detection_stop
+[08:07:57.191] Ya mungkin selama dua tahun ini[08:07:57.258] Ya mungkin selama dua tahun ini[08:07:57.322] Ya mungkin selama dua tahun ini[08:07:57.387] Ya mungkin selama dua tahun ini[08:07:57.451] Ya mungkin selama dua tahun ini[08:07:57.519] Ya mungkin selama dua tahun ini ya&&& stt_server on_turn_detection_start
+[08:07:57.587] Ya mungkin selama dua tahun ini&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:07:57.763] Ya mungkin selama dua tahun ini&&& stt_server on_turn_detection_stop
+[08:07:57.905] Ya mungkin selama dua tahun ini ya nepat[08:07:57.984] Ya mungkin selama dua tahun ini ya nepatnya&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:07:58.064] Ya mungkin selama dua tahun ini ya nepatnya&&& stt_server on_turn_detection_start
+[08:07:58.141] Ya mungkin selama dua tahun ini yang nepotnya&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:07:58.342] Ya mungkin selama dua tahun ini yang nepatnya sebenernya[08:07:58.431] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga[08:07:58.520] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga[08:07:58.611] Ya mungkin selama 2 tahun ini yang nepatnya sebenernya 3 tahun&&& stt_server on_turn_detection_start
+[08:07:58.704] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun&&& stt_server on_turn_detection_stop
+[08:07:58.800] Ya mungkin selama 2 tahun ini yang nepatnya sebenernya 3 tahun ya[08:07:58.931] Ya mungkin selama 2 tahun ini yang nepatnya sebenernya 3 tahun ya[08:07:59.031] Ya mungkin selama 2 tahun ini yang nepatnya sebenernya 3 tahun ya[08:07:59.134] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama[08:07:59.235] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama[08:07:59.331] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama[08:07:59.430] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama[08:07:59.529] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa[08:07:59.627] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa[08:07:59.731] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi[08:07:59.836] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi[08:07:59.940] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi[08:08:00.047] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita[08:08:00.157] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga[08:08:00.270] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga[08:08:00.380] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga[08:08:00.498] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahunnya selama masa pandemi kita juga mulai&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:08:00.622] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai ber...&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:08:00.752] Ya mungkin selama dua tahun ini, yang nepatnya sebenarnya tiga tahun ya, selama masa pandemi kita juga mulai ber...[08:08:00.880] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenar&&& stt_server on_turn_detection_start
+[08:08:01.008] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahunnya selama masa pandemi kita juga mulai berbenar&&& stt_server on_turn_detection_stop
+[08:08:01.444] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahunnya selama masa pandemi kita juga mulai berbenah[08:08:01.590] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahunnya selama masa pandemi kita juga mulai berbenah kita juga[08:08:01.746] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga[08:08:01.925] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar[08:08:02.108] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar[08:08:02.292] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat[08:08:02.440] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat[08:08:02.591] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat ke[08:08:02.752] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan[08:08:02.911] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan[08:08:03.113] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan[08:08:03.327] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakat[08:08:03.527] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakatnya[08:08:03.756] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakat ya&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:08:03.995] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakat ya apa sih?&&& stt_server on_turn_detection_start
+[08:08:04.238] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakat ya apa sih&&& stt_server on_turn_detection_stop
+[08:08:04.752] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakat ya apa sih[08:08:05.054] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakat ya apa sih kita belajar[08:08:05.346] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakat ya apa sih kita belajar ngedeng[08:08:05.602] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakat ya apa sih kita belajar ngedengerin[08:08:05.886] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakat ya apa sih kita belajar ngedengerin terutama[08:08:06.161] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakatnya apa sih kita belajar ngedengerin terutama mungkin&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:08:06.447] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakatnya apa sih kita belajar ngedengerin terutama mungkin kan[08:08:06.732] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakatnya apa sih kita belajar ngedengerin terutama mungkin karena&&& stt_server on_turn_detection_start
+[08:08:07.018] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakatnya apa sih kita belajar ngedengerin terutama mungkin karena kita juga&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:08:07.352] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakatnya apa sih kita belajar ngedengerin terutama mungkin karena kita juga kan&&& stt_server on_turn_detection_start
+[08:08:07.635] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakatnya apa sih kita belajar ngedengerin terutama mungkin karena kita juga kan&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:08:07.939] Ya mungkin selama dua tahun ini yang nepatnya sebenernya tiga tahun ya selama masa pandemi kita juga mulai berbenah kita juga belajar buat ngeliat kebutuhan masyarakatnya apa sih kita belajar ngedengerin terutama mungkin karena kita juga kan makin&&& stt_server on_turn_detection_stop
+[08:08:08.703] Sentence: Ya mungkin selama 2 tahun ini, ya tepatnya sebenarnya 3 tahun ya, selama masa pandemi kita juga mulai berbenah. Kita juga belajar buat ngeliat kebutuhan masyarakatnya apa sih. Kita belajar ngedengerin, terutama mungkin karena kita juga kan makin deket.
+
+[08:08:09.561] Dan kita sekomentar sangat mudah[08:08:09.627] Kita skomentas anak muda[08:08:09.692] Kita sekomentar sangat mudah.[08:08:09.758] Kita sekomentar sangat mudah.[08:08:09.823] Kita sekomentar sangat mudah.[08:08:09.889] Kita sekomentar sangat mudah[08:08:09.954] Kita sekomentar sangat mudah.[08:08:10.019] Kita sekomentar sangat mudah.[08:08:10.084] Kita sekomentar sangat mudah.[08:08:10.157] Kita sekomentar sangat mudah, kita juga...[08:08:10.222] Kita sekomentar sangat mudah.[08:08:10.297] Kita sekomentar sangat mudah, kita juga[08:08:10.370] Kita sekomentar sangat mudah, kita juga.&&& stt_server on_turn_detection_start
+[08:08:10.446] Kita sekomentar sangat mudah, kita juga.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:08:10.599] Kita komentas anak muda, kita juga.&&& stt_server on_turn_detection_stop
+[08:08:10.735] Kita komentas anak muda, kita juga[08:08:10.826] Kita komentar sangat mudah, kita juga masih dari itu.[08:08:10.922] Kita komentas anak muda, kita juga masih dari tali.[08:08:11.006] Kita komentar sangat mudah, kita juga masih jadi tau.[08:08:11.092] Kita komentas anak muda, kita juga masih jadi tau kita.&&& stt_server on_turn_detection_start
+[08:08:11.176] Kita komentar sangat mudah, kita juga masih jadi tahu kita.&&& stt_server on_turn_detection_stop
+[08:08:11.273] Kita komentar sangat mudah, kita juga masih dari tau kita pun.&&& stt_server on_turn_detection_start
+[08:08:11.360] Kita komentas anak muda, kita juga masih dari tau kita punya.&&& stt_server on_turn_detection_stop
+[08:08:12.094] Sentence: Tidak.
+
+[08:08:12.760] Program yang kerjasama.[08:08:12.819] Program yang kerjasama.[08:08:12.884] Program yang kerja sama-sama.[08:08:12.949] Program yang kerja sama-sama.[08:08:13.014] Program yang kerja sama-sama.[08:08:13.082] Program yang kerjasama sama sekali.[08:08:13.156] Program yang kerjasama sama sekolah.[08:08:13.227] Program yang kerjasama sama sekolah.[08:08:13.298] Program yang kerjasama sama sekolah.[08:08:13.368] Program yang kerjasama sama sekolah.[08:08:13.439] Program yang kerjasama sama sekolah.[08:08:13.510] Program yang kerjasama sama sekolah.[08:08:13.581] Program yang kerjasama sama sekolah.[08:08:13.649] Program yang kerjasama sama sekolah[08:08:13.722] Program yang kerjasama sama sekolahan.&&& stt_server on_turn_detection_start
+[08:08:13.796] Program yang kerjasama sama sekolahan.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:08:13.929] Program yang kerjasama sama sekolahan.&&& stt_server on_turn_detection_stop
+[08:08:14.623] Sentence: Ada program yang kerja sama-sama sekolahan.
+
+[08:08:15.014] Dzień dobry![08:08:15.077] ¡Suscríbete![08:08:15.149] Jéééééééééé[08:08:15.212] ¡Suscríbete![08:08:15.275] ¡Suscríbete![08:08:15.338] ¡Suscríbete![08:08:15.392] ¡Ehh![08:08:15.450] ¡Eeeh![08:08:15.513] ¡Suscríbete![08:08:15.572] No, no.[08:08:15.635] ¡Suscríbete![08:08:15.696] No, no, no.[08:08:15.754] No, no.[08:08:15.843] Lo que tu perra, lo que tu perra, lo que tu perra&&& stt_server on_turn_detection_start
+[08:08:15.916] Lo que no pasa nada, bueno, ya&&& stt_server on_turn_detection_stop
+[08:08:16.615] Sentence: Ya ya ya, waktu itu berangkat sekolah, waktu itu ya.
+
+[08:08:20.216] Rp 1.000.000 isu ISM[08:08:20.279] Semasa 1000 sysm[08:08:20.352] Kelasan 1000 sysm.[08:08:20.425] Rp 1,000 sisua SMK.[08:08:20.495] Rp 1,000 sisua SMK.[08:08:20.568] Rp 1.000.000 sisua SMK[08:08:20.639] Rp 1,000 sisua SMK.[08:08:20.711] Rp 1,000 sisua SMK.[08:08:20.784] Rp 1.000.000 sisua SMK[08:08:20.861] Rp 1.000.000 sisua SMK.[08:08:20.935] Rp 1.000.000 sisua SMK[08:08:21.014] Rp 1.000.000 SISU ISM K[08:08:21.085] &&& stt_server on_turn_detection_startRasaan ribu sisu SMK.
+&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:08:21.396] Ribu sisu SMK kita dengerin mau&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:08:21.487] Ribu sisu SMK kita dengerin maunya&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:08:21.662] Ribu sisu SMK. Kita dengerin mau nyaman&&& stt_server on_turn_detection_stop
+[08:08:22.306] Sentence: Pertanyaan terakhir.
+
+[08:08:25.631] Ingin produk aksiyo yang pokok[08:08:25.704] Ingin produk AXIO yang pokoknya[08:08:25.778] Yang ingin produk AXIO yang pokoknya[08:08:25.854] Yang ingin produk AXIO yang pokoknya yang[08:08:25.930] Yang ingin produk AXIO yang pokoknya yang[08:08:26.009] Ingin produk aksio yang pokoknya yang banyak.[08:08:26.090] Ingin produk AXIO yang pokoknya yang bakal.[08:08:26.172] Ingin produk AXIO yang pokoknya yang baik.[08:08:26.250] Ingin produk AXIO yang pokoknya yang bagus.[08:08:26.332] Ingin produk AXIO yang pokoknya yang bagus.[08:08:26.411] Ingin produk AXIO yang pokoknya yang bagus.[08:08:26.490] Ingin produk AXIO yang pokoknya yang bagus.[08:08:26.569] Ingin produk AXIO yang pokoknya yang bagus.[08:08:26.648] Ingin produk AXIO yang pokoknya yang bagus.[08:08:26.733] Ingin produk AXIO yang pokoknya yang bagus, yang...[08:08:26.816] Ingin produk AXIO yang pokoknya yang bagus, yang&&& stt_server on_turn_detection_start
+[08:08:26.904] Ingin produk AXIO yang pokoknya yang bagus, yang...&&& stt_server on_turn_detection_stop
+[08:08:27.597] Sentence: Mengen produk Axio yang pokoknya yang bagus, yang oke.
+
+[08:08:30.545] Dan kami mulai pikir.[08:08:30.617] Dan kami mulai pikir.[08:08:30.680] Dan kami mulai pikir.[08:08:30.743] Dan kami mulai pikir[08:08:30.815] Dan kami mulai pikir, berat.[08:08:30.886] Dan kami mulai pikir berat.[08:08:30.954] Dan kami mulai pikir berarti[08:08:31.022] Dan kami mulai pikir berarti[08:08:31.091] Dan kami mulai pikir berarti[08:08:31.161] Dan kami mulai pikir berarti[08:08:31.239] Dan kami mulai pikir, berarti...[08:08:31.310] Dan kami mulai pikir berarti PR[08:08:31.383] Dan kami mulai pikir berarti PR nya&&& stt_server on_turn_detection_start
+[08:08:31.458] Dan kami mulai pikir berarti PR nya.&&& stt_server on_turn_detection_stop
+[08:08:32.146] Sentence: Dan kami mulai pikir, berarti PR-nya ini adalah...
+
+[08:08:33.075] Gimana caranya buat[08:08:33.136] Gimana caranya buat[08:08:33.195] Gimana caranya buat[08:08:33.255] Gimana caranya buat[08:08:33.324] Gimana caranya buat ngapain?[08:08:33.395] Gimana caranya buat ngebi...[08:08:33.466] Gimana caranya buat ngebikir.[08:08:33.537] Gimana caranya buat ngebikin[08:08:33.607] Gimana caranya buat ngebikin[08:08:33.683] Bagaimana caranya buat ngebikin ini.[08:08:33.756] Gimana caranya buat ngebikin ini.[08:08:33.829] Gimana caranya buat ngebikinin.[08:08:33.903] Gimana caranya buat ngebikin ini?&&& stt_server on_turn_detection_start
+[08:08:33.978] Gimana caranya buat ngebikin ini?&&& stt_server on_turn_detection_stop
+[08:08:34.689] Sentence: Gimana caranya buat ngebikin ini?
+
+[08:08:37.594] Agak berat buat kami[08:08:37.666] Agak berat buat kami karena[08:08:37.731] Agak berat buat kami karena[08:08:37.795] Agak berat buat kami karena[08:08:37.860] Agak berat buat kami karena[08:08:37.925] Agak berat buat kami karena[08:08:37.990] Agak berat buat kami karena[08:08:38.055] Agak berat buat kami karena buat[08:08:38.121] Agak berat buat kami karena buat[08:08:38.186] Agak berat buat kami karena buat[08:08:38.260] Agak berat buat kami karena buat menje...[08:08:38.333] Agak berat buat kami karena buat mencipta[08:08:38.415] Agak berat buat kami karena buat menciptak[08:08:38.493] Agak berat buat kami karena buat menciptakan&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:08:38.578] Agak berat buat kami karena buat menciptakan su...[08:08:38.664] Agak berat buat kami karena buat menciptakan sebuah&&& stt_server on_turn_detection_start
+[08:08:38.751] Agak berat buat kami karena buat menciptakan sebuah&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:08:38.948] Agak berat buat kami karena buat menciptakan sebuah produk.&&& stt_server on_turn_detection_stop
+[08:08:39.057] Agak berat buat kami karena buat menciptakan sebuah produk[08:08:39.151] Agak berat buat kami karena buat menciptakan sebuah produk yang[08:08:39.246] Agak berat buat kami karena buat menciptakan sebuah produk yang...[08:08:39.381] Agak berat buat kami karena buat menciptakan sebuah produk yang baru.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:08:39.506] Agak berat buat kami karena buat menciptakan sebuah produk yang bagus.[08:08:39.602] Agak berat buat kami karena buat menciptakan sebuah produk yang bagus.[08:08:39.698] Agak berat buat kami karena buat menciptakan sebuah produk yang bagus.&&& stt_server on_turn_detection_start
+[08:08:39.798] Agak berat buat kami karena buat menciptakan sebuah produk yang bagus.&&& stt_server on_turn_detection_stop
+[08:08:40.426] Sentence: Agak berat buat kami karena buat menciptakan sebuah produk yang bagus,
+
+[08:08:40.844] И тубатуре[08:08:40.905] И тубатуре[08:08:40.968] И тубатуре[08:08:41.028] И тубатуре[08:08:41.088] Itu betul riset.[08:08:41.146] Itu butuh reset[08:08:41.203] Itu betul reset[08:08:41.262] Itu betul reset.[08:08:41.324] Itu betul riset ya[08:08:41.382] Itu betul reset ya[08:08:41.442] Itu betul reset ya ya[08:08:41.503] Itu butuh reset biar[08:08:41.567] Itu butuh reset biar...[08:08:41.633] Itu butuh reset, ya ya reset[08:08:41.699] Itu butuh reset, ya reset.&&& stt_server on_turn_detection_start
+[08:08:41.762] Itu butuh reset, ya reset&&& stt_server on_turn_detection_stop
+[08:08:41.843] Itu butuh reset, ya reset.[08:08:41.910] Itu butuh reset, ya reset ya&&& stt_server on_turn_detection_start
+[08:08:41.979] Itu butuh reset, ya reset yang...&&& stt_server on_turn_detection_stop
+[08:08:42.107] Itu butuh reset, ya reset yang nggak.&&& stt_server on_turn_detection_start
+[08:08:42.179] Itu butuh reset, ya reset yang nggak.&&& stt_server on_turn_detection_stop
+[08:08:42.277] Itu butuh reset, ya reset yang gak[08:08:42.351] Itu butuh reset, ya reset yang gak mau&&& stt_server on_turn_detection_start
+[08:08:42.427] Itu betul reset, ya reset yang gak murah&&& stt_server on_turn_detection_stop
+[08:08:42.892] Itu betul reset, ya reset yang gak murah[08:08:42.983] Itu betul reset, ya reset yang gak murah[08:08:43.065] Itu butuh reset, ya reset yang gak murah gitu[08:08:43.143] Itu betul reset, ya reset yang gak murah gitu[08:08:43.221] Itu betul reset, ya reset yang gak murah gitu[08:08:43.302] Itu betul reset, ya reset yang gak murah gitu[08:08:43.380] Itu betul reset, ya reset yang gak murah gitu[08:08:43.466] Itu butuh reset, biaya reset yang gak murah gitu biaya[08:08:43.552] Itu butuh reset, biaya reset yang gak murah gitu biaya[08:08:43.641] Itu butuh reset, biaya reset yang gak murah gitu biaya reset[08:08:43.727] Itu butuh reset biaya reset yang gak murah gitu biaya reset[08:08:43.818] Itu butuh reset biaya reset yang gak murah gitu biaya reset[08:08:43.899] Itu betul reset, biaya reset yang gak murah.[08:08:43.980] Itu butuh reset, biaya reset yang gak murah[08:08:44.061] Itu betul reset, biaya reset yang gak murah[08:08:44.156] Itu butuh reset, biaya reset yang gak murah, biaya saya coba[08:08:44.255] Itu butuh reset, biaya reset yang gak murah, biaya reset coba nyoba[08:08:44.356] Itu butuh reset biaya reset yang gak murah gitu biaya reset coba-coba[08:08:44.458] Itu butuh reset, biaya reset yang gak murah, biaya reset coba-coba[08:08:44.585] Itu butuh reset, biaya reset yang gak murah, biaya reset coba-coba[08:08:44.722] Itu butuh reset biaya reset yang gak murah gitu biaya reset coba-coba semua&&& stt_server on_turn_detection_start
+[08:08:44.880] Itu butuh reset biaya reset yang gak murah gitu biaya reset coba nyobanya semua murah&&& stt_server on_turn_detection_stop
+[08:08:45.643] Sentence: Itu butuh biaya riset yang nggak murah. Biaya riset, coba-cobanya semua murah.
+
+[08:08:46.319] Dá bem bem bom por dito.[08:08:46.395] 但並不至於[08:08:46.456] Tapi memang puji tuh..[08:08:46.516] Tapi memang puji tuh[08:08:46.576] Tapi memang puji tuh[08:08:46.637] Tapi memang puji tuh[08:08:46.705] Tapi memang puji tuhan[08:08:46.767] Tapi memang puji Tuhan.[08:08:46.842] Tapi memang puji Tuhan dikini lihat[08:08:46.920] Tapi memang puji Tuhan[08:08:46.994] Tapi memang puji Tuhan bukin ini ada.[08:08:47.068] Tapi memang puji Tuhan, mungkin ini ada...[08:08:47.147] Tapi memang puji Tuhan, mungkin ini ada efek...&&& stt_server on_turn_detection_start
+[08:08:47.226] Tapi memang puji Tuhan, mungkin ini ada efek...&&& stt_server on_turn_detection_stop
+[08:08:47.471] Tapi memang puji Tuhan, mungkin ini ada efek sama.[08:08:47.554] Tapi memang puji Tuhan mungkin ini ada efek samping.[08:08:47.638] Tapi memang pun jiduhan mungkin ini ada efek sampingnya[08:08:47.722] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya[08:08:47.809] Tapi memang pun jenis, mungkin ini ada efek sampingnya.[08:08:47.899] Tapi memang pun jatuhan, mungkin ini ada efek sampingnya juga[08:08:47.988] Tapi memang puji Tuhan mungkin ini ada efek sampingnya juga.&&& stt_server on_turn_detection_start
+[08:08:48.502] Tạm biệt mọi người tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi tụi&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:08:48.643] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari...&&& stt_server on_turn_detection_stop
+[08:08:48.909] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan Pemerintah.[08:08:49.021] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan pemerintah.&&& stt_server on_turn_detection_start
+[08:08:49.132] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan pemerintah.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:08:49.377] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan pemerintah.&&& stt_server on_turn_detection_stop
+[08:08:49.512] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan pemerintah.&&& stt_server on_turn_detection_start
+[08:08:49.635] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan pemerintah mati diikan.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:08:50.171] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan pemerintah.[08:08:50.312] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan pemerintah.&&& stt_server on_turn_detection_start
+[08:08:50.445] Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan pemerintah.&&& stt_server on_turn_detection_stop
+[08:08:51.152] Sentence: Tapi memang puji Tuhan, mungkin ini ada efek sampingnya juga dari dukungan pemerintah. Jadi kan ini ada aturan.
+
+[08:09:03.778] Yang mau melakukan sesuatu.[08:09:03.844] Kita mau melakukan sesuatu.[08:09:03.910] Yang mau melakukan sesuatu.[08:09:03.976] Karena mau melakukan sesuatu...[08:09:04.046] Kita mau melakukan sesuatu piktif.[08:09:04.118] Kita mau melakukan sesuatu piktif.[08:09:04.190] Yang mau melakukan sesuatu pick different.[08:09:04.260] Yang mau melakukan sesuatu peak different.[08:09:04.330] Yang mau melakukan sesuatu peak different.[08:09:04.399] Yang mau melakukan sesuatu peak different.[08:09:04.470] Yang mau melakukan sesuatu peak difference.[08:09:04.540] Yang mau melakukan sesuatu peak difference.[08:09:04.611] Yang mau melakukan sesuatu peak difference.[08:09:04.682] Yang mau melakukan sesuatu peak difference.[08:09:04.753] Yang mau melakukan sesuatu peak difference.[08:09:04.825] Yang mau melakukan sesuatu peak difference.&&& stt_server on_turn_detection_start
+[08:09:04.899] Karena mau melakukan sesuatu peak difference gitu.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:05.322] Karena mau melakukan sesuatu big difference[08:09:05.398] Karena mau melakukan sesuatu peak difference[08:09:05.473] Karena mau melakukan sesuatu peak difference[08:09:05.545] Karena mau melakukan sesuatu big difference[08:09:05.630] Karena mau melakukan sesuatu peak difference&&& stt_server on_turn_detection_start
+[08:09:05.718] Karena mau melakukan sesuatu peak difference, ini butuh biaya.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:05.807] Karena mau melakukan sesuatu big difference&&& stt_server on_turn_detection_start
+[08:09:05.898] Karena mau melakukan sesuatu big difference, ini butuh biaya gede&&& stt_server on_turn_detection_stop
+[08:09:06.588] Sentence: Kalau kita mau melakukan sesuatu big difference, ini butuh biaya gede.
+
+[08:09:07.207] तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो तो,[08:09:07.271] Lu ini kegak ada buat...[08:09:07.344] Lu ini kegak ada. Buat...[08:09:07.417] Lu ini kegak ada. Buat apa?[08:09:07.487] Lu ini kegak ada buat dapet[08:09:07.557] Lu ini kagak ada buat dapet[08:09:07.630] Lu ini kegak ada buat dapet duit[08:09:07.703] Luitnya nggak ada buat dapet duit.[08:09:07.778] Luitnya nggak ada buat dapet duit.&&& stt_server on_turn_detection_start
+[08:09:07.858] Luitnya nggak ada buat dapet duit gini.&&& stt_server on_turn_detection_stop
+[08:09:08.546] Sentence: Luidnya nggak ada. Buat dapat duit gede,
+
+[08:09:09.130] Butuh dusam[08:09:09.189] Butuh dusanti[08:09:09.244] Butuh, dusanti[08:09:09.298] Butuh do something[08:09:09.352] Butuh do something[08:09:09.405] Butuh do something[08:09:09.459] Butuh do something[08:09:09.513] Butuh do something[08:09:09.568] Butuh do something[08:09:09.626] Butuh do something[08:09:09.684] Butuh do something[08:09:09.743] Butuh do something[08:09:09.801] Butuh 2x something[08:09:09.860] Butuh do something[08:09:09.923] Butuh sesuatu yang bagus[08:09:09.988] Butuh sesuatu yang bagus[08:09:10.053] Butuh sesuatu yang bagus.[08:09:10.117] Butuh sesuatu yang bagus[08:09:10.184] Butuh sesuatu bagus ini[08:09:10.248] Butuh sesuatu bagus ini&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:10.314] Butuh sesuatu bagus ini[08:09:10.375] Butuh sesuatu bagus ini&&& stt_server on_turn_detection_start
+[08:09:10.435] Butuh sesuatu bagus ini&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:09:10.518] Butuh sesuatu yang bagus ini&&& stt_server on_turn_detection_stop
+[08:09:10.666] Butuh sesuatu bagus ini[08:09:10.726] Butuh sesuatu bagus ini[08:09:10.786] Butuh sesuatu bagus ini[08:09:10.846] Butuh sesuatu bagus ini[08:09:10.906] Butuh sesuatu yang bagus[08:09:10.966] Butuh sesuatu bagus ini[08:09:11.033] Butuh do something bagus ini pari pari[08:09:11.093] Butuh sesuatu bagus ini&&& stt_server on_turn_detection_start
+[08:09:11.153] Butuh sesuatu bagus ini&&& stt_server on_turn_detection_stop
+[08:09:11.249] Butuh sesuatu yang bagus ini[08:09:11.330] Butuh sesuatu yang bagus, ini parah-parah[08:09:11.410] Butuh sesuatu yang bagus ini&&& stt_server on_turn_detection_start
+[08:09:11.490] Butuh sesuatu yang bagus ini&&& stt_server on_turn_detection_stop
+[08:09:11.652] Butuh sesuatu yang bagus, ini parah-parah kita[08:09:11.736] Butuh sesuatu yang bagus, ini parah parika&&& stt_server on_turn_detection_start
+[08:09:11.819] Butuh sesuatu yang bagus, ini parah-parah&&& stt_server on_turn_detection_stop
+[08:09:11.909] Butuh sesuatu yang bagus, ini parah parika[08:09:11.992] Butuh sesuatu yang bagus, ini pari-pari[08:09:12.076] Butuh sesuatu yang bagus, ini parpa rika[08:09:12.155] Butuh do something bagus ini[08:09:12.231] Butuh do something bagus ini parpa rika[08:09:12.314] Butuh sesuatu yang bagus, ini parpa rika[08:09:12.395] Butuh sesuatu yang bagus, ini parpa rika[08:09:12.477] Butuh sesuatu yang bagus, ini parpa rika[08:09:12.558] Butuh sesuatu yang bagus, ini parpa rika[08:09:12.639] Butuh sesuatu yang bagus, ini parpa rika[08:09:12.720] Butuh sesuatu yang bagus, ini parpa rita&&& stt_server on_turn_detection_start
+[08:09:12.802] Butuh sesuatu yang bagus, ini parkarita&&& stt_server on_turn_detection_stop
+[08:09:12.890] Butuh sesuatu yang bagus, ini parkarita[08:09:12.973] Butuh sesuatu yang bagus, ini parkarita[08:09:13.054] Butuh sesuatu yang bagus, ini tarpa rita[08:09:13.145] Butuh sesuatu yang bagus, ini tarpa rita[08:09:13.225] Butuh sesuatu yang bagus, ini tarpa rita[08:09:13.297] Butuh do something bagus ini tar-tarita[08:09:13.377] Butuh sesuatu yang bagus, ini tarpa rita[08:09:13.457] Butuh sesuatu yang bagus, ini tarpa rita[08:09:13.537] Butuh sesuatu yang bagus, ini tarpa rita[08:09:13.615] Butuh sesuatu yang bagus, ini tarpa rita&&& stt_server on_turn_detection_start
+[08:09:13.690] Butuh do something bagus ini tar-tarita&&& stt_server on_turn_detection_stop
+[08:09:13.787] Butuh sesuatu yang bagus, ini tar-tarita&&& stt_server on_turn_detection_start
+[08:09:13.896] Butuh do something bagus ini, tar-tarita, pemerintah itu ngambil inisiatif itu&&& stt_server on_turn_detection_stop
+[08:09:14.097] Butuh sesuatu yang bagus, ini tartarita[08:09:14.172] Butuh do something bagus ini tar-tarita[08:09:14.246] Butuh do something bagus ini tar-tarita[08:09:14.319] Butuh do something bagus ini tar-tarita[08:09:14.395] Butuh do something bagus ini tar-tarita[08:09:14.468] Butuh do something bagus ini tar-tarita[08:09:14.572] Butuh do something bagus ini tar-tarita. Pemerintah tuh ngambil initiative itu.[08:09:14.649] Butuh do something bagus ini tar-tarita[08:09:14.725] Butuh do something bagus ini tar-tarita&&& stt_server on_turn_detection_start
+[08:09:14.806] Butuh do something bagus ini tar-tarita&&& stt_server on_turn_detection_stop
+[08:09:15.026] Butuh do something bagus ini tar-tarita. Pemerintah tuh ngambil inisiatif itu.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:15.159] Butuh du-something bagus ini tar-tarita. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan.[08:09:15.261] Butuh do something bagus ini tar-tarita. Pemerintah tuh ngambil initiative itu.[08:09:15.374] Butuh do something bagus ini, tar-tarita. Pemerintah tuh ngambil inisiatif itu.[08:09:15.516] Butuh do something bagus ini tar-tarita. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi itu.[08:09:15.626] Butuh dosanting bagus, ini tartarita. Pemerintah tuh ngambil inisiatif itu.[08:09:15.768] Butuh dosanting bagus, ini tartarita. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan.[08:09:15.924] Butuh du-something bagus ini, tar-tarita. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan dinilai.[08:09:16.080] Butuh du-something bagus ini, tar-tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara.[08:09:16.234] Butuh dosanting bagus, ini tartarita. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara.[08:09:16.390] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara sendiri.&&& stt_server on_turn_detection_start
+[08:09:16.545] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara sendiri.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:09:16.825] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara sendiri.&&& stt_server on_turn_detection_stop
+[08:09:17.574] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara sendiri.[08:09:17.799] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara sendiri. Yang TKDN.[08:09:18.027] Butuh dosanting bagus, ini parkarita. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara sendiri. Yang TKDN nya bagus.[08:09:18.253] Butuh dosanting bagus, ini tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara sendiri. Yang tekadannya bagus.[08:09:18.496] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi Tuhan di negara sendiri. Yang tekadarnya bagus, yang...[08:09:18.783] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDN nya bagus, yang kanungan.[08:09:19.057] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDN nya bagus, yang ngandungan lo kalian.[08:09:19.337] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang ngandungan lokalnya dalam...[08:09:19.612] Butuh do something bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus.[08:09:19.889] Butuh do something bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus.[08:09:20.211] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus.[08:09:20.497] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porus.&&& stt_server on_turn_detection_start
+[08:09:20.785] Butuh dosanting bagus, ini tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porsi.&&& stt_server on_turn_detection_stop
+[08:09:21.113] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porsi lebih...&&& stt_server on_turn_detection_start
+[08:09:21.404] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porsi lebih bisa.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:09:21.900] Butuh dosanting bagus ini, tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porsi lebih, bisa lebih.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:22.527] Butuh dosanting bagus, ini tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porsi lebih, bisa lebih.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:22.864] Butuh dosanting bagus, ini tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porsi lebih, bisa lebih bersaing.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:23.203] Butuh dosanting bagus, ini tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porsi lebih, bisa lebih, persaing.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:23.524] Butuh dosanting bagus, ini tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porsi lebih bisa, lebih bersaing.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:09:23.841] Butuh dosanting bagus, ini tarik tarika. Pemerintah tuh ngambil inisiatif itu. Gue kasih lu kesempatan buat jadi Tuhan di negara sendiri. Yang TKDNnya bagus, yang kandungan lokalnya dalam bagus, punya porsi lebih bisa, lebih bersaing di pengadaran.&&& stt_server on_turn_detection_stop
+[08:09:24.747] Sentence: Butuh something bagus. Ini tarik-tarikan. Pemerintah tuh ngambil inisiatif itu. Gue kasih lo kesempatan buat jadi tuan di negara sendiri. Yang TKDN-nya bagus, yang kandungan lokalnya dalam bagus, punya porsi bisa lebih bersaing di pengemadan pemerintah.
+
+[08:09:25.853] Dan terus terang waktu pada saat[08:09:25.921] Terus terang waktu pada saat...[08:09:25.996] Terus terang waktu pada saat pemenang.[08:09:26.074] Dan terus terang waktu pada saat pemeriksaan.[08:09:26.152] Dan terus terang waktu pada saat pemerintah.[08:09:26.227] Terus terang waktu pada saat pemerintah.[08:09:26.306] Dan terus terang waktu pada saat pemerintah.[08:09:26.381] Terus terang waktu pada saat pemerintah.[08:09:26.464] Terus terang waktu pada saat pemerintah akhirnya.[08:09:26.545] Terus terang waktu pada saat pemerintah akhirnya.[08:09:26.625] Terus terang waktu pada saat pemerintah akhirnya[08:09:26.706] Terus terangwak pada saat pemerintah akhirnya&&& stt_server on_turn_detection_start
+[08:09:26.795] Terus terangwak pada saat pemerintah akhirnya meng.&&& stt_server on_turn_detection_stop
+[08:09:27.464] Sentence: Dan terus terang waktu pada saat pemerintah akhirnya meng...
+
+[08:09:42.963] Bila, pulang ke sana ya.[08:09:43.021] Mulai kesana ya.[08:09:43.083] Ula! Ula kesana ya[08:09:43.147] Ulah! Ulah kesana ya![08:09:43.214] Ula! Ula kesana ya[08:09:43.271] Ulang sana ya[08:09:43.328] Ulang sana ya[08:09:43.386] Ulang sana ya[08:09:43.443] Ulang sana ya[08:09:43.500] Ulang sana ya[08:09:43.561] Pulang sana ya[08:09:43.620] Pulang sana ya[08:09:43.688] Bila, pulang ke sana ya.[08:09:43.756] Bila, pulang ke sana ya.[08:09:43.824] Bila, pulang ke sana ya.&&& stt_server on_turn_detection_start
+[08:09:43.893] Bila, pulang ke sana ya.&&& stt_server on_turn_detection_stop
+[08:09:44.575] Sentence: Pulang ke sana ya. Pulang ke sana.
+
+[08:09:45.175] Udah pakai beli kapan pesih.[08:09:45.262] Udah pake beli kapan persiaan[08:09:45.360] Udah pake beli kapal pesia[08:09:45.458] Udah pake beli kapal pesia[08:09:45.561] Udah pake beli kapal pesiaaa[08:09:45.664] Udah pake beli kapal pesiaaa[08:09:45.767] Udah pake beli kapal pesiaaa[08:09:45.869] Udah pake beli kapal pesiah.[08:09:45.973] Udah pake beli kapal pesiat.[08:09:46.076] Udah pake beli kapal pesia[08:09:46.179] Udah pake beli kapal pesia.[08:09:46.281] Udah pake beli kapal pesia.[08:09:46.384] Udah pake beli kapal pesia.[08:09:46.516] Udah pake beli kapal pesia.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:46.651] Udah pake beli kapal pesia.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:46.773] Udah pakai beli kapal pesia. Salah terbang.&&& stt_server on_turn_detection_start
+[08:09:46.900] Udah pake beli kapal pesia. Salah terbang.&&& stt_server on_turn_detection_stop
+[08:09:47.041] Udah pake beli kapal pesia. Salah terbang.[08:09:47.167] Udah pake beli kapal pesia! Salah terbang![08:09:47.289] Udah pakai beli kapal pesia. Salah terbang.[08:09:47.414] Udah pake beli kapal pesia. Salah terbang.[08:09:47.540] Udah pake beli kapal pesia. Salah terbang.[08:09:47.669] Udah pake beli kapal pesia, soal terbang, gitu kan[08:09:47.799] Udah pake beli kapal pesia, soal terbang gitu kan?&&& stt_server on_turn_detection_start
+[08:09:47.936] Udah pake beli kapal pesia, soal terbang gitu kan?&&& stt_server on_turn_detection_stop
+[08:09:48.412] Udah pake beli kapal pesia, soal terbang gitu kan.[08:09:48.583] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksiyo.[08:09:48.735] Udah pake beli kapal pesia, soal terbang, gitu kan? Aksiyo!&&& stt_server on_turn_detection_start
+[08:09:48.888] Udah pake beli kapal pesia, soal terbang, gitu kan? Aksiyo!&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:49.147] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksio kita pake.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:49.341] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake.&&& stt_server on_turn_detection_start
+[08:09:49.521] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksio kita pake.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:09:49.832] Udah pake beli kapal pesia. Soal terbang gitu kan. Aksio kita pake buat.&&& stt_server on_turn_detection_stop
+[08:09:50.004] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat...[08:09:50.115] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksio kita pake buat...[08:09:50.233] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksio kita pake buat soal.[08:09:50.350] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksio kita pake buat slide.[08:09:50.470] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain gitu.&&& stt_server on_turn_detection_start
+[08:09:50.594] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksio kita pake buat selain kita.&&& stt_server on_turn_detection_stop
+[08:09:50.750] Udah pake beli kapal pesia. Sontor bang, gitu kan. Aksiyo kita pake buat selain kita.[08:09:50.881] Udah pake beli kapal pesia. Sontor bang, gitu kan. Aksiyo kita pake buat selain kita beja.[08:09:51.045] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksio kita pake buat selain kita bejalan.[08:09:51.193] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain kita bejalanin.[08:09:51.330] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksiyo kita pake buat selain kita bejalanin program.[08:09:51.465] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain kita bejalanin program.[08:09:51.602] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain kita bejalani program sosial.[08:09:51.740] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain kita bejalani program sosial.[08:09:51.879] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain kita bejalanin program sosial gitu.[08:09:52.020] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksio kita pake buat selain kita bejalani program sosial kita.[08:09:52.168] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksio kita pake buat selain kita bejalanin program sosial kita buat[08:09:52.313] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain kita bejalani program sosial kita buat ini.[08:09:52.462] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain kita bejalani program sosial kita buat ini.[08:09:52.610] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain kita bejalani program sosial kita buat Indonesia.&&& stt_server on_turn_detection_start
+[08:09:52.760] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalani program sosial kita buat Indonesia.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:53.211] Udah pake beli kapal pesia, soal terbang gitu kan. Aksio kita pake buat selain kita bejalanin program sosial kita buat Indonesia.[08:09:53.420] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat&&& stt_server on_turn_detection_start
+[08:09:53.601] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalani program sosial kita buat Indonesia, kita pake buat resep.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[08:09:53.987] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.&&& stt_server on_turn_detection_stop
+[08:09:54.257] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.[08:09:54.474] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[08:09:54.696] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.[08:09:54.932] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.[08:09:55.160] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.[08:09:55.421] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.[08:09:55.652] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.[08:09:55.891] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.[08:09:56.150] Udah pake beli kapal pesia, soal terbang gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset.&&& stt_server on_turn_detection_start
+[08:09:56.419] Udah pake beli kapal pesia, soal terbang, gitu kan. Aksiyo kita pake buat selain kita bejalanin program sosial kita buat Indonesia, kita pake buat reset. Iya, YouTube balik lagi.&&& stt_server on_turn_detection_stop
+[08:09:57.032] Sentence: Ya, terus balik lagi.
+
+Data client disconnected: no close frame received or sent
+Data client connected
+Data client disconnected: received 1005 (no status received [internal]); then sent 1005 (no status received [internal])
+Data client connected
+Data client disconnected: no close frame received or sent
+Data client connected
+Data client disconnected: received 1001 (going away); then sent 1001 (going away)
+Data client connected
+Data client disconnected: received 1005 (no status received [internal]); then sent 1005 (no status received [internal])
+Data client connected
+Data client disconnected: received 1005 (no status received [internal]); then sent 1005 (no status received [internal])
+Data client connected
+/home/zhouzhencheng/miniconda3/envs/realtimestt/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 25 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

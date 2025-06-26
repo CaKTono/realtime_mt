@@ -1,0 +1,178 @@
+nohup: ignoring input
+Starting server, please wait...
+Control server started on ws://localhost:8011
+Data server started on ws://localhost:8012
+Initializing RealtimeSTT server with parameters:
+    model: large-v3
+    download_root: None
+    realtime_model_type: large-v3
+    language: 
+    batch_size: 16
+    init_realtime_after_seconds: 0.2
+    realtime_batch_size: 16
+    initial_prompt_realtime: 
+    input_device_index: 1
+    silero_sensitivity: 0.1
+    silero_use_onnx: False
+    webrtc_sensitivity: 1
+    post_speech_silence_duration: 0.7
+    min_length_of_recording: 1.1
+    min_gap_between_recordings: 0
+    enable_realtime_transcription: True
+    realtime_processing_pause: 0.02
+    silero_deactivity_detection: True
+    early_transcription_on_silence: 0.2
+    beam_size: 5
+    beam_size_realtime: 5
+    initial_prompt: Incomplete thoughts should end with '...'. Examples of complete thoughts: 'The sky is blue.' 'She walked home.' Examples of incomplete thoughts: 'When the sky...' 'Because he...'
+    wake_words: 
+    wake_words_sensitivity: 0.5
+    wake_word_timeout: 5.0
+    wake_word_activation_delay: 0
+    wakeword_backend: none
+    openwakeword_model_paths: None
+    openwakeword_inference_framework: tensorflow
+    wake_word_buffer_duration: 1.0
+    use_main_model_for_realtime: False
+    spinner: False
+    use_microphone: False
+    on_realtime_transcription_update: <function make_callback.<locals>.inner_callback at 0x7cb78c160dc0>
+    on_recording_start: <function make_callback.<locals>.inner_callback at 0x7cb78c160ee0>
+    on_recording_stop: <function make_callback.<locals>.inner_callback at 0x7cb78c160e50>
+    on_vad_detect_start: <function make_callback.<locals>.inner_callback at 0x7cb78c160f70>
+    on_vad_detect_stop: <function make_callback.<locals>.inner_callback at 0x7cb78c161000>
+    on_wakeword_detected: <function make_callback.<locals>.inner_callback at 0x7cb78c161090>
+    on_wakeword_detection_start: <function make_callback.<locals>.inner_callback at 0x7cb78c161120>
+    on_wakeword_detection_end: <function make_callback.<locals>.inner_callback at 0x7cb78c1611b0>
+    on_transcription_start: <function make_callback.<locals>.inner_callback at 0x7cb78c161240>
+    on_turn_detection_start: <function make_callback.<locals>.inner_callback at 0x7cb78c1612d0>
+    on_turn_detection_stop: <function make_callback.<locals>.inner_callback at 0x7cb78c161360>
+    no_log_file: True
+    use_extended_logging: False
+    level: 30
+    compute_type: default
+    gpu_device_index: 0
+    device: cuda
+    handle_buffer_overflow: False
+    suppress_tokens: [-1]
+    allowed_latency_limit: 100
+    faster_whisper_vad_filter: False
+RealtimeSTT initialized
+Server started. Press Ctrl+C to stop the server.
+Data client connected
+[12:48:08.542] Oh.[12:48:08.716] Oh.[12:48:08.882] Oh.[12:48:09.048] Oh.[12:48:09.214] Oh.[12:48:09.379] Oh.[12:48:09.545] Oh.[12:48:09.711] Oh.[12:48:09.878] Oh.[12:48:10.044] Oh.&&& stt_server on_turn_detection_start
+[12:48:10.210] Oh.&&& stt_server on_turn_detection_stop
+[12:48:11.258] Sentence: Thanks for watching!
+
+Data client connected
+[12:48:32.738] Thank you.[12:48:32.927] Hi.[12:48:33.094] Hi.[12:48:33.260] Hi.[12:48:33.427] Hi.[12:48:33.593] Hi.[12:48:33.760] Hi.[12:48:33.927] Hi.[12:48:34.094] Hi.&&& stt_server on_turn_detection_start
+[12:48:34.261] Hi.&&& stt_server on_turn_detection_stop
+[12:48:34.828] Sentence: Hi.
+
+[12:48:37.739] This.[12:48:37.905] This is[12:48:38.070] This is[12:48:38.244] This is...[12:48:38.418] This is...&&& stt_server on_turn_detection_start
+[12:48:38.592] This is...&&& stt_server on_turn_detection_stop
+[12:48:39.210] Sentence: This is...
+
+[12:48:43.045] To[12:48:43.212] To.[12:48:43.381] To.[12:48:43.547] To.[12:48:43.714] To.[12:48:43.881] To.[12:48:44.048] To.[12:48:44.230] To do this.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[12:48:44.412] To do this.[12:48:44.601] ご視聴ありがとうございました&&& stt_server on_turn_detection_start
+[12:48:44.791] ご視聴ありがとうございました&&& stt_server on_turn_detection_stop
+[12:48:45.359] ご視聴ありがとうございました&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[12:48:45.574] To the church.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[12:48:45.921] Thank you.&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[12:48:46.277] Thank you.&&& stt_server on_turn_detection_stop
+[12:48:46.771] Thank you.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[12:48:46.974] Thank you.[12:48:47.152] To do this&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[12:48:47.322] To the&&& stt_server on_turn_detection_start
+[12:48:47.564] To remind the&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[12:48:48.309] Thank you.&&& stt_server on_turn_detection_stop
+[12:48:48.562] To do this&&& stt_server on_turn_detection_start
+[12:48:48.734] Thank you.&&& stt_server on_turn_detection_stop
+[12:48:48.919] To determine the[12:48:49.093] To remind the[12:48:49.266] And the quality&&& stt_server on_turn_detection_start
+[12:48:49.447] To determine the quality&&& stt_server on_turn_detection_stop
+&&& stt_server on_turn_detection_start
+[12:48:50.057] To determine the quality of the&&& stt_server on_turn_detection_stop
+[12:48:50.843] Sentence: To determine the quality of the...
+
+[12:48:51.569] Uh...[12:48:51.735] Uh...[12:48:51.901] Yeah.[12:48:52.067] Uh...[12:48:52.232] Uh...[12:48:52.398] Uh...[12:48:52.564] Uh...&&& stt_server on_turn_detection_start
+[12:48:52.729] Uh...&&& stt_server on_turn_detection_stop
+[12:48:53.319] Sentence: The input...
+
+[12:48:57.908] Yeah.[12:48:58.073] Yeah.[12:48:58.247] Thank you.[12:48:58.435] Yeah.[12:48:58.623] Yeah.&&& stt_server on_turn_detection_start
+[12:48:58.811] Yeah.&&& stt_server on_turn_detection_stop
+[12:48:59.002] Yeah.[12:48:59.190] Kiitos.[12:48:59.371] It is this.[12:48:59.552] It is this.[12:48:59.733] It is this.[12:48:59.914] Yes, yes.[12:49:00.095] Yes, yes.[12:49:00.276] This is.[12:49:00.457] This is.[12:49:00.638] This is.[12:49:00.819] This is.[12:49:01.000] This is.[12:49:01.181] This is.[12:49:01.362] This is a...Data client disconnected: no close frame received or sent
+[12:49:01.543] This is a...[12:49:01.724] This is a...[12:49:01.905] This is a...[12:49:02.087] This is a...[12:49:02.269] This is a...[12:49:02.450] This is a...[12:49:02.631] This is a...[12:49:02.812] This is a...[12:49:02.993] This is a...[12:49:03.174] This is a...[12:49:03.355] This is a...[12:49:03.536] This is a...[12:49:03.717] This is a...[12:49:03.899] This is a...[12:49:04.079] This is a...[12:49:04.260] This is a...Data client connected
+[12:49:04.442] This is a...[12:49:04.623] This is a...[12:49:04.804] This is a...[12:49:04.985] This is a...[12:49:05.167] This is a...&&& stt_server on_turn_detection_start
+[12:49:05.348] This is a...&&& stt_server on_turn_detection_stop
+[12:49:06.051] This is a...[12:49:06.255] Yeah, this is... Hi.[12:49:06.459] Yeah, this is... Hi.[12:49:06.663] Yeah, this is... Hi.[12:49:06.867] Yes, this is... Hi.[12:49:07.064] This is a... Hi.[12:49:07.261] This is a... Hi.[12:49:07.457] This is a... Hi.[12:49:07.654] This is a... Hi.[12:49:07.858] Yes, this is... Hi.&&& stt_server on_turn_detection_start
+[12:49:08.062] Yes, this is... Hi.&&& stt_server on_turn_detection_stop
+[12:49:09.970] Sentence: Yes, this is... Hi.
+
+Data client disconnected: sent 1011 (internal error) keepalive ping timeout; no close frame received
+Data client connected
+[12:49:48.000] All right.Data client connected
+[12:49:48.178] All right.[12:49:48.351] All right.[12:49:48.524] All right.[12:49:48.697] É isso.[12:49:48.870] É isso.[12:49:49.036] Aí.&&& stt_server on_turn_detection_start
+[12:49:49.201] Aí.&&& stt_server on_turn_detection_stop
+[12:49:50.146] Sentence: Aí.
+
+[12:49:52.605] Hello.[12:49:52.771] Hello.[12:49:52.937] Hello.[12:49:53.102] Hello.[12:49:53.268] Hello.[12:49:53.434] Hello.&&& stt_server on_turn_detection_start
+[12:49:53.599] Hello.Data client disconnected: sent 1011 (internal error) keepalive ping timeout; no close frame received
+&&& stt_server on_turn_detection_stop
+[12:49:54.389] Sentence: Hello.
+
+Data client disconnected: received 1005 (no status received [internal]); then sent 1005 (no status received [internal])
+Data client disconnected: no close frame received or sent
+Data client connected
+[12:50:20.147] Bye.[12:50:20.333] Bye.[12:50:20.519] Bye.[12:50:20.690] Bye.[12:50:20.855] Bye.[12:50:21.020] Bye.&&& stt_server on_turn_detection_start
+&&& stt_server on_turn_detection_stop
+[12:50:21.186] Bye.[12:50:21.351] Bye.[12:50:21.516] Bye.[12:50:21.696] Bye.[12:50:21.876] Bye.[12:50:22.056] Bye.[12:50:22.237] Bye.[12:50:22.417] Bye.[12:50:22.597] Hi. Hello.[12:50:22.777] Hi. Hello.[12:50:22.958] Hi. Hello.&&& stt_server on_turn_detection_start
+[12:50:23.138] Hi. Hello.&&& stt_server on_turn_detection_stop
+[12:50:24.089] Sentence: Hi. Hello.
+
+[12:50:37.588] All right.[12:50:37.762] All right.[12:50:37.927] Alright.[12:50:38.092] Alright.[12:50:38.258] Alright.[12:50:38.423] Alright.[12:50:38.589] Alright.[12:50:38.755] Alright.[12:50:38.921] Alright.[12:50:39.086] Alright.[12:50:39.252] Alright.&&& stt_server on_turn_detection_start
+[12:50:39.417] Alright.&&& stt_server on_turn_detection_stop
+[12:50:40.523] Sentence: Alright.
+
+Data client connected
+[12:51:06.531] Alright.[12:51:06.697] Alright.[12:51:06.862] Alright.[12:51:07.027] Alright.[12:51:07.193] Alright.[12:51:07.359] Alright.&&& stt_server on_turn_detection_start
+[12:51:07.524] Alright.Data client disconnected: sent 1011 (internal error) keepalive ping timeout; no close frame received
+&&& stt_server on_turn_detection_stop
+[12:51:08.191] Hi.[12:51:08.367] Hi.[12:51:08.540] Hi.[12:51:08.714] Hi.[12:51:08.887] Hi.[12:51:09.061] Hi.[12:51:09.234] Hi.[12:51:09.408] Hi.[12:51:09.588] Hi, hello.[12:51:09.770] Hi, hello.[12:51:09.952] Hi. Hello.[12:51:10.133] Hi. Hello.[12:51:10.314] Hi. Hello.[12:51:10.495] Hi. Hello.[12:51:10.676] Hi. Hello.[12:51:10.857] Hi, hello.[12:51:11.038] Hi, hello.[12:51:11.219] Hi. Hello.[12:51:11.400] Hi. Hello.[12:51:11.589] Hi, hello, hi[12:51:11.778] Hi, hello, hi[12:51:11.967] Hi hello hi&&& stt_server on_turn_detection_start
+[12:51:12.156] Hi hello hi&&& stt_server on_turn_detection_stop
+[12:51:13.095] Sentence: Hi. Hello, hi.
+
+Data client disconnected: sent 1011 (internal error) keepalive ping timeout; no close frame received
+Data client connected
+[12:52:59.828] Hello[12:52:59.994] Hello[12:53:00.160] Hello[12:53:00.326] Hello[12:53:00.489] Hello[12:53:00.653] Hello[12:53:00.817] Hello[12:53:00.980] Hello[12:53:01.144] Hello[12:53:01.307] Hello[12:53:01.471] Hello[12:53:01.636] Hello[12:53:01.802] Hello[12:53:01.968] Hello[12:53:02.133] Hello[12:53:02.299] Hello[12:53:02.464] Hello[12:53:02.630] Hello[12:53:02.795] Hello[12:53:02.961] Hello&&& stt_server on_turn_detection_start
+[12:53:03.127] Hello&&& stt_server on_turn_detection_stop
+[12:53:03.788] Sentence: Hello.
+
+[12:53:12.177] Hi.[12:53:12.353] Hi.[12:53:12.517] Hi.[12:53:12.681] Hi.[12:53:12.845] Hi.[12:53:13.008] Hi.[12:53:13.174] Hi.[12:53:13.355] Hi, hello.[12:53:13.536] Hi, hello.[12:53:13.731] Hi, hello, hi.[12:53:13.926] Hi, hello, hi.[12:53:14.107] Hi Hello Hi[12:53:14.288] Hi Hello Hi[12:53:14.469] Hi Hello Hi[12:53:14.650] Hi Hello Hi[12:53:14.831] Hi Hello Hi[12:53:15.012] Hi Hello Hi[12:53:15.192] Hi Hello Hi[12:53:15.372] Hi Hello Hi[12:53:15.552] Hi Hello Hi[12:53:15.733] Hi Hello Hi[12:53:15.913] Hi Hello Hi[12:53:16.093] Hi Hello Hi&&& stt_server on_turn_detection_start
+[12:53:16.274] Hi Hello Hi&&& stt_server on_turn_detection_stop
+[12:53:17.252] Sentence: Hi, hello, hi.
+
+[12:54:31.720] My name is[12:54:31.906] My name is[12:54:32.086] My name is[12:54:32.267] My name is[12:54:32.462] My name is Khalid.[12:54:32.658] My name is Khalid.[12:54:32.861] My name is Kavya.&&& stt_server on_turn_detection_start
+[12:54:33.065] My name is Kavya.&&& stt_server on_turn_detection_stop
+[12:54:33.663] Sentence: My name is Kavin.
+
+[12:54:48.051] Cow.[12:54:48.222] Cow.[12:54:48.396] Calv-[12:54:48.569] Calv-[12:54:48.742] Calv-[12:54:48.915] Calv-[12:54:49.089] Calv-[12:54:49.263] Calv-[12:54:49.436] Calv-[12:54:49.609] Calv-&&& stt_server on_turn_detection_start
+[12:54:49.782] Calv-&&& stt_server on_turn_detection_stop
+[12:54:50.855] Sentence: Calvin...
+
+[12:55:27.053] My name[12:55:27.227] My name[12:55:27.400] My name[12:55:27.573] My name[12:55:27.753] My name is[12:55:27.934] My name is[12:55:28.114] My name is[12:55:28.295] My name is[12:55:28.476] My name is[12:55:28.657] My name is[12:55:28.838] My name is.[12:55:29.018] My name is.[12:55:29.200] My name is Carl[12:55:29.388] My name is Carl.[12:55:29.576] My name is Carl.[12:55:29.765] My name is Carl.[12:55:29.954] My name is Carl.[12:55:30.143] My name is Carl.[12:55:30.331] My name is Carl.&&& stt_server on_turn_detection_start
+[12:55:30.520] My name is Carl.&&& stt_server on_turn_detection_stop
+[12:55:31.243] Sentence: My name is Calvin.
+
+[12:55:37.897] Cool.[12:55:38.063] Cool.[12:55:38.229] Cool.[12:55:38.395] Cool.[12:55:38.568] Go away.[12:55:38.741] Go away.[12:55:38.914] Cohen.[12:55:39.088] Cohen.[12:55:39.254] Cohen.[12:55:39.420] Cohen.[12:55:39.586] Cohen.&&& stt_server on_turn_detection_start
+[12:55:39.753] Cohen.&&& stt_server on_turn_detection_stop
+[12:55:40.446] Sentence: Go in.
+
+/home/zhouzhencheng/miniconda3/envs/realtimestt/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 25 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

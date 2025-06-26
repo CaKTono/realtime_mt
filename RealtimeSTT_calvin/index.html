@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser STT Client (Modified)</title>
+  <style>
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 700px;
+      padding: 20px;
+      box-sizing: border-box;
+      gap: 20px; /* Add more vertical space between items */
+      height: 90%; /* Fixed height to prevent layout shift */
+    }
+    #status {
+      color: #0056b3;
+      font-size: 20px;
+      text-align: center;
+    }
+    #transcriptionContainer {
+      height: 90px; /* Fixed height for approximately 3 lines of text */
+      overflow-y: auto;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    #transcription {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #333;
+      word-wrap: break-word;
+    }
+    #fullTextContainer {
+      height: 150px; /* Fixed height to prevent layout shift */
+      overflow-y: auto;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    #fullText {
+      color: #4CAF50;
+      font-size: 18px;
+      font-weight: 600;
+      word-wrap: break-word;
+    }
+
+    /* ADD THIS CSS */
+    .translation-box {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #e3f2fd; /* Light blue background */
+      border: 1px solid #90caf9;
+      border-radius: 5px;
+    }
+    #translationContainer {
+      height: 90px;
+      overflow-y: auto;
+    }
+    #fullTranslationContainer {
+      height: 150px;
+      overflow-y: auto;
+    }
+    #translation, #fullTranslation {
+      font-size: 18px;
+      word-wrap: break-word;
+      color: #0d47a1; /* Dark blue text */
+    }
+    #fullTranslation {
+      font-weight: 600;
+    }
+    /* END ADD */
+
+    .last-word {
+      color: #007bff;
+      font-weight: 600;
+    }
+    button {
+      padding: 12px 24px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin: 5px;
+      transition: background-color 0.3s ease;
+      color: #fff;
+      background-color: #0056b3;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    button:hover {
+      background-color: #007bff;
+    }
+    button:disabled {
+      background-color: #cccccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="status">Press "Start Recording"...</div>
+    <button id="startButton" onclick="startRecording()">Start Recording</button>
+    <button id="stopButton" onclick="stopRecording()" disabled>Stop Recording</button>
+
+    <div id="transcriptionContainer">
+      <div id="transcription" class="realtime"></div>
+    </div>
+    <div id="fullTextContainer">
+      <div id="fullText"></div>
+    </div>
+
+    <div id="translationContainer" class="translation-box">
+      <div id="translation" class="realtime"></div>
+    </div>
+    <div id="fullTranslationContainer" class="translation-box">
+      <div id="fullTranslation"></div>
+    </div>
+  </div>
+  
+  <script>
+      // --- Get all HTML elements once at the top ---
+      const statusDiv = document.getElementById("status");
+      const transcriptionDiv = document.getElementById("transcription");
+      const fullTextDiv = document.getElementById("fullText");
+      const translationDiv = document.getElementById("translation");
+      const fullTranslationDiv = document.getElementById("fullTranslation");
+      const startButton = document.getElementById("startButton");
+      const stopButton = document.getElementById("stopButton");
+      const transcriptionContainer = document.getElementById("transcriptionContainer");
+      const fullTextContainer = document.getElementById("fullTextContainer");
+      const fullTranslationContainer = document.getElementById("fullTranslationContainer");
+
+      const scheme = window.location.protocol === "https:" ? "wss" : "ws";
+      const host = window.location.host;
+      const dataURL = `${scheme}://${host}/data`;
+      console.log("Connecting to Data URL:", dataURL);
+
+      let dataSocket;
+      let audioContext;
+      let mediaStream;
+      let mediaProcessor;
+      
+      function connectToDataSocket() {
+        dataSocket = new WebSocket(dataURL);
+
+        dataSocket.onopen = () => {
+          statusDiv.textContent = "Connected to STT server.";
+          console.log("Connected to data WebSocket.");
+        };
+
+        dataSocket.onmessage = (event) => {
+          try {
+            const message = JSON.parse(event.data);
+            console.log("Received message:", message); // For debugging
+
+            if (message.type === "realtime") {
+              const words = message.text.split(" ");
+              const lastWord = words.pop() || "";
+              // Use .textContent for the part without HTML tags for safety
+              const mainText = document.createTextNode(words.join(" "));
+              const lastWordSpan = document.createElement('span');
+              lastWordSpan.className = 'last-word';
+              lastWordSpan.textContent = ` ${lastWord}`; // Add space before last word
+              
+              // Clear previous content and append new
+              transcriptionDiv.innerHTML = ''; 
+              transcriptionDiv.appendChild(mainText);
+              transcriptionDiv.appendChild(lastWordSpan);
+
+              if (message.translation) {
+                translationDiv.textContent = message.translation.text;
+              }
+              transcriptionContainer.scrollTop = transcriptionContainer.scrollHeight;
+
+            } else if (message.type === "fullSentence") {
+              // Append final text
+              fullTextDiv.innerHTML += message.text + " ";
+              if (message.translation) {
+                fullTranslationDiv.innerHTML += message.translation.text + " ";
+              }
+
+              // Clear the real-time display areas
+              transcriptionDiv.innerHTML = "";
+              translationDiv.textContent = "";
+
+              // Scroll the final text containers
+              fullTextContainer.scrollTop = fullTextContainer.scrollHeight;
+              fullTranslationContainer.scrollTop = fullTranslationContainer.scrollHeight;
+            }
+          } catch (e) {
+            console.error("Error parsing message:", e);
+          }
+        };
+
+        dataSocket.onclose = () => statusDiv.textContent = "Disconnected from STT server.";
+        dataSocket.onerror = (error) => {
+          console.error("WebSocket error:", error);
+          statusDiv.textContent = "Error connecting to the STT server.";
+        };
+      }
+
+      async function startRecording() {
+        try {
+          startButton.disabled = true;
+          stopButton.disabled = false;
+          statusDiv.textContent = "Recording...";
+          
+          fullTextDiv.textContent = "";
+          fullTranslationDiv.textContent = "";
+          transcriptionDiv.textContent = "";
+          translationDiv.textContent = "";
+
+          audioContext = new AudioContext();
+          mediaStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          const input = audioContext.createMediaStreamSource(mediaStream);
+
+          mediaProcessor = audioContext.createScriptProcessor(1024, 1, 1);
+          mediaProcessor.onaudioprocess = (event) => {
+            if (dataSocket && dataSocket.readyState === WebSocket.OPEN) {
+              const audioData = event.inputBuffer.getChannelData(0);
+              sendAudioChunk(audioData, audioContext.sampleRate);
+            }
+          };
+
+          input.connect(mediaProcessor);
+          mediaProcessor.connect(audioContext.destination);
+
+          connectToDataSocket();
+        } catch (error) {
+          console.error("Error accessing microphone:", error);
+          statusDiv.textContent = "Error accessing microphone.";
+          stopRecording();
+        }
+      }
+
+      function stopRecording() {
+        if (mediaProcessor) {
+          mediaProcessor.disconnect();
+          mediaProcessor.onaudioprocess = null;
+          mediaProcessor = null;
+        }
+        if (mediaStream) mediaStream.getTracks().forEach(track => track.stop());
+        if (audioContext) audioContext.close();
+        if (dataSocket) dataSocket.close();
+
+        startButton.disabled = false;
+        stopButton.disabled = true;
+        statusDiv.textContent = "Stopped recording.";
+      }
+
+      function sendAudioChunk(audioData, sampleRate) {
+          const pcm16Data = new Int16Array(audioData.length);
+          for (let i = 0; i < audioData.length; i++) {
+            pcm16Data[i] = Math.max(-1, Math.min(1, audioData[i])) * 0x7FFF;
+          }
+
+          const metadata = JSON.stringify({ sampleRate });
+          const metadataLength = new Uint32Array([metadata.length]);
+          const metadataBuffer = new TextEncoder().encode(metadata);
+
+          const message = new Uint8Array(4 + metadataBuffer.byteLength + pcm16Data.byteLength);
+          
+          // Explicitly set the length in the first 4 bytes
+          new DataView(message.buffer).setUint32(0, metadata.length, true);
+          
+          message.set(metadataBuffer, 4);
+          message.set(new Uint8Array(pcm16Data.buffer), 4 + metadataBuffer.byteLength);
+
+          dataSocket.send(message);
+      }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1489 @@
+nohup: ignoring input
+[1m[96mStarting server, please wait...[0m
+Translation layer enabled.
+Loading translation models...
+Loading real-time translation model: facebook/nllb-200-distilled-600M
+Device set to use cuda:0
+Loading full-sentence translation model: facebook/nllb-200-3.3B
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:00<00:00, 13.40it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:00<00:00, 19.98it/s]
+Device set to use cuda:0
+Translation models loaded.
+Web server started on http://localhost:8888
+Control and Data WebSockets available on the same port at /control and /data paths.
+Initializing RealtimeSTT server with parameters:
+    model: large-v3
+    download_root: None
+    realtime_model_type: large-v3
+    language: 
+    batch_size: 16
+    init_realtime_after_seconds: 0.2
+    realtime_batch_size: 16
+    initial_prompt_realtime: 
+    input_device_index: 1
+    silero_sensitivity: 0.05
+    silero_use_onnx: False
+    webrtc_sensitivity: 3
+    post_speech_silence_duration: 0.6
+    min_length_of_recording: 1.1
+    min_gap_between_recordings: 0
+    enable_realtime_transcription: True
+    realtime_processing_pause: 0.01
+    silero_deactivity_detection: True
+    early_transcription_on_silence: 0.2
+    beam_size: 5
+    beam_size_realtime: 3
+    initial_prompt: Incomplete thoughts should end with '...'. Examples of complete thoughts: 'The sky is blue.' 'She walked home.' Examples of incomplete thoughts: 'When the sky...' 'Because he...'
+    wake_words: 
+    wake_words_sensitivity: 0.5
+    wake_word_timeout: 5.0
+    wake_word_activation_delay: 0
+    wakeword_backend: none
+    openwakeword_model_paths: None
+    openwakeword_inference_framework: tensorflow
+    wake_word_buffer_duration: 1.0
+    use_main_model_for_realtime: False
+    spinner: False
+    use_microphone: False
+    on_realtime_transcription_update: <function make_callback.<locals>.inner_callback at 0x75a64cfb55a0>
+    on_recording_start: <function make_callback.<locals>.inner_callback at 0x75a64cfef2e0>
+    on_recording_stop: <function make_callback.<locals>.inner_callback at 0x75a64c1d1bd0>
+    on_vad_detect_start: <function make_callback.<locals>.inner_callback at 0x75a64c1d1c60>
+    on_vad_detect_stop: <function make_callback.<locals>.inner_callback at 0x75a64c1d2290>
+    on_wakeword_detected: <function make_callback.<locals>.inner_callback at 0x75a64c1d2200>
+    on_wakeword_detection_start: <function make_callback.<locals>.inner_callback at 0x75a64c1d1b40>
+    on_wakeword_detection_end: <function make_callback.<locals>.inner_callback at 0x75a64c1d2320>
+    on_transcription_start: <function make_callback.<locals>.inner_callback at 0x75a64c1d2170>
+    on_turn_detection_start: <function make_callback.<locals>.inner_callback at 0x75a64c1d2050>
+    on_turn_detection_stop: <function make_callback.<locals>.inner_callback at 0x75a64c1d20e0>
+    no_log_file: True
+    use_extended_logging: False
+    level: 30
+    compute_type: default
+    gpu_device_index: 0
+    device: cuda
+    handle_buffer_overflow: False
+    suppress_tokens: [-1]
+    allowed_latency_limit: 100
+    faster_whisper_vad_filter: True
+    translation_target_language: zho_Hans
+    translation_model_realtime: facebook/nllb-200-distilled-600M
+    translation_model_full: facebook/nllb-200-3.3B
+RealtimeSTT initialized
+Server started. Press Ctrl+C to stop the server.
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:18:00.874"}
+No clients connected, message not sent.
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:26:38.090"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:26:38.092"}
+[17:26:38.395] 지금까지 뉴스 스토리였습니다.[17:26:38.694] Check check[17:26:38.919] Check check.[17:26:39.271] Cek, cek, 1, 2, 3&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:26:39.305"}
+[17:26:39.560] Cek, cek, 1, 2, 3Broadcasting message: {"type": "realtime", "text": "\uc9c0\uae08\uae4c\uc9c0 \ub274\uc2a4 \uc2a4\ud1a0\ub9ac\uc600\uc2b5\ub2c8\ub2e4.", "translation": {"language": "zho_Hans", "text": "\u5230\u76ee\u524d\u4e3a\u6b62,\u8fd9\u662f\u4e00\u4e2a\u65b0\u95fb\u6545\u4e8b."}, "timestamp": "2025-06-24 17:26:39.650"}
+Broadcasting message: {"type": "realtime", "text": "Check check", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5"}, "timestamp": "2025-06-24 17:26:39.895"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:26:39.938"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:26:39.939"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:26:39.940"}
+[17:26:39.998] Sentence:Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:26:39.999"} Cek, cek. 1, 2, 3.
+
+
+Broadcasting message: {"type": "realtime", "text": "Check check.", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5."}, "timestamp": "2025-06-24 17:26:40.073"}
+Broadcasting message: {"type": "realtime", "text": "Cek, cek, 1, 2, 3", "translation": {"language": "zho_Hans", "text": "\u67e5\u770b,\u67e5\u770b, 1, 2, 3"}, "timestamp": "2025-06-24 17:26:40.340"}
+Broadcasting message: {"type": "realtime", "text": "Cek, cek, 1, 2, 3", "translation": {"language": "zho_Hans", "text": "\u67e5\u770b,\u67e5\u770b, 1, 2, 3"}, "timestamp": "2025-06-24 17:26:40.612"}
+Broadcasting message: {"type": "fullSentence", "text": "Cek, cek. 1, 2, 3.", "translation": {"language": "zho_Hans", "text": "\u67e5\u770b,\u67e5\u770b. \u4e00,\u4e8c,\u4e09."}, "timestamp": "2025-06-24 17:26:41.144"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:26:41.701"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:26:41.702"}
+[17:26:42.068] Okay.[17:26:42.276] Oke, bagusBroadcasting message: {"type": "realtime", "text": "Okay.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709\u4ec0\u4e48\u95ee\u9898."}, "timestamp": "2025-06-24 17:26:42.436"}
+[17:26:42.482] Oke, bagus[17:26:42.704] Okay, bagus.Broadcasting message: {"type": "realtime", "text": "Oke, bagus", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u5f88\u597d"}, "timestamp": "2025-06-24 17:26:42.718"}
+[17:26:42.953] Oke bagus, terima kasih&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:26:42.991"}
+Broadcasting message: {"type": "realtime", "text": "Oke, bagus", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u5f88\u597d"}, "timestamp": "2025-06-24 17:26:43.119"}
+[17:26:43.216] Oke bagus, terima kasihBroadcasting message: {"type": "realtime", "text": "Okay, bagus.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u5f88\u597d."}, "timestamp": "2025-06-24 17:26:43.251"}
+You seem to be using the pipelines sequentially on GPU. In order to maximize efficiency please use a dataset
+Broadcasting message: {"type": "realtime", "text": "Oke bagus, terima kasih", "translation": {"language": "zho_Hans", "text": "\u5f88\u597d,\u8c22\u8c22."}, "timestamp": "2025-06-24 17:26:43.594"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:26:43.612"}&&& stt_server on_turn_detection_stop
+
+[17:26:43.615] Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:26:43.617"}
+Sentence:Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:26:43.619"} 
+Oke, bagus. Terima kasih.
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:26:43.620"}
+Broadcasting message: {"type": "realtime", "text": "Oke bagus, terima kasih", "translation": {"language": "zho_Hans", "text": "\u5f88\u597d,\u8c22\u8c22."}, "timestamp": "2025-06-24 17:26:43.776"}
+Broadcasting message: {"type": "fullSentence", "text": "Oke, bagus. Terima kasih.", "translation": {"language": "zho_Hans", "text": "\u597d,\u5f88\u597d. \u8c22\u8c22."}, "timestamp": "2025-06-24 17:26:44.191"}
+Data client disconnected.
+Data client connected
+Data client disconnected.
+Data client connected
+Data client disconnected.
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:28:33.129"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:28:33.132"}
+[17:28:33.381] いろいろ[17:28:33.601] I knowData client connected
+Broadcasting message: {"type": "realtime", "text": "\u3044\u308d\u3044\u308d", "translation": {"language": "zho_Hans", "text": "\u4e0d\u540c\u7684\u4e1c\u897f."}, "timestamp": "2025-06-24 17:28:33.778"}
+[17:28:33.838] Allora...Broadcasting message: {"type": "realtime", "text": "I know", "translation": {"language": "zho_Hans", "text": "\u6211\u77e5\u9053."}, "timestamp": "2025-06-24 17:28:34.037"}
+[17:28:34.116] Lalu ini gak ada&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:28:34.229"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:28:34.247"}
+Broadcasting message: {"type": "realtime", "text": "Allora...", "translation": {"language": "zho_Hans", "text": "\u7136\u540e..."}, "timestamp": "2025-06-24 17:28:34.295"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:28:34.301"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:28:34.314"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:28:34.352"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:28:34.371"}
+[17:28:34.397] Kalau ini nggak ada safety.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:28:34.578"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:28:34.589"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:28:34.591"}
+Broadcasting message: {"type": "realtime", "text": "Lalu ini gak ada", "translation": {"language": "zho_Hans", "text": "\u73b0\u5728\u8fd8\u6ca1\u6709."}, "timestamp": "2025-06-24 17:28:34.610"}
+[17:28:34.752] Kalau ini nggak ada safety-nya ya?&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:28:34.791"}
+Broadcasting message: {"type": "realtime", "text": "Kalau ini nggak ada safety.", "translation": {"language": "zho_Hans", "text": "\u5982\u679c\u8fd9\u91cc\u6ca1\u6709\u5b89\u5168."}, "timestamp": "2025-06-24 17:28:34.804"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:28:34.813"}
+Broadcasting message: {"type": "realtime", "text": "Kalau ini nggak ada safety-nya ya?", "translation": {"language": "zho_Hans", "text": "\u5982\u679c\u8fd9\u4e0d\u662f\u5b89\u5168\u5417?"}, "timestamp": "2025-06-24 17:28:35.272"}
+[17:28:35.324] Kalau ini nggak ada safety-nya ya?&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:28:35.457"}
+[17:28:35.457] Sentence: Kalau ini nggak ada safety-nya ya?
+
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:28:35.459"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:28:35.461"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:28:35.462"}
+Broadcasting message: {"type": "realtime", "text": "Kalau ini nggak ada safety-nya ya?", "translation": {"language": "zho_Hans", "text": "\u5982\u679c\u8fd9\u4e0d\u662f\u5b89\u5168\u5417?"}, "timestamp": "2025-06-24 17:28:35.549"}
+Broadcasting message: {"type": "fullSentence", "text": "Kalau ini nggak ada safety-nya ya?", "translation": {"language": "zho_Hans", "text": "\u5982\u679c\u8fd9\u4e0d\u662f\u5b89\u5168\u7684\u5417?"}, "timestamp": "2025-06-24 17:28:35.916"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:28:36.758"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:28:36.759"}
+[17:28:36.960] Today.[17:28:37.207] Thank you.Broadcasting message: {"type": "realtime", "text": "Today.", "translation": {"language": "zho_Hans", "text": "\u4eca\u5929."}, "timestamp": "2025-06-24 17:28:37.295"}
+[17:28:37.485] Thank you.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:28:37.610"}
+[17:28:37.773] Thank you for listening.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:28:37.878"}
+Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:28:37.979"}
+[17:28:38.066] Thank you.Broadcasting message: {"type": "realtime", "text": "Thank you for listening.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u542c\u6211\u7684\u8bdd."}, "timestamp": "2025-06-24 17:28:38.328"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:28:38.490"}&&& stt_server on_turn_detection_stop
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:28:38.495"}
+[17:28:38.496] Sentence: Thanks for watching!
+
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:28:38.497"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:28:38.498"}
+Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:28:38.556"}
+Broadcasting message: {"type": "fullSentence", "text": "Thanks for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u60a8\u7684\u5173\u6ce8!"}, "timestamp": "2025-06-24 17:28:38.911"}
+Data client disconnected.
+Data client connected
+Data client disconnected.
+Data client connected
+Data client disconnected.
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:21.614"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:21.615"}
+[17:29:21.885] Всем спасибо за просмотр![17:29:22.102] 行不行啊[17:29:22.318] 行不行啊这个Broadcasting message: {"type": "realtime", "text": "\u0412\u0441\u0435\u043c \u0441\u043f\u0430\u0441\u0438\u0431\u043e \u0437\u0430 \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u5927\u5bb6!"}, "timestamp": "2025-06-24 17:29:22.319"}
+[17:29:22.567] 行不行啊这个东西Data client connected
+Broadcasting message: {"type": "realtime", "text": "\u884c\u4e0d\u884c\u554a", "translation": {"language": "zho_Hans", "text": "\u884c\u4e0d\u884c\u554a"}, "timestamp": "2025-06-24 17:29:22.656"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:22.750"}
+[17:29:22.815] 行不行啊这个东西Broadcasting message: {"type": "realtime", "text": "\u884c\u4e0d\u884c\u554a\u8fd9\u4e2a", "translation": {"language": "zho_Hans", "text": "\u884c\u4e0d\u884c\u554a\u8fd9\u4e2a"}, "timestamp": "2025-06-24 17:29:22.885"}
+Broadcasting message: {"type": "realtime", "text": "\u884c\u4e0d\u884c\u554a\u8fd9\u4e2a\u4e1c\u897f", "translation": {"language": "zho_Hans", "text": "\u8d70\u4e0d\u884c\u554a\u8fd9\u4e2a\u4e1c\u897f"}, "timestamp": "2025-06-24 17:29:23.266"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:29:23.362"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:29:23.375"}[17:29:23.366] 
+Sentence: 行不行啊这个东西?
+
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:23.381"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:29:23.383"}
+Broadcasting message: {"type": "realtime", "text": "\u884c\u4e0d\u884c\u554a\u8fd9\u4e2a\u4e1c\u897f", "translation": {"language": "zho_Hans", "text": "\u8d70\u4e0d\u884c\u554a\u8fd9\u4e2a\u4e1c\u897f"}, "timestamp": "2025-06-24 17:29:23.520"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:23.593"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:23.594"}
+[17:29:23.827] Take care.[17:29:24.086] Tick, tick, tick.Broadcasting message: {"type": "fullSentence", "text": "\u884c\u4e0d\u884c\u554a\u8fd9\u4e2a\u4e1c\u897f?", "translation": {"language": "zho_Hans", "text": "\u4e0d\u884c\u554a\u8fd9\u4e2a\u4e1c\u897f?"}, "timestamp": "2025-06-24 17:29:24.181"}
+[17:29:24.328] Check, check, stop.[17:29:24.583] Check, check, stop moving.Broadcasting message: {"type": "realtime", "text": "Take care.", "translation": {"language": "zho_Hans", "text": "\u7167\u987e\u81ea\u5df1."}, "timestamp": "2025-06-24 17:29:24.585"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:24.707"}
+[17:29:24.853] Check, check, something's wrong.Broadcasting message: {"type": "realtime", "text": "Tick, tick, tick.", "translation": {"language": "zho_Hans", "text": "\u5b50,\u5b50,\u5b50."}, "timestamp": "2025-06-24 17:29:25.004"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:29:25.334"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:29:25.335"}
+[17:29:25.338] Sentence: &&& stt_server on_turn_detection_stop
+Check, check, something's wrong.
+
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:25.343"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:29:25.344"}
+Broadcasting message: {"type": "realtime", "text": "Check, check, stop.", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5,\u68c0\u67e5,\u505c\u6b62."}, "timestamp": "2025-06-24 17:29:25.438"}
+Broadcasting message: {"type": "realtime", "text": "Check, check, stop moving.", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5,\u68c0\u67e5,\u505c\u6b62\u79fb\u52a8."}, "timestamp": "2025-06-24 17:29:25.763"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:25.902"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:25.903"}
+[17:29:26.108] Blah.[17:29:26.310] Bye.Broadcasting message: {"type": "realtime", "text": "Check, check, something's wrong.", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5,\u68c0\u67e5,\u6709\u4ec0\u4e48\u95ee\u9898."}, "timestamp": "2025-06-24 17:29:26.316"}
+[17:29:26.532] Bye.[17:29:26.766] Thank you.[17:29:27.012] Thank you.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:27.019"}
+[17:29:27.289] Здравствуйте. Здравствуйте.Broadcasting message: {"type": "fullSentence", "text": "Check, check, something's wrong.", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5,\u68c0\u67e5,\u6709\u4ec0\u4e48\u4e0d\u5bf9."}, "timestamp": "2025-06-24 17:29:27.441"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:29:27.633"}
+
+[17:29:27.638] Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:29:27.639"}Sentence:
+ Hello. Hello.
+
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:27.640"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:29:27.641"}
+Broadcasting message: {"type": "realtime", "text": "Blah.", "translation": {"language": "zho_Hans", "text": "! ! !"}, "timestamp": "2025-06-24 17:29:27.733"}
+Broadcasting message: {"type": "realtime", "text": "Bye.", "translation": {"language": "zho_Hans", "text": "\u522b\u89c1\u4f60."}, "timestamp": "2025-06-24 17:29:27.915"}
+Broadcasting message: {"type": "realtime", "text": "Bye.", "translation": {"language": "zho_Hans", "text": "\u522b\u89c1\u4f60."}, "timestamp": "2025-06-24 17:29:28.116"}
+Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:29:28.284"}
+Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:29:28.508"}
+Broadcasting message: {"type": "realtime", "text": "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435. \u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435.", "translation": {"language": "zho_Hans", "text": "\u60a8\u597d,\u60a8\u597d."}, "timestamp": "2025-06-24 17:29:28.808"}
+Broadcasting message: {"type": "fullSentence", "text": "Hello. Hello.", "translation": {"language": "zho_Hans", "text": "\u4f60\u597d,\u4f60\u597d."}, "timestamp": "2025-06-24 17:29:29.197"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:29.503"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:29.503"}
+[17:29:29.723] Thank you.[17:29:29.934] Thank you.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:29:30.153"}
+[17:29:30.161] Thank you for watching![17:29:30.395] Thank you for watching!Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:29:30.569"}
+[17:29:30.632] Thank you for watching!&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:30.672"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:30.706"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:30.708"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:30.821"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:30.852"}
+[17:29:30.878] Thank you for watching!Broadcasting message: {"type": "realtime", "text": "Thank you for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u89c2\u770b!"}, "timestamp": "2025-06-24 17:29:30.944"}
+Broadcasting message: {"type": "realtime", "text": "Thank you for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u89c2\u770b!"}, "timestamp": "2025-06-24 17:29:31.169"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:31.356"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:31.359"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:31.654"}
+[17:29:31.670] See you next time.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:31.704"}
+Broadcasting message: {"type": "realtime", "text": "Thank you for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u89c2\u770b!"}, "timestamp": "2025-06-24 17:29:31.736"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:31.991"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:32.008"}
+[17:29:32.078] See you next time.&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:32.106"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:32.136"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:32.191"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:32.229"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:32.280"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:32.307"}
+Broadcasting message: {"type": "realtime", "text": "Thank you for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u89c2\u770b!"}, "timestamp": "2025-06-24 17:29:32.329"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:32.356"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:32.390"}
+[17:29:32.544] See you next time. Bye.Broadcasting message: {"type": "realtime", "text": "See you next time.", "translation": {"language": "zho_Hans", "text": "\u4e0b\u6b21\u89c1\u9762."}, "timestamp": "2025-06-24 17:29:32.650"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:32.689"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:32.842"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:32.874"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:33.015"}
+Broadcasting message: {"type": "realtime", "text": "See you next time.", "translation": {"language": "zho_Hans", "text": "\u4e0b\u6b21\u89c1\u9762."}, "timestamp": "2025-06-24 17:29:33.078"}
+[17:29:33.105] I don't know.&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:33.185"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:33.191"}
+Broadcasting message: {"type": "realtime", "text": "See you next time. Bye.", "translation": {"language": "zho_Hans", "text": "\u4e0b\u6b21\u89c1\u9762,\u518d\u89c1."}, "timestamp": "2025-06-24 17:29:33.363"}
+Broadcasting message: {"type": "realtime", "text": "I don't know.", "translation": {"language": "zho_Hans", "text": "\u6211\u4e0d\u77e5\u9053."}, "timestamp": "2025-06-24 17:29:33.750"}
+[17:29:33.763] Oke, pasti saya inggris.&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:29:33.802"}
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:29:33.805"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:33.806"}
+[17:29:33.867] Sentence: Oke, pasti saya inggris.
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:29:33.869"}
+Broadcasting message: {"type": "realtime", "text": "Oke, pasti saya inggris.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u6211\u5fc5\u987b\u8bf4\u82f1\u8bed."}, "timestamp": "2025-06-24 17:29:33.932"}
+Broadcasting message: {"type": "fullSentence", "text": "Oke, pasti saya inggris.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u6211\u4e00\u5b9a\u662f\u82f1\u56fd\u4eba."}, "timestamp": "2025-06-24 17:29:34.187"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:36.873"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:36.874"}
+[17:29:37.117] Thank you.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:29:37.351"}
+[17:29:37.352] Stay.[17:29:37.585] Stay tuned.Broadcasting message: {"type": "realtime", "text": "Stay.", "translation": {"language": "zho_Hans", "text": "\u7559\u4e0b\u6765\u5427."}, "timestamp": "2025-06-24 17:29:37.616"}
+[17:29:37.807] Stay tuned.Broadcasting message: {"type": "realtime", "text": "Stay tuned.", "translation": {"language": "zho_Hans", "text": "\u4fdd\u6301\u76d1\u89c6."}, "timestamp": "2025-06-24 17:29:37.922"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:37.978"}
+[17:29:38.028] Stay tuned.Broadcasting message: {"type": "realtime", "text": "Stay tuned.", "translation": {"language": "zho_Hans", "text": "\u4fdd\u6301\u76d1\u89c6."}, "timestamp": "2025-06-24 17:29:38.125"}
+Broadcasting message: {"type": "realtime", "text": "Stay tuned.", "translation": {"language": "zho_Hans", "text": "\u4fdd\u6301\u76d1\u89c6."}, "timestamp": "2025-06-24 17:29:38.384"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:29:38.579"}
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:29:38.581"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:38.583"}
+[17:29:38.584] Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:29:38.584"}Sentence:
+ Stayed.
+
+Broadcasting message: {"type": "fullSentence", "text": "Stayed.", "translation": {"language": "zho_Hans", "text": "\u7559\u4e0b\u6765\u4e86"}, "timestamp": "2025-06-24 17:29:38.829"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:40.474"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:40.475"}
+[17:29:40.707] Thank you.[17:29:40.921] Thank you.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:29:41.116"}
+[17:29:41.133] Thank you.[17:29:41.358] Stay. Stay.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:29:41.458"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:41.575"}
+[17:29:41.599] Stay. Stay on.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:29:41.708"}
+Broadcasting message: {"type": "realtime", "text": "Stay. Stay.", "translation": {"language": "zho_Hans", "text": "\u7559\u4e0b\u6765,\u7559\u4e0b\u6765."}, "timestamp": "2025-06-24 17:29:42.131"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:29:42.180"}
+
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:42.184"}[17:29:42.184] 
+Sentence: Stay. The end.
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:29:42.185"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:29:42.186"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:42.293"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:42.294"}
+Broadcasting message: {"type": "realtime", "text": "Stay. Stay on.", "translation": {"language": "zho_Hans", "text": "\u7559\u4e0b\u6765,\u7559\u4e0b\u6765."}, "timestamp": "2025-06-24 17:29:42.514"}
+[17:29:42.519] What?[17:29:42.757] What do you want?[17:29:43.028] What do you want?Broadcasting message: {"type": "fullSentence", "text": "Stay. The end.", "translation": {"language": "zho_Hans", "text": "\u7559\u4e0b\u6765,\u7ed3\u675f\u4e86."}, "timestamp": "2025-06-24 17:29:43.252"}
+[17:29:43.267] What do you want?&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:43.393"}
+[17:29:43.493] Bye. Bye.Broadcasting message: {"type": "realtime", "text": "What?", "translation": {"language": "zho_Hans", "text": "\u4ec0\u4e48? \u4ec0\u4e48?"}, "timestamp": "2025-06-24 17:29:43.615"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:43.666"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:43.668"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:43.704"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:43.812"}
+[17:29:44.002] What? What?Broadcasting message: {"type": "realtime", "text": "What do you want?", "translation": {"language": "zho_Hans", "text": "\u4f60\u60f3\u8981\u4ec0\u4e48?"}, "timestamp": "2025-06-24 17:29:44.068"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:44.115"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:44.121"}
+[17:29:44.532] Bom dia. Bom dia.Broadcasting message: {"type": "realtime", "text": "What do you want?", "translation": {"language": "zho_Hans", "text": "\u4f60\u60f3\u8981\u4ec0\u4e48?"}, "timestamp": "2025-06-24 17:29:44.557"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:29:44.727"}&&& stt_server on_turn_detection_stop
+
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:44.730"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:29:44.731"}
+Broadcasting message: {"type": "realtime", "text": "What do you want?", "translation": {"language": "zho_Hans", "text": "\u4f60\u60f3\u8981\u4ec0\u4e48?"}, "timestamp": "2025-06-24 17:29:44.867"}
+[17:29:44.968] Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:29:44.970"}
+Sentence: Examples of complete thoughts are as follows.
+
+Broadcasting message: {"type": "realtime", "text": "Bye. Bye.", "translation": {"language": "zho_Hans", "text": "\u518d\u89c1,\u518d\u89c1."}, "timestamp": "2025-06-24 17:29:45.100"}
+Broadcasting message: {"type": "realtime", "text": "What? What?", "translation": {"language": "zho_Hans", "text": "\u4ec0\u4e48\u662f\u4ec0\u4e48?"}, "timestamp": "2025-06-24 17:29:45.269"}
+Broadcasting message: {"type": "realtime", "text": "Bom dia. Bom dia.", "translation": {"language": "zho_Hans", "text": "\u70b8\u4e86,\u70b8\u4e86."}, "timestamp": "2025-06-24 17:29:45.531"}
+Broadcasting message: {"type": "fullSentence", "text": "Examples of complete thoughts are as follows.", "translation": {"language": "zho_Hans", "text": "\u5b8c\u6574\u601d\u60f3\u7684\u4f8b\u5b50\u5982\u4e0b."}, "timestamp": "2025-06-24 17:29:45.957"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:52.484"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:52.485"}
+[17:29:52.720] Thank you.[17:29:52.926] What?Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:29:53.026"}
+[17:29:53.121] What?[17:29:53.318] What?[17:29:53.532] Hey.Broadcasting message: {"type": "realtime", "text": "What?", "translation": {"language": "zho_Hans", "text": "\u4ec0\u4e48? \u4ec0\u4e48?"}, "timestamp": "2025-06-24 17:29:53.553"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:53.630"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:53.633"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:53.710"}
+[17:29:53.770] Thank you for watching!Broadcasting message: {"type": "realtime", "text": "What?", "translation": {"language": "zho_Hans", "text": "\u4ec0\u4e48? \u4ec0\u4e48?"}, "timestamp": "2025-06-24 17:29:53.902"}
+Broadcasting message: {"type": "realtime", "text": "What?", "translation": {"language": "zho_Hans", "text": "\u4ec0\u4e48? \u4ec0\u4e48?"}, "timestamp": "2025-06-24 17:29:54.291"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:29:54.322"}&&& stt_server on_turn_detection_stop
+
+[17:29:54.326] Sentence: Thank you for watching!
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:29:54.327"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:54.328"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:29:54.328"}
+Broadcasting message: {"type": "realtime", "text": "Hey.", "translation": {"language": "zho_Hans", "text": "\u60a8\u597d."}, "timestamp": "2025-06-24 17:29:54.491"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:54.710"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:54.711"}
+Broadcasting message: {"type": "realtime", "text": "Thank you for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u89c2\u770b!"}, "timestamp": "2025-06-24 17:29:54.729"}
+[17:29:54.942] It[17:29:55.155] It means[17:29:55.375] It meansBroadcasting message: {"type": "fullSentence", "text": "Thank you for watching!", "translation": {"language": "zho_Hans", "text": "\u611f\u8c22\u60a8\u7684\u5173\u6ce8!"}, "timestamp": "2025-06-24 17:29:55.381"}
+[17:29:55.573] It meansBroadcasting message: {"type": "realtime", "text": "It", "translation": {"language": "zho_Hans", "text": "\u5b83"}, "timestamp": "2025-06-24 17:29:55.606"}
+[17:29:55.846] Иркин, Иркин.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:55.908"}
+Broadcasting message: {"type": "realtime", "text": "It means", "translation": {"language": "zho_Hans", "text": "\u8fd9\u610f\u5473\u7740"}, "timestamp": "2025-06-24 17:29:55.946"}
+[17:29:56.075] It can't beBroadcasting message: {"type": "realtime", "text": "It means", "translation": {"language": "zho_Hans", "text": "\u8fd9\u610f\u5473\u7740"}, "timestamp": "2025-06-24 17:29:56.179"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:56.188"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:56.243"}
+[17:29:56.544] Продолжение следует...Broadcasting message: {"type": "realtime", "text": "It means", "translation": {"language": "zho_Hans", "text": "\u8fd9\u610f\u5473\u7740"}, "timestamp": "2025-06-24 17:29:56.665"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:29:56.855"}&&& stt_server on_turn_detection_stop
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:29:56.859"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:29:56.861"}
+[17:29:56.862] Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:29:56.862"}Sentence:
+ Check.
+
+Broadcasting message: {"type": "realtime", "text": "\u0418\u0440\u043a\u0438\u043d, \u0418\u0440\u043a\u0438\u043d.", "translation": {"language": "zho_Hans", "text": "\u4f0a\u5c14\u91d1,\u4f0a\u5c14\u91d1."}, "timestamp": "2025-06-24 17:29:56.934"}
+Broadcasting message: {"type": "realtime", "text": "It can't be", "translation": {"language": "zho_Hans", "text": "\u8fd9\u662f\u4e0d\u53ef\u80fd\u7684."}, "timestamp": "2025-06-24 17:29:57.100"}
+Broadcasting message: {"type": "realtime", "text": "\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u0441\u043b\u0435\u0434\u0443\u0435\u0442...", "translation": {"language": "zho_Hans", "text": "\u7ee7\u7eed\u4e0b\u53bb..."}, "timestamp": "2025-06-24 17:29:57.278"}
+Broadcasting message: {"type": "fullSentence", "text": "Check.", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u4e00\u4e0b"}, "timestamp": "2025-06-24 17:29:57.523"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:29:58.780"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:29:58.780"}
+[17:29:59.000] Bye.[17:29:59.214] Bye.Broadcasting message: {"type": "realtime", "text": "Bye.", "translation": {"language": "zho_Hans", "text": "\u522b\u89c1\u4f60."}, "timestamp": "2025-06-24 17:29:59.243"}
+[17:29:59.461] I don't see that.Broadcasting message: {"type": "realtime", "text": "Bye.", "translation": {"language": "zho_Hans", "text": "\u522b\u89c1\u4f60."}, "timestamp": "2025-06-24 17:29:59.555"}
+[17:29:59.747] Nah, I don't see it. I see.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:29:59.902"}
+Broadcasting message: {"type": "realtime", "text": "I don't see that.", "translation": {"language": "zho_Hans", "text": "\u6211\u770b\u4e0d\u5230\u8fd9\u4e00\u70b9."}, "timestamp": "2025-06-24 17:29:59.982"}
+[17:30:00.035] Nah, I don't see the last teeth.&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:30:00.286"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:30:00.309"}
+Broadcasting message: {"type": "realtime", "text": "Nah, I don't see it. I see.", "translation": {"language": "zho_Hans", "text": "\u4e0d,\u6211\u770b\u4e0d\u5230,\u6211\u770b\u5230\u4e86."}, "timestamp": "2025-06-24 17:30:00.547"}
+[17:30:00.613] Nah, I don't see the last teeth.Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:30:00.971"}&&& stt_server on_turn_detection_stop
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:30:00.979"}
+[17:30:00.983] Sentence: The sky is blue.Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:30:00.984"}
+
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:30:00.987"}
+Broadcasting message: {"type": "realtime", "text": "Nah, I don't see the last teeth.", "translation": {"language": "zho_Hans", "text": "\u4e0d,\u6211\u770b\u4e0d\u5230\u6700\u540e\u7684\u7259."}, "timestamp": "2025-06-24 17:30:01.012"}
+Broadcasting message: {"type": "realtime", "text": "Nah, I don't see the last teeth.", "translation": {"language": "zho_Hans", "text": "\u4e0d,\u6211\u770b\u4e0d\u5230\u6700\u540e\u7684\u7259."}, "timestamp": "2025-06-24 17:30:01.262"}
+Broadcasting message: {"type": "fullSentence", "text": "The sky is blue.", "translation": {"language": "zho_Hans", "text": "\u5929\u7a7a\u662f\u84dd\u8272\u7684."}, "timestamp": "2025-06-24 17:30:01.589"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:30:03.780"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:30:03.782"}
+[17:30:04.008] The end.Broadcasting message: {"type": "realtime", "text": "The end.", "translation": {"language": "zho_Hans", "text": "\u7ed3\u675f\u4e86."}, "timestamp": "2025-06-24 17:30:04.248"}
+[17:30:04.269] Hehehehehehehehehehehehehehe[17:30:04.518] Thank you for watching!Broadcasting message: {"type": "realtime", "text": "Hehehehehehehehehehehehehehe", "translation": {"language": "zho_Hans", "text": "\u54c8\u54c8\u54c8\u54c8\u54c8\u54c8"}, "timestamp": "2025-06-24 17:30:04.747"}
+[17:30:04.761] Thank you for watching!&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:30:04.889"}
+[17:30:05.029] Thank you for watching!Broadcasting message: {"type": "realtime", "text": "Thank you for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u89c2\u770b!"}, "timestamp": "2025-06-24 17:30:05.113"}
+Broadcasting message: {"type": "realtime", "text": "Thank you for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u89c2\u770b!"}, "timestamp": "2025-06-24 17:30:05.455"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:30:05.522"}&&& stt_server on_turn_detection_stop
+
+[17:30:05.528] Sentence: Thanks for watching!
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:30:05.529"}
+
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:30:05.530"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:30:05.530"}
+Broadcasting message: {"type": "realtime", "text": "Thank you for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u89c2\u770b!"}, "timestamp": "2025-06-24 17:30:05.647"}
+Broadcasting message: {"type": "fullSentence", "text": "Thanks for watching!", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u60a8\u7684\u5173\u6ce8!"}, "timestamp": "2025-06-24 17:30:06.014"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:30:08.056"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:30:08.057"}
+[17:30:08.297] Bye.Broadcasting message: {"type": "realtime", "text": "Bye.", "translation": {"language": "zho_Hans", "text": "\u522b\u89c1\u4f60."}, "timestamp": "2025-06-24 17:30:08.551"}
+[17:30:08.637] ¡Bah! ¡Rudo, bebé![17:30:08.975] ¡Barulho, baby!Broadcasting message: {"type": "realtime", "text": "\u00a1Bah! \u00a1Rudo, beb\u00e9!", "translation": {"language": "zho_Hans", "text": "\u9c81\u591a,\u5b9d\u8d1d!"}, "timestamp": "2025-06-24 17:30:09.080"}
+Data client disconnected.
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:30:09.191"}
+[17:30:09.352] ¡Bah! ¡Rudo, baby!Broadcasting message: {"type": "realtime", "text": "\u00a1Barulho, baby!", "translation": {"language": "zho_Hans", "text": "\u5df4\u9c81\u7f57,\u5b9d\u8d1d!"}, "timestamp": "2025-06-24 17:30:09.364"}
+Broadcasting message: {"type": "realtime", "text": "\u00a1Bah! \u00a1Rudo, baby!", "translation": {"language": "zho_Hans", "text": "\u9c81\u591a,\u5b9d\u8d1d!"}, "timestamp": "2025-06-24 17:30:09.682"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:30:09.829"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:30:09.831"}
+[17:30:09.835] Sentence: ¡Barulho, baby!
+
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:30:09.836"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:30:09.837"}
+Broadcasting message: {"type": "fullSentence", "text": "\u00a1Barulho, baby!", "translation": {"language": "zho_Hans", "text": "\u5df4\u9c81\u970d,\u5b9d\u8d1d!"}, "timestamp": "2025-06-24 17:30:10.202"}
+Data client disconnected.
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:30:32.806"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:30:32.807"}
+[17:30:33.033] Check, check.[17:30:33.243] Check checkBroadcasting message: {"type": "realtime", "text": "Check, check.", "translation": {"language": "zho_Hans", "text": "\u652f\u7968,\u652f\u7968."}, "timestamp": "2025-06-24 17:30:33.469"}
+[17:30:33.474] Check check security[17:30:33.698] Check check securityBroadcasting message: {"type": "realtime", "text": "Check check", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5"}, "timestamp": "2025-06-24 17:30:33.884"}
+[17:30:33.904] Check check security&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:30:33.945"}
+[17:30:34.114] Check check securityBroadcasting message: {"type": "realtime", "text": "Check check security", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5\u5b89\u5168"}, "timestamp": "2025-06-24 17:30:34.281"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:30:34.549"}
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:30:34.554"}
+[17:30:34.554] Sentence: Check, check, security.Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:30:34.557"}
+
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:30:34.559"}
+Broadcasting message: {"type": "realtime", "text": "Check check security", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5\u5b89\u5168"}, "timestamp": "2025-06-24 17:30:34.574"}
+Data client connected
+Broadcasting message: {"type": "realtime", "text": "Check check security", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5\u5b89\u5168"}, "timestamp": "2025-06-24 17:30:34.809"}
+Broadcasting message: {"type": "realtime", "text": "Check check security", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5\u5b89\u5168"}, "timestamp": "2025-06-24 17:30:35.041"}
+Broadcasting message: {"type": "fullSentence", "text": "Check, check, security.", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5,\u68c0\u67e5,\u5b89\u5168."}, "timestamp": "2025-06-24 17:30:35.469"}
+Data client disconnected.
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:30:57.096"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:30:57.097"}
+[17:30:57.362] Qua in Natalizia[17:30:57.596] Com a medalhista.Broadcasting message: {"type": "realtime", "text": "Qua in Natalizia", "translation": {"language": "zho_Hans", "text": "\u5728\u7eb3\u5854\u5229\u897f\u4e9a\u7684Qua"}, "timestamp": "2025-06-24 17:30:57.833"}
+[17:30:57.839] Kayaknya tadi sprek[17:30:58.087] Kayaknya tadi seperti itu.Broadcasting message: {"type": "realtime", "text": "Com a medalhista.", "translation": {"language": "zho_Hans", "text": "\u6709\u4e2a\u5956\u724c\u540d\u5355."}, "timestamp": "2025-06-24 17:30:58.306"}
+[17:30:58.357] I know that he's sparring the dog.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:30:58.378"}
+[17:30:58.669] Kind of that is what I get.Broadcasting message: {"type": "realtime", "text": "Kayaknya tadi sprek", "translation": {"language": "zho_Hans", "text": "\u5361\u96c5\u5361\u7eb3 tadi \u55b7"}, "timestamp": "2025-06-24 17:30:58.802"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:30:58.990"}
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:30:58.994"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:30:58.994"}
+[17:30:58.995] Sentence:Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:30:59.005"} Kind of that is connected. Yeah.
+
+
+Broadcasting message: {"type": "realtime", "text": "Kayaknya tadi seperti itu.", "translation": {"language": "zho_Hans", "text": "\u50cf\u5b83\u4e00\u6837."}, "timestamp": "2025-06-24 17:30:59.011"}
+Broadcasting message: {"type": "realtime", "text": "I know that he's sparring the dog.", "translation": {"language": "zho_Hans", "text": "\u6211\u77e5\u9053\u4ed6\u6b63\u5728\u72d7."}, "timestamp": "2025-06-24 17:30:59.213"}
+Broadcasting message: {"type": "realtime", "text": "Kind of that is what I get.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u5c31\u662f\u6211\u5f97\u5230\u7684."}, "timestamp": "2025-06-24 17:30:59.428"}
+Broadcasting message: {"type": "fullSentence", "text": "Kind of that is connected. Yeah.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u6709\u70b9\u76f8\u5173."}, "timestamp": "2025-06-24 17:30:59.732"}
+Data client disconnected.
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:31:05.138"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:31:05.139"}
+[17:31:05.506] Спасибо.[17:31:05.708] Спасибо.[17:31:05.913] Спасибо, спасибо.Broadcasting message: {"type": "realtime", "text": "\u0421\u043f\u0430\u0441\u0438\u0431\u043e.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:31:05.988"}
+[17:31:06.135] Merci.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:31:06.332"}
+[17:31:06.345] Merci. Merci.Broadcasting message: {"type": "realtime", "text": "\u0421\u043f\u0430\u0441\u0438\u0431\u043e.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:31:06.365"}
+Broadcasting message: {"type": "realtime", "text": "\u0421\u043f\u0430\u0441\u0438\u0431\u043e, \u0441\u043f\u0430\u0441\u0438\u0431\u043e.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22,\u8c22\u8c22."}, "timestamp": "2025-06-24 17:31:06.574"}
+Broadcasting message: {"type": "realtime", "text": "Merci.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:31:06.864"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:31:06.936"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:31:06.937"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:31:06.938"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:31:06.941"}[17:31:06.941] 
+Sentence: 什麼聲音啊?
+
+Broadcasting message: {"type": "realtime", "text": "Merci. Merci.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22,\u8c22\u8c22."}, "timestamp": "2025-06-24 17:31:07.142"}
+Broadcasting message: {"type": "fullSentence", "text": "\u4ec0\u9ebc\u8072\u97f3\u554a?", "translation": {"language": "zho_Hans", "text": "\u4ec0\u4e48\u58f0\u97f3\u554a?"}, "timestamp": "2025-06-24 17:31:07.346"}
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:31:10.171"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:31:10.173"}
+[17:31:10.386] Thank you.[17:31:10.628] Terima kasih.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:31:10.640"}
+[17:31:10.865] Terima kasih.Broadcasting message: {"type": "realtime", "text": "Terima kasih.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:31:11.035"}
+[17:31:11.116] Terima kasih telah menonton&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:31:11.283"}
+Broadcasting message: {"type": "realtime", "text": "Terima kasih.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:31:11.350"}
+[17:31:11.367] Sampai jumpa.Broadcasting message: {"type": "realtime", "text": "Terima kasih telah menonton", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u5df2\u7ecf\u770b\u4e86"}, "timestamp": "2025-06-24 17:31:11.693"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:31:11.902"}
+
+[17:31:11.907] Sentence: ... ...
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:31:11.907"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:31:11.908"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:31:11.908"}
+Broadcasting message: {"type": "realtime", "text": "Sampai jumpa.", "translation": {"language": "zho_Hans", "text": "\u89c1\u9762."}, "timestamp": "2025-06-24 17:31:11.915"}
+Broadcasting message: {"type": "fullSentence", "text": "... ...", "translation": {"language": "zho_Hans", "text": "\u8fd9\u5c31\u662f..."}, "timestamp": "2025-06-24 17:31:12.224"}
+Data client connected
+Data client disconnected.
+Data client disconnected.
+Data client connected
+Data client connected
+Data client connected
+Data client disconnected.
+Data client disconnected.
+Data client disconnected.
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:32:41.986"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:32:41.988"}
+[17:32:42.235] 最后一下Broadcasting message: {"type": "realtime", "text": "\u6700\u540e\u4e00\u4e0b", "translation": {"language": "zho_Hans", "text": "\u6700\u540e\u4e00\u4e0b"}, "timestamp": "2025-06-24 17:32:42.521"}
+[17:32:42.537] 这个好像不太好[17:32:42.835] 这个好像不太能分Broadcasting message: {"type": "realtime", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u597d", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u597d"}, "timestamp": "2025-06-24 17:32:42.927"}
+[17:32:43.162] 这个好像不太能分辨Broadcasting message: {"type": "realtime", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206"}, "timestamp": "2025-06-24 17:32:43.331"}
+[17:32:43.449] 这个好像不太能分辨语言&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:32:43.490"}
+[17:32:43.755] 这个好像不太能分辨语言Broadcasting message: {"type": "realtime", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206\u8fa8", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206\u8fa8"}, "timestamp": "2025-06-24 17:32:43.757"}
+Broadcasting message: {"type": "realtime", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206\u8fa8\u8bed\u8a00", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206\u8fa8\u8bed\u8a00"}, "timestamp": "2025-06-24 17:32:44.062"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:32:44.135"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:32:44.137"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:32:44.137"}
+[17:32:44.165] Sentence: 这个好像不太能分辨语言呢。
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:32:44.169"}
+
+Broadcasting message: {"type": "realtime", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206\u8fa8\u8bed\u8a00", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206\u8fa8\u8bed\u8a00"}, "timestamp": "2025-06-24 17:32:44.357"}
+Broadcasting message: {"type": "fullSentence", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206\u8fa8\u8bed\u8a00\u5462\u3002", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e2a\u597d\u50cf\u4e0d\u592a\u80fd\u5206\u8fa8\u8bed\u8a00\u5462."}, "timestamp": "2025-06-24 17:32:44.817"}
+Data client disconnected.
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:33:46.444"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:33:46.444"}
+[17:33:46.672] S T.[17:33:46.860] S T[17:33:47.046] S T[17:33:47.229] S T[17:33:47.418] S T[17:33:47.606] S T&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:33:47.715"}
+[17:33:47.811] STTC.Broadcasting message: {"type": "realtime", "text": "S T.", "translation": {"language": "zho_Hans", "text": ",,,,,,,,,,,,,,,,,,,,,"}, "timestamp": "2025-06-24 17:33:48.266"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:33:48.322"}
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:33:48.327"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:33:48.327"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:33:48.329"}
+[17:33:48.329] Sentence: STT server.
+
+Broadcasting message: {"type": "realtime", "text": "S T", "translation": {"language": "zho_Hans", "text": "\u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e:"}, "timestamp": "2025-06-24 17:33:48.828"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:33:49.098"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:33:49.100"}
+[17:33:49.305] Just.[17:33:49.532] Descanso.Broadcasting message: {"type": "realtime", "text": "S T", "translation": {"language": "zho_Hans", "text": "\u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e:"}, "timestamp": "2025-06-24 17:33:49.630"}
+[17:33:49.759] Дисконнект.[17:33:49.964] Disconnected[17:33:50.177] Disconnected from[17:33:50.400] Disconnected from[17:33:50.633] Disconnected from ST.Broadcasting message: {"type": "realtime", "text": "S T", "translation": {"language": "zho_Hans", "text": "\u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e:"}, "timestamp": "2025-06-24 17:33:50.837"}
+[17:33:50.868] Disconnected from STTC.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:33:51.110"}
+[17:33:51.133] Disconnected from STT server.Broadcasting message: {"type": "realtime", "text": "S T", "translation": {"language": "zho_Hans", "text": "\u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e:"}, "timestamp": "2025-06-24 17:33:51.274"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:33:51.715"}&&& stt_server on_turn_detection_stop
+
+[17:33:51.720] Sentence: Disconnected from STT server.Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:33:51.723"}
+
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:33:51.724"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:33:51.725"}
+Broadcasting message: {"type": "realtime", "text": "S T", "translation": {"language": "zho_Hans", "text": "\u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e: \u6807\u7b7e:"}, "timestamp": "2025-06-24 17:33:51.959"}
+Broadcasting message: {"type": "realtime", "text": "STTC.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709\u4ec0\u4e48\u95ee\u9898."}, "timestamp": "2025-06-24 17:33:52.146"}
+Broadcasting message: {"type": "fullSentence", "text": "STT server.", "translation": {"language": "zho_Hans", "text": "\u5728STT\u670d\u52a1\u5668."}, "timestamp": "2025-06-24 17:33:52.474"}
+Broadcasting message: {"type": "realtime", "text": "Just.", "translation": {"language": "zho_Hans", "text": "\u53ea\u662f\u4e00\u4e2a."}, "timestamp": "2025-06-24 17:33:52.637"}
+Broadcasting message: {"type": "realtime", "text": "Descanso.", "translation": {"language": "zho_Hans", "text": "\u73b0\u5728,\u6211\u4eec\u8981\u53bb\u505a\u4ec0\u4e48\u5462?"}, "timestamp": "2025-06-24 17:33:52.902"}
+Broadcasting message: {"type": "realtime", "text": "\u0414\u0438\u0441\u043a\u043e\u043d\u043d\u0435\u043a\u0442.", "translation": {"language": "zho_Hans", "text": "\u73b0\u5728\u6211\u4eec\u8981\u53bb\u505a\u4ec0\u4e48\u5462?"}, "timestamp": "2025-06-24 17:33:53.102"}
+Broadcasting message: {"type": "realtime", "text": "Disconnected", "translation": {"language": "zho_Hans", "text": "\u65ad\u5f00\u8fde\u63a5"}, "timestamp": "2025-06-24 17:33:53.265"}
+Broadcasting message: {"type": "realtime", "text": "Disconnected from", "translation": {"language": "zho_Hans", "text": "\u79bb\u7ebf"}, "timestamp": "2025-06-24 17:33:53.411"}
+Broadcasting message: {"type": "realtime", "text": "Disconnected from", "translation": {"language": "zho_Hans", "text": "\u79bb\u7ebf"}, "timestamp": "2025-06-24 17:33:53.575"}
+Broadcasting message: {"type": "realtime", "text": "Disconnected from ST.", "translation": {"language": "zho_Hans", "text": "\u65ad\u5f00\u4e86ST\u7684\u8fde\u63a5."}, "timestamp": "2025-06-24 17:33:53.766"}
+Broadcasting message: {"type": "realtime", "text": "Disconnected from STTC.", "translation": {"language": "zho_Hans", "text": "\u65ad\u5f00\u4e86STTC."}, "timestamp": "2025-06-24 17:33:54.031"}
+Broadcasting message: {"type": "realtime", "text": "Disconnected from STT server.", "translation": {"language": "zho_Hans", "text": "\u65ad\u5f00STT\u670d\u52a1\u5668."}, "timestamp": "2025-06-24 17:33:54.287"}
+Broadcasting message: {"type": "fullSentence", "text": "Disconnected from STT server.", "translation": {"language": "zho_Hans", "text": "\u4eceSTT\u670d\u52a1\u5668\u65ad\u5f00\u8fde\u63a5."}, "timestamp": "2025-06-24 17:33:54.766"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:34:00.976"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:34:00.976"}
+[17:34:01.197] Okay.Broadcasting message: {"type": "realtime", "text": "Okay.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709\u4ec0\u4e48\u95ee\u9898."}, "timestamp": "2025-06-24 17:34:01.455"}
+[17:34:01.471] Okay, it worked.[17:34:01.765] Okay, it works now.Broadcasting message: {"type": "realtime", "text": "Okay, it worked.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u5b83\u594f\u6548\u4e86."}, "timestamp": "2025-06-24 17:34:01.854"}
+[17:34:02.062] Okay, it works now.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:34:02.105"}
+Broadcasting message: {"type": "realtime", "text": "Okay, it works now.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u73b0\u5728\u5b83\u5df2\u7ecf\u6210\u529f\u4e86."}, "timestamp": "2025-06-24 17:34:02.290"}
+[17:34:02.350] Okay, it works now.Broadcasting message: {"type": "realtime", "text": "Okay, it works now.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u73b0\u5728\u5b83\u5df2\u7ecf\u6210\u529f\u4e86."}, "timestamp": "2025-06-24 17:34:02.673"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:34:02.707"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:34:02.709"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:34:02.710"}
+[17:34:02.714] Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:34:02.714"}
+Sentence: Okay, it works now.
+
+Broadcasting message: {"type": "realtime", "text": "Okay, it works now.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u73b0\u5728\u5b83\u5df2\u7ecf\u6210\u529f\u4e86."}, "timestamp": "2025-06-24 17:34:02.936"}
+Broadcasting message: {"type": "fullSentence", "text": "Okay, it works now.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u5b83\u73b0\u5728\u5de5\u4f5c."}, "timestamp": "2025-06-24 17:34:03.314"}
+Data client disconnected.
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:36:26.786"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:36:26.787"}
+[17:36:27.028] Ayah suka...[17:36:27.254] Ayah suka begitu.Broadcasting message: {"type": "realtime", "text": "Ayah suka...", "translation": {"language": "zho_Hans", "text": "\u4e00\u4e2a\u5c0f\u670b\u53cb."}, "timestamp": "2025-06-24 17:36:27.410"}
+[17:36:27.482] Ayah suka begini.[17:36:27.718] Ayah suka begini.Broadcasting message: {"type": "realtime", "text": "Ayah suka begitu.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u6837\u5c31\u597d\u4e86."}, "timestamp": "2025-06-24 17:36:27.740"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:36:27.907"}
+[17:36:27.961] Ayah suka begini.Broadcasting message: {"type": "realtime", "text": "Ayah suka begini.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u6837\u5c31\u5f00\u59cb\u4e86."}, "timestamp": "2025-06-24 17:36:28.033"}
+Broadcasting message: {"type": "realtime", "text": "Ayah suka begini.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u6837\u5c31\u5f00\u59cb\u4e86."}, "timestamp": "2025-06-24 17:36:28.351"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:36:28.517"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:36:28.518"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:36:28.519"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:36:28.521"}
+[17:36:28.521] Sentence: Ayah suka begini.
+
+Broadcasting message: {"type": "realtime", "text": "Ayah suka begini.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u6837\u5c31\u5f00\u59cb\u4e86."}, "timestamp": "2025-06-24 17:36:28.564"}
+Broadcasting message: {"type": "fullSentence", "text": "Ayah suka begini.", "translation": {"language": "zho_Hans", "text": "\u6211\u559c\u6b22\u8fd9\u6837."}, "timestamp": "2025-06-24 17:36:28.799"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:36:29.493"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:36:29.493"}
+[17:36:29.866] Bye.[17:36:30.072] Gracias.Broadcasting message: {"type": "realtime", "text": "Bye.", "translation": {"language": "zho_Hans", "text": "\u522b\u89c1\u4f60."}, "timestamp": "2025-06-24 17:36:30.259"}
+[17:36:30.292] So I guess you...[17:36:30.531] So I guess you can...Broadcasting message: {"type": "realtime", "text": "Gracias.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:36:30.554"}
+[17:36:30.756] Saya suka begitu.Broadcasting message: {"type": "realtime", "text": "So I guess you...", "translation": {"language": "zho_Hans", "text": "\u6240\u4ee5\u6211\u731c\u4f60..."}, "timestamp": "2025-06-24 17:36:30.977"}
+[17:36:30.982] Saya suka begitu.[17:36:31.210] Saya suka begitu.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:36:31.220"}
+Broadcasting message: {"type": "realtime", "text": "So I guess you can...", "translation": {"language": "zho_Hans", "text": "\u6240\u4ee5\u6211\u731c\u4f60\u53ef\u4ee5..."}, "timestamp": "2025-06-24 17:36:31.387"}
+[17:36:31.443] Saya suka begitu.&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:36:31.504"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:36:31.614"}
+Broadcasting message: {"type": "realtime", "text": "Saya suka begitu.", "translation": {"language": "zho_Hans", "text": "\u6211\u559c\u6b22\u8fd9\u6837."}, "timestamp": "2025-06-24 17:36:31.838"}
+[17:36:31.864] Saya suka begitu.Broadcasting message: {"type": "realtime", "text": "Saya suka begitu.", "translation": {"language": "zho_Hans", "text": "\u6211\u559c\u6b22\u8fd9\u6837."}, "timestamp": "2025-06-24 17:36:32.165"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:36:32.225"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:36:32.227"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:36:32.227"}
+[17:36:32.231] Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:36:32.232"}Sentence:
+ Saya suka begitu.
+
+Broadcasting message: {"type": "realtime", "text": "Saya suka begitu.", "translation": {"language": "zho_Hans", "text": "\u6211\u559c\u6b22\u8fd9\u6837."}, "timestamp": "2025-06-24 17:36:32.361"}
+Broadcasting message: {"type": "realtime", "text": "Saya suka begitu.", "translation": {"language": "zho_Hans", "text": "\u6211\u559c\u6b22\u8fd9\u6837."}, "timestamp": "2025-06-24 17:36:32.539"}
+Broadcasting message: {"type": "realtime", "text": "Saya suka begitu.", "translation": {"language": "zho_Hans", "text": "\u6211\u559c\u6b22\u8fd9\u6837."}, "timestamp": "2025-06-24 17:36:32.722"}
+Broadcasting message: {"type": "fullSentence", "text": "Saya suka begitu.", "translation": {"language": "zho_Hans", "text": "\u6211\u559c\u6b22\u8fd9\u6837."}, "timestamp": "2025-06-24 17:36:33.019"}
+Data client disconnected.
+Data client connected
+Data client disconnected.
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:39:20.172"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:39:20.173"}
+[17:39:20.391] Thank you.[17:39:20.604] Okay.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:39:20.815"}[17:39:20.815] 
+Gracias.[17:39:21.049] ご視聴ありがとうございましたBroadcasting message: {"type": "realtime", "text": "Okay.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709\u4ec0\u4e48\u95ee\u9898."}, "timestamp": "2025-06-24 17:39:21.208"}
+[17:39:21.280] Eu já li isso.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:21.476"}
+[17:39:21.479] Hello.Broadcasting message: {"type": "realtime", "text": "Gracias.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:39:21.507"}
+Broadcasting message: {"type": "realtime", "text": "\u3054\u8996\u8074\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3057\u305f", "translation": {"language": "zho_Hans", "text": "\u611f\u8c22\u60a8."}, "timestamp": "2025-06-24 17:39:21.661"}
+Broadcasting message: {"type": "realtime", "text": "Eu j\u00e1 li isso.", "translation": {"language": "zho_Hans", "text": "\u6211\u5df2\u7ecf\u77e5\u9053\u4e86."}, "timestamp": "2025-06-24 17:39:21.923"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:39:22.090"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:39:22.091"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:22.092"}
+[17:39:22.093] Sentence: Hello!
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:39:22.094"}
+Broadcasting message: {"type": "realtime", "text": "Hello.", "translation": {"language": "zho_Hans", "text": "\u60a8\u597d."}, "timestamp": "2025-06-24 17:39:22.134"}
+Broadcasting message: {"type": "fullSentence", "text": "Hello!", "translation": {"language": "zho_Hans", "text": "\u4f60\u597d! \u4f60\u597d!"}, "timestamp": "2025-06-24 17:39:22.511"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:39:23.485"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:39:23.486"}
+[17:39:23.863] Thank you.[17:39:24.062] Hello.[17:39:24.257] Hello.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:39:24.272"}
+[17:39:24.513] I'm not going to go up.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:24.645"}
+Broadcasting message: {"type": "realtime", "text": "Hello.", "translation": {"language": "zho_Hans", "text": "\u60a8\u597d."}, "timestamp": "2025-06-24 17:39:24.724"}
+[17:39:24.767] I'm not going to go up.&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:24.816"}
+Broadcasting message: {"type": "realtime", "text": "Hello.", "translation": {"language": "zho_Hans", "text": "\u60a8\u597d."}, "timestamp": "2025-06-24 17:39:25.067"}
+[17:39:25.080] I'm not going to go up.[17:39:25.320] You know what I meanBroadcasting message: {"type": "realtime", "text": "I'm not going to go up.", "translation": {"language": "zho_Hans", "text": "\u6211\u4e0d\u4f1a\u4e0a\u53bb."}, "timestamp": "2025-06-24 17:39:25.346"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:25.439"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:25.486"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:25.541"}
+[17:39:25.545] Hello.Broadcasting message: {"type": "realtime", "text": "I'm not going to go up.", "translation": {"language": "zho_Hans", "text": "\u6211\u4e0d\u4f1a\u4e0a\u53bb."}, "timestamp": "2025-06-24 17:39:25.620"}
+Broadcasting message: {"type": "realtime", "text": "I'm not going to go up.", "translation": {"language": "zho_Hans", "text": "\u6211\u4e0d\u4f1a\u4e0a\u53bb."}, "timestamp": "2025-06-24 17:39:25.787"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:25.914"}
+[17:39:26.222] You know what I mean?Broadcasting message: {"type": "realtime", "text": "You know what I mean", "translation": {"language": "zho_Hans", "text": "\u4f60\u77e5\u9053\u6211\u7684\u610f\u601d."}, "timestamp": "2025-06-24 17:39:26.240"}
+[17:39:26.545] Nå kan vi gå igang. Vi går igang.Broadcasting message: {"type": "realtime", "text": "Hello.", "translation": {"language": "zho_Hans", "text": "\u60a8\u597d."}, "timestamp": "2025-06-24 17:39:26.600"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:26.790"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:26.804"}
+[17:39:26.864] Nå kan vi gå av.Broadcasting message: {"type": "realtime", "text": "You know what I mean?", "translation": {"language": "zho_Hans", "text": "\u4f60\u77e5\u9053\u6211\u7684\u610f\u601d\u5417?"}, "timestamp": "2025-06-24 17:39:26.979"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:27.003"}
+[17:39:27.116] E aí E aí&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:27.203"}
+Broadcasting message: {"type": "realtime", "text": "N\u00e5 kan vi g\u00e5 igang. Vi g\u00e5r igang.", "translation": {"language": "zho_Hans", "text": "\u6211\u4eec\u53ef\u4ee5\u8d70\u4e86,\u6211\u4eec\u53ef\u4ee5\u8d70\u4e86."}, "timestamp": "2025-06-24 17:39:27.210"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:27.325"}
+[17:39:27.509] You know what I'm going to do?Broadcasting message: {"type": "realtime", "text": "N\u00e5 kan vi g\u00e5 av.", "translation": {"language": "zho_Hans", "text": "\u6211\u4eec\u4e0d\u80fd\u79bb\u5f00."}, "timestamp": "2025-06-24 17:39:27.528"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:27.689"}
+Broadcasting message: {"type": "realtime", "text": "E a\u00ed E a\u00ed", "translation": {"language": "zho_Hans", "text": "\u5728\u90a3\u91cc,\u5728\u90a3\u91cc."}, "timestamp": "2025-06-24 17:39:27.978"}
+[17:39:28.045] You know what I'm talking about?Broadcasting message: {"type": "realtime", "text": "You know what I'm going to do?", "translation": {"language": "zho_Hans", "text": "\u4f60\u77e5\u9053\u6211\u4f1a\u505a\u4ec0\u4e48\u5417?"}, "timestamp": "2025-06-24 17:39:28.340"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:28.394"}
+[17:39:28.476] Nå kan vi gå av. Vi går av igjen.Broadcasting message: {"type": "realtime", "text": "You know what I'm talking about?", "translation": {"language": "zho_Hans", "text": "\u4f60\u77e5\u9053\u6211\u5728\u8bf4\u4ec0\u4e48\u5417?"}, "timestamp": "2025-06-24 17:39:28.590"}
+Broadcasting message: {"type": "realtime", "text": "N\u00e5 kan vi g\u00e5 av. Vi g\u00e5r av igjen.", "translation": {"language": "zho_Hans", "text": "\u6211\u4eec\u53ef\u4ee5\u79bb\u5f00. \u6211\u4eec\u4f1a\u518d\u6b21\u79bb\u5f00."}, "timestamp": "2025-06-24 17:39:28.994"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:39:29.124"}
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:39:29.126"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:29.127"}
+[17:39:29.130] Sentence: Examples of complete thoughts...
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:39:29.132"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:39:29.336"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:39:29.336"}
+[17:39:29.570] All right.Broadcasting message: {"type": "fullSentence", "text": "Examples of complete thoughts...", "translation": {"language": "zho_Hans", "text": "\u4e00\u4e9b\u5b8c\u6574\u601d\u60f3\u7684\u4f8b\u5b50..."}, "timestamp": "2025-06-24 17:39:29.730"}
+[17:39:29.792] All right.[17:39:30.022] All right, Nicole.Broadcasting message: {"type": "realtime", "text": "All right.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u6211\u53ef\u4ee5."}, "timestamp": "2025-06-24 17:39:30.031"}
+[17:39:30.248] Ini kalau diri.Broadcasting message: {"type": "realtime", "text": "All right.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u6211\u53ef\u4ee5."}, "timestamp": "2025-06-24 17:39:30.460"}
+[17:39:30.485] Ini kalau diri gue.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:30.686"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:30.696"}
+[17:39:30.733] Ini kalau diri butuh&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:30.826"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:30.875"}
+Broadcasting message: {"type": "realtime", "text": "All right, Nicole.", "translation": {"language": "zho_Hans", "text": "\u597d\u5427,\u5c3c\u53e4\u5c14."}, "timestamp": "2025-06-24 17:39:30.929"}
+[17:39:30.983] Ini kalau diri gue tuh...&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:31.121"}
+Broadcasting message: {"type": "realtime", "text": "Ini kalau diri.", "translation": {"language": "zho_Hans", "text": "\u6211\u4e0d\u6562\u8bf4."}, "timestamp": "2025-06-24 17:39:31.208"}
+[17:39:31.260] Ini kalau diri gue tuh kadang&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:31.294"}
+Broadcasting message: {"type": "realtime", "text": "Ini kalau diri gue.", "translation": {"language": "zho_Hans", "text": "\u6211\u53ea\u80fd\u8fd9\u6837\u505a."}, "timestamp": "2025-06-24 17:39:31.549"}
+[17:39:31.574] Ini kalau diri gue tuh kadang...&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:31.700"}
+Broadcasting message: {"type": "realtime", "text": "Ini kalau diri butuh", "translation": {"language": "zho_Hans", "text": "\u5982\u679c\u6211\u9700\u8981"}, "timestamp": "2025-06-24 17:39:31.831"}
+[17:39:31.861] Ini kalau diri gue tuh kadang bisa...Broadcasting message: {"type": "realtime", "text": "Ini kalau diri gue tuh...", "translation": {"language": "zho_Hans", "text": "\u5982\u679c\u6211\u8fd9\u6837\u505a..."}, "timestamp": "2025-06-24 17:39:32.101"}
+Broadcasting message: {"type": "realtime", "text": "Ini kalau diri gue tuh kadang", "translation": {"language": "zho_Hans", "text": "\u6211\u6709\u65f6\u4f1a\u8fd9\u6837\u505a."}, "timestamp": "2025-06-24 17:39:32.334"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:39:32.342"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:32.343"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:39:32.345"}
+[17:39:32.346] Sentence: Ini kalau diribut tuh kadang bisa...
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:39:32.346"}
+Broadcasting message: {"type": "realtime", "text": "Ini kalau diri gue tuh kadang...", "translation": {"language": "zho_Hans", "text": "\u6211\u6709\u65f6\u4f1a..."}, "timestamp": "2025-06-24 17:39:32.548"}
+Broadcasting message: {"type": "realtime", "text": "Ini kalau diri gue tuh kadang bisa...", "translation": {"language": "zho_Hans", "text": "\u6211\u6709\u65f6\u4f1a..."}, "timestamp": "2025-06-24 17:39:32.714"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:39:32.942"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:39:32.943"}
+[17:39:33.175] Thank you.Broadcasting message: {"type": "fullSentence", "text": "Ini kalau diribut tuh kadang bisa...", "translation": {"language": "zho_Hans", "text": "\u8fd9\u53ea\u80fd\u8bf4\u662f\u6709\u65f6\u53ef\u4ee5..."}, "timestamp": "2025-06-24 17:39:33.184"}
+[17:39:33.423] Продолжение следует.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:39:33.608"}
+[17:39:33.662] Продолжение следует.[17:39:33.908] Винеретен.Broadcasting message: {"type": "realtime", "text": "\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u0441\u043b\u0435\u0434\u0443\u0435\u0442.", "translation": {"language": "zho_Hans", "text": "\u7ee7\u7eed\u4e0b\u53bb."}, "timestamp": "2025-06-24 17:39:33.917"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:34.107"}
+[17:39:34.155] Terima kasih telah menontonBroadcasting message: {"type": "realtime", "text": "\u041f\u0440\u043e\u0434\u043e\u043b\u0436\u0435\u043d\u0438\u0435 \u0441\u043b\u0435\u0434\u0443\u0435\u0442.", "translation": {"language": "zho_Hans", "text": "\u7ee7\u7eed\u4e0b\u53bb."}, "timestamp": "2025-06-24 17:39:34.204"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:34.543"}
+Broadcasting message: {"type": "realtime", "text": "\u0412\u0438\u043d\u0435\u0440\u0435\u0442\u0435\u043d.", "translation": {"language": "zho_Hans", "text": "\u73b0\u5728,\u6211\u4eec\u9700\u8981\u4e00\u4e2a\u4eba\u6765\u770b\u770b."}, "timestamp": "2025-06-24 17:39:34.735"}
+[17:39:34.881] Itu generatornya luar biasa.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:35.036"}
+Broadcasting message: {"type": "realtime", "text": "Terima kasih telah menonton", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60\u5df2\u7ecf\u770b\u4e86"}, "timestamp": "2025-06-24 17:39:35.114"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:35.121"}
+[17:39:35.155] Itu generatornya luar biasa.[17:39:35.439] Itu generatornya luar biasa.Broadcasting message: {"type": "realtime", "text": "Itu generatornya luar biasa.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u79cd\u53d1\u7535\u5668\u662f\u4e0d\u5bfb\u5e38\u7684."}, "timestamp": "2025-06-24 17:39:35.649"}
+[17:39:35.719] Itu generatornya luar biasa.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:35.866"}
+[17:39:36.016] Itu generetnya luar biasa.Broadcasting message: {"type": "realtime", "text": "Itu generatornya luar biasa.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u79cd\u53d1\u7535\u5668\u662f\u4e0d\u5bfb\u5e38\u7684."}, "timestamp": "2025-06-24 17:39:36.080"}
+Broadcasting message: {"type": "realtime", "text": "Itu generatornya luar biasa.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u79cd\u53d1\u7535\u5668\u662f\u4e0d\u5bfb\u5e38\u7684."}, "timestamp": "2025-06-24 17:39:36.495"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:39:36.503"}
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:39:36.506"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:36.507"}
+[17:39:36.509] Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:39:36.510"}Sentence:
+ Itu genretnya yang luar biasa.
+
+Broadcasting message: {"type": "realtime", "text": "Itu generatornya luar biasa.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u79cd\u53d1\u7535\u5668\u662f\u4e0d\u5bfb\u5e38\u7684."}, "timestamp": "2025-06-24 17:39:36.689"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:39:36.767"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:39:36.768"}
+[17:39:36.998] Broadcasting message: {"type": "realtime", "text": "Itu generetnya luar biasa.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u662f\u4e00\u79cd\u975e\u51e1\u7684\u4ea7\u7269."}, "timestamp": "2025-06-24 17:39:36.998"}Thank you.
+[17:39:37.219] Thank you.[17:39:37.429] Bye.[17:39:37.640] No.[17:39:37.858] Oh.Broadcasting message: {"type": "fullSentence", "text": "Itu genretnya yang luar biasa.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u662f\u4e00\u4e2a\u975e\u5e38\u51fa\u8272\u7684\u54c1\u79cd."}, "timestamp": "2025-06-24 17:39:37.864"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:37.907"}
+[17:39:38.068] 그리고..Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:39:38.107"}
+Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:39:38.403"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:39:38.511"}[17:39:38.513] Sentence: 
+그리고 한 번...
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:39:38.515"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:39:38.516"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:38.517"}
+Broadcasting message: {"type": "realtime", "text": "Bye.", "translation": {"language": "zho_Hans", "text": "\u522b\u89c1\u4f60."}, "timestamp": "2025-06-24 17:39:38.574"}
+Broadcasting message: {"type": "realtime", "text": "No.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:38.742"}
+Broadcasting message: {"type": "realtime", "text": "Oh.", "translation": {"language": "zho_Hans", "text": ",\u8fd9\u662f\u4e00\u4e2a\u95ee\u9898."}, "timestamp": "2025-06-24 17:39:38.963"}
+Broadcasting message: {"type": "realtime", "text": "\uadf8\ub9ac\uace0..", "translation": {"language": "zho_Hans", "text": "\u7136\u540e..."}, "timestamp": "2025-06-24 17:39:39.112"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:39:39.334"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:39:39.335"}
+Broadcasting message: {"type": "fullSentence", "text": "\uadf8\ub9ac\uace0 \ud55c \ubc88...", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e00\u6b21..."}, "timestamp": "2025-06-24 17:39:39.426"}
+[17:39:39.581] I don't want to do all this.[17:39:39.846] I don't want to do all this.Broadcasting message: {"type": "realtime", "text": "I don't want to do all this.", "translation": {"language": "zho_Hans", "text": "\u6211\u4e0d\u60f3\u505a\u8fd9\u4e00\u5207."}, "timestamp": "2025-06-24 17:39:40.003"}
+[17:39:40.112] I don't want to do all this.[17:39:40.330] Merci à vous.Broadcasting message: {"type": "realtime", "text": "I don't want to do all this.", "translation": {"language": "zho_Hans", "text": "\u6211\u4e0d\u60f3\u505a\u8fd9\u4e00\u5207."}, "timestamp": "2025-06-24 17:39:40.417"}
+[17:39:40.580] Vielen Dank.[17:39:40.788] ...Broadcasting message: {"type": "realtime", "text": "I don't want to do all this.", "translation": {"language": "zho_Hans", "text": "\u6211\u4e0d\u60f3\u505a\u8fd9\u4e00\u5207."}, "timestamp": "2025-06-24 17:39:40.816"}
+[17:39:41.020] 這不一定是Broadcasting message: {"type": "realtime", "text": "Merci \u00e0 vous.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:39:41.191"}
+[17:39:41.264] Det är det vi säger.[17:39:41.526] Tapi dia bisa auto-promoteBroadcasting message: {"type": "realtime", "text": "Vielen Dank.", "translation": {"language": "zho_Hans", "text": "\u4f1f\u4f26\u4e39\u514b."}, "timestamp": "2025-06-24 17:39:41.538"}
+[17:39:41.790] Tapi dia bisa auto memiliki&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:41.991"}
+Broadcasting message: {"type": "realtime", "text": "...", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709\u4ec0\u4e48."}, "timestamp": "2025-06-24 17:39:42.030"}
+[17:39:42.072] Tapi dia bisa auto memiliki yangBroadcasting message: {"type": "realtime", "text": "\u9019\u4e0d\u4e00\u5b9a\u662f", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e0d\u4e00\u5b9a\u662f"}, "timestamp": "2025-06-24 17:39:42.204"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:42.436"}
+Broadcasting message: {"type": "realtime", "text": "Det \u00e4r det vi s\u00e4ger.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u5c31\u662f\u6211\u4eec\u6240\u8bf4\u7684."}, "timestamp": "2025-06-24 17:39:42.709"}
+[17:39:42.767] Tapi dia bisa auto permaiki yang gini&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:42.772"}
+[17:39:43.107] Tapi dia bisa auto permaiki yang giniBroadcasting message: {"type": "realtime", "text": "Tapi dia bisa auto-promote", "translation": {"language": "zho_Hans", "text": "\u4f46\u5979\u53ef\u4ee5\u81ea\u52a8\u63a8\u5e7f."}, "timestamp": "2025-06-24 17:39:43.140"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:43.144"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:43.195"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:43.214"}
+Broadcasting message: {"type": "realtime", "text": "Tapi dia bisa auto memiliki", "translation": {"language": "zho_Hans", "text": "\u4f46\u5979\u53ef\u4ee5\u62e5\u6709\u6c7d\u8f66."}, "timestamp": "2025-06-24 17:39:43.571"}
+[17:39:43.674] Tapi dia bisa auto permaiki yang giniBroadcasting message: {"type": "realtime", "text": "Tapi dia bisa auto memiliki yang", "translation": {"language": "zho_Hans", "text": "\u4f46\u5979\u53ef\u4ee5\u62e5\u6709\u6c7d\u8f66."}, "timestamp": "2025-06-24 17:39:43.921"}
+Broadcasting message: {"type": "realtime", "text": "Tapi dia bisa auto permaiki yang gini", "translation": {"language": "zho_Hans", "text": "\u4f46\u5979\u53ef\u4ee5\u81ea\u52a8\u9a7e\u9a76."}, "timestamp": "2025-06-24 17:39:44.070"}
+[17:39:44.174] Tapi dia bisa auto-permaiki yang ini. Iya.Broadcasting message: {"type": "realtime", "text": "Tapi dia bisa auto permaiki yang gini", "translation": {"language": "zho_Hans", "text": "\u4f46\u5979\u53ef\u4ee5\u81ea\u52a8\u9a7e\u9a76."}, "timestamp": "2025-06-24 17:39:44.368"}
+Broadcasting message: {"type": "realtime", "text": "Tapi dia bisa auto permaiki yang gini", "translation": {"language": "zho_Hans", "text": "\u4f46\u5979\u53ef\u4ee5\u81ea\u52a8\u9a7e\u9a76."}, "timestamp": "2025-06-24 17:39:44.651"}
+[17:39:44.805] Tapi dia bisa auto-permaiki yang ini. Iya. Yang sebelumnya kan dia bisa.Broadcasting message: {"type": "realtime", "text": "Tapi dia bisa auto-permaiki yang ini. Iya.", "translation": {"language": "zho_Hans", "text": "\u4f46\u5979\u53ef\u4ee5\u81ea\u52a8\u5b8c\u6210."}, "timestamp": "2025-06-24 17:39:44.860"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:44.899"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:44.901"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:39:44.964"}
+[17:39:45.268] Tapi dia bisa auto permaiki yang ini iya yang sebelumnya kan dia bisaBroadcasting message: {"type": "realtime", "text": "Tapi dia bisa auto-permaiki yang ini. Iya. Yang sebelumnya kan dia bisa.", "translation": {"language": "zho_Hans", "text": "\u4f46\u5979\u53ef\u4ee5\u81ea\u52a8\u5b8c\u6210. \u662f\u7684. \u4e4b\u524d\u5979\u53ef\u4ee5."}, "timestamp": "2025-06-24 17:39:45.465"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:39:45.577"}&&& stt_server on_turn_detection_stop
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:39:45.581"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:39:45.582"}
+Broadcasting message: {"type": "realtime", "text": "Tapi dia bisa auto permaiki yang ini iya yang sebelumnya kan dia bisa", "translation": {"language": "zho_Hans", "text": "\u4f46\u5979\u53ef\u4ee5\u81ea\u52a8\u505c\u7559."}, "timestamp": "2025-06-24 17:39:45.718"}
+[17:39:45.813] Sentence: Tapi dia bisa auto-permaiki yang ini. Iya. Yang sebelumnya kan dia bisa.Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:39:45.814"}
+
+
+Broadcasting message: {"type": "fullSentence", "text": "Tapi dia bisa auto-permaiki yang ini. Iya. Yang sebelumnya kan dia bisa.", "translation": {"language": "zho_Hans", "text": "\u4f46\u4ed6\u53ef\u4ee5\u81ea\u52a8\u4fee\u590d\u8fd9\u4e2a.\u662f\u7684.\u4ed6\u53ef\u4ee5\u505a\u4e4b\u524d\u7684."}, "timestamp": "2025-06-24 17:39:46.211"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:39:47.055"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:39:47.055"}
+[17:39:47.258] ¡Aura![17:39:47.471] Aura!Broadcasting message: {"type": "realtime", "text": "\u00a1Aura!", "translation": {"language": "zho_Hans", "text": "\u827e\u62c9!"}, "timestamp": "2025-06-24 17:39:47.483"}
+[17:39:47.697] Nah, udah.Broadcasting message: {"type": "realtime", "text": "Aura!", "translation": {"language": "zho_Hans", "text": "\u827e\u62c9!"}, "timestamp": "2025-06-24 17:39:47.709"}
+Data client disconnected.
+[17:39:47.979] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Nah, udah.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709\u4e86."}, "timestamp": "2025-06-24 17:39:47.983"}
+No clients connected, message not sent.
+[17:39:48.268] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:48.270"}
+No clients connected, message not sent.
+[17:39:48.555] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:48.560"}
+No clients connected, message not sent.
+[17:39:48.839] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:48.848"}
+No clients connected, message not sent.
+[17:39:49.115] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:49.287"}
+No clients connected, message not sent.
+[17:39:49.370] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:49.606"}
+No clients connected, message not sent.
+[17:39:49.638] Gak, gak sejauh itu.[17:39:49.911] Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:49.912"}Gak, gak sejauh itu.
+No clients connected, message not sent.
+[17:39:50.193] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:50.193"}
+No clients connected, message not sent.
+[17:39:50.476] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:50.482"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:50.742"}
+No clients connected, message not sent.
+[17:39:50.761] Gak, gak sejauh itu.[17:39:51.026] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:51.182"}
+No clients connected, message not sent.
+[17:39:51.303] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:51.464"}
+No clients connected, message not sent.
+[17:39:51.575] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:51.787"}
+No clients connected, message not sent.
+[17:39:51.855] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:52.095"}
+No clients connected, message not sent.
+[17:39:52.138] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:52.404"}
+No clients connected, message not sent.
+[17:39:52.421] Gak, gak sejauh itu.[17:39:52.705] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:52.708"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:52.984"}
+No clients connected, message not sent.
+[17:39:52.992] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:53.278"}
+No clients connected, message not sent.
+[17:39:53.280] Gak, gak sejauh itu.[17:39:53.551] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:53.725"}
+No clients connected, message not sent.
+[17:39:53.810] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:54.039"}
+No clients connected, message not sent.
+[17:39:54.079] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:54.342"}
+No clients connected, message not sent.
+[17:39:54.349] Gak, gak sejauh itu.[17:39:54.630] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:54.635"}
+No clients connected, message not sent.
+[17:39:54.905] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:54.981"}
+No clients connected, message not sent.
+[17:39:55.168] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:55.345"}
+No clients connected, message not sent.
+[17:39:55.430] Gak, gak sejauh itu.[17:39:55.688] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:55.765"}
+No clients connected, message not sent.
+[17:39:55.955] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:56.107"}
+No clients connected, message not sent.
+[17:39:56.225] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:56.393"}
+No clients connected, message not sent.
+[17:39:56.490] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:56.712"}
+No clients connected, message not sent.
+[17:39:56.772] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:57.019"}
+No clients connected, message not sent.
+[17:39:57.052] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:57.319"}
+No clients connected, message not sent.
+[17:39:57.336] Gak, gak sejauh itu.[17:39:57.609] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:57.793"}
+No clients connected, message not sent.
+[17:39:57.877] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:58.100"}
+No clients connected, message not sent.
+[17:39:58.158] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:58.398"}
+No clients connected, message not sent.
+[17:39:58.440] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:58.694"}
+No clients connected, message not sent.
+[17:39:58.726] Gak, gak sejauh itu.[17:39:59.000] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:59.087"}
+No clients connected, message not sent.
+[17:39:59.276] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:59.452"}
+No clients connected, message not sent.
+[17:39:59.548] Gak, gak sejauh itu.[17:39:59.819] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:39:59.828"}
+No clients connected, message not sent.
+[17:40:00.099] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:00.189"}
+No clients connected, message not sent.
+[17:40:00.377] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:00.608"}
+No clients connected, message not sent.
+[17:40:00.647] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:00.921"}
+No clients connected, message not sent.
+[17:40:00.928] Gak, gak sejauh itu.[17:40:01.201] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:01.386"}
+No clients connected, message not sent.
+[17:40:01.470] Gak, gak sejauh itu.[17:40:01.749] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:01.751"}
+No clients connected, message not sent.
+[17:40:02.022] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:02.184"}
+No clients connected, message not sent.
+[17:40:02.302] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:02.487"}
+No clients connected, message not sent.
+[17:40:02.572] Gak, gak sejauh itu.[17:40:02.847] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:02.852"}
+No clients connected, message not sent.
+[17:40:03.133] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:03.136"}
+No clients connected, message not sent.
+[17:40:03.410] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:03.569"}
+No clients connected, message not sent.
+[17:40:03.677] Gak, gak sejauh itu.[17:40:03.951] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:03.955"}
+No clients connected, message not sent.
+[17:40:04.226] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:04.409"}
+No clients connected, message not sent.
+[17:40:04.492] Gak, gak sejauh itu.[17:40:04.763] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:04.837"}
+No clients connected, message not sent.
+[17:40:05.029] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:05.180"}
+No clients connected, message not sent.
+[17:40:05.291] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:05.515"}
+No clients connected, message not sent.
+[17:40:05.557] Gak, gak sejauh itu.[17:40:05.821] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:05.967"}
+No clients connected, message not sent.
+[17:40:06.077] Gak, gak sejauh itu.[17:40:06.337] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:06.345"}
+No clients connected, message not sent.
+[17:40:06.600] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:06.798"}
+No clients connected, message not sent.
+[17:40:06.858] Gak, gak sejauh itu.[17:40:07.120] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:07.266"}
+No clients connected, message not sent.
+[17:40:07.376] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:07.604"}
+No clients connected, message not sent.
+[17:40:07.647] Gak, gak sejauh itu.[17:40:07.919] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:07.924"}
+No clients connected, message not sent.
+[17:40:08.185] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:08.382"}
+No clients connected, message not sent.
+[17:40:08.442] Gak, gak sejauh itu.[17:40:08.703] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:08.850"}
+No clients connected, message not sent.
+[17:40:08.961] Gak, gak sejauh itu.[17:40:09.221] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:09.231"}
+No clients connected, message not sent.
+[17:40:09.486] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:09.684"}
+No clients connected, message not sent.
+[17:40:09.744] Gak, gak sejauh itu.[17:40:10.005] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:10.152"}
+No clients connected, message not sent.
+[17:40:10.261] Gak, gak sejauh itu.[17:40:10.523] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:10.531"}
+No clients connected, message not sent.
+[17:40:10.790] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:10.988"}
+No clients connected, message not sent.
+[17:40:11.048] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:11.310"}
+No clients connected, message not sent.
+[17:40:11.317] Gak, gak sejauh itu.[17:40:11.582] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:11.756"}
+No clients connected, message not sent.
+[17:40:11.838] Gak, gak sejauh itu.[17:40:12.098] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:12.174"}
+No clients connected, message not sent.
+[17:40:12.358] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:12.604"}
+No clients connected, message not sent.
+[17:40:12.615] Gak, gak sejauh itu.[17:40:12.886] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:12.962"}
+No clients connected, message not sent.
+[17:40:13.147] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:13.372"}
+No clients connected, message not sent.
+[17:40:13.405] Gak, gak sejauh itu.[17:40:13.674] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:13.684"}
+No clients connected, message not sent.
+[17:40:13.939] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:14.138"}
+No clients connected, message not sent.
+[17:40:14.198] Gak, gak sejauh itu.[17:40:14.458] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:14.607"}
+No clients connected, message not sent.
+[17:40:14.717] Gak, gak sejauh itu.[17:40:14.980] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:14.985"}
+No clients connected, message not sent.
+[17:40:15.242] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:15.442"}
+No clients connected, message not sent.
+[17:40:15.502] Gak, gak sejauh itu.[17:40:15.765] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:15.840"}
+No clients connected, message not sent.
+[17:40:16.028] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:16.213"}
+No clients connected, message not sent.
+[17:40:16.291] Gak, gak sejauh itu.[17:40:16.551] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:16.627"}
+No clients connected, message not sent.
+[17:40:16.813] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:17.039"}
+No clients connected, message not sent.
+[17:40:17.072] Gak, gak sejauh itu.[17:40:17.331] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:17.511"}
+No clients connected, message not sent.
+[17:40:17.594] Gak, gak sejauh itu.[17:40:17.855] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:17.929"}
+No clients connected, message not sent.
+[17:40:18.115] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:18.336"}
+No clients connected, message not sent.
+[17:40:18.373] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:18.633"}
+No clients connected, message not sent.
+[17:40:18.648] Gak, gak sejauh itu.[17:40:18.918] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:19.116"}
+No clients connected, message not sent.
+[17:40:19.175] Gak, gak sejauh itu.[17:40:19.435] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:19.585"}
+No clients connected, message not sent.
+[17:40:19.695] Gak, gak sejauh itu.[17:40:19.956] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:19.964"}
+No clients connected, message not sent.
+[17:40:20.223] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:20.422"}
+No clients connected, message not sent.
+[17:40:20.483] Gak, gak sejauh itu.[17:40:20.745] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:20.819"}
+No clients connected, message not sent.
+[17:40:21.004] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:21.185"}
+No clients connected, message not sent.
+[17:40:21.268] Gak, gak sejauh itu.[17:40:21.530] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:21.605"}
+No clients connected, message not sent.
+[17:40:21.805] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:21.901"}
+No clients connected, message not sent.
+[17:40:22.070] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:22.317"}
+No clients connected, message not sent.
+[17:40:22.328] Gak, gak sejauh itu.[17:40:22.591] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:22.766"}
+No clients connected, message not sent.
+[17:40:22.851] Gak, gak sejauh itu.[17:40:23.116] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:23.123"}
+No clients connected, message not sent.
+[17:40:23.379] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:23.578"}
+No clients connected, message not sent.
+[17:40:23.636] Gak, gak sejauh itu.[17:40:23.895] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:24.044"}
+No clients connected, message not sent.
+[17:40:24.152] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:24.369"}
+No clients connected, message not sent.
+[17:40:24.421] Gak, gak sejauh itu.[17:40:24.689] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:24.837"}
+No clients connected, message not sent.
+[17:40:24.948] Gak, gak sejauh itu.[17:40:25.211] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:25.216"}
+No clients connected, message not sent.
+[17:40:25.472] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:25.669"}
+No clients connected, message not sent.
+[17:40:25.731] Gak, gak sejauh itu.[17:40:25.995] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:26.076"}
+No clients connected, message not sent.
+[17:40:26.268] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:26.502"}
+No clients connected, message not sent.
+[17:40:26.535] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:26.805"}
+No clients connected, message not sent.
+[17:40:26.819] Gak, gak sejauh itu.[17:40:27.090] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:27.251"}
+No clients connected, message not sent.
+[17:40:27.362] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:27.620"}
+No clients connected, message not sent.
+[17:40:27.635] Gak, gak sejauh itu.[17:40:27.904] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:28.088"}
+No clients connected, message not sent.
+[17:40:28.171] Gak, gak sejauh itu.[17:40:28.441] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:28.487"}
+No clients connected, message not sent.
+[17:40:28.716] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:28.960"}
+No clients connected, message not sent.
+[17:40:28.998] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:29.264"}
+No clients connected, message not sent.
+[17:40:29.281] Gak, gak sejauh itu.[17:40:29.554] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:29.716"}
+No clients connected, message not sent.
+[17:40:29.826] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:30.084"}
+No clients connected, message not sent.
+[17:40:30.100] Gak, gak sejauh itu.[17:40:30.371] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:30.555"}
+No clients connected, message not sent.
+[17:40:30.638] Gak, gak sejauh itu.[17:40:30.912] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:30.919"}
+No clients connected, message not sent.
+[17:40:31.183] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:31.390"}
+No clients connected, message not sent.
+[17:40:31.450] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:31.691"}
+No clients connected, message not sent.
+[17:40:31.734] Gak, gak sejauh itu.[17:40:32.005] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:32.162"}
+No clients connected, message not sent.
+[17:40:32.271] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:32.528"}
+No clients connected, message not sent.
+[17:40:32.544] Gak, gak sejauh itu.[17:40:32.816] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:32.999"}
+No clients connected, message not sent.
+[17:40:33.082] Gak, gak sejauh itu.[17:40:33.360] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:33.365"}
+No clients connected, message not sent.
+[17:40:33.634] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:33.816"}
+No clients connected, message not sent.
+[17:40:33.902] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:34.127"}
+No clients connected, message not sent.
+[17:40:34.186] Gak, gak sejauh itu.[17:40:34.462] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:34.488"}
+No clients connected, message not sent.
+[17:40:34.738] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:34.972"}
+No clients connected, message not sent.
+[17:40:35.008] Gak, gak sejauh itu.[17:40:35.281] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:35.439"}
+No clients connected, message not sent.
+[17:40:35.549] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:35.809"}
+No clients connected, message not sent.
+[17:40:35.822] Gak, gak sejauh itu.[17:40:36.095] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:36.279"}
+No clients connected, message not sent.
+[17:40:36.363] Gak, gak sejauh itu.[17:40:36.636] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:36.648"}
+No clients connected, message not sent.
+[17:40:36.911] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:37.099"}
+No clients connected, message not sent.
+[17:40:37.181] Gak, gak sejauh itu.[17:40:37.453] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:37.478"}
+No clients connected, message not sent.
+[17:40:37.725] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:37.958"}
+No clients connected, message not sent.
+[17:40:37.992] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:38.290"}
+No clients connected, message not sent.
+[17:40:38.306] Gak, gak sejauh itu.[17:40:38.578] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:38.765"}
+No clients connected, message not sent.
+[17:40:38.844] Gak, gak sejauh itu.[17:40:39.119] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:39.127"}
+No clients connected, message not sent.
+[17:40:39.389] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:39.601"}
+No clients connected, message not sent.
+[17:40:39.659] Gak, gak sejauh itu.Data client connected
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:40:39.913"}
+[17:40:39.933] Gak, gak sejauh itu.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:39.964"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:40:40.065"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:40.309"}
+[17:40:40.343] Gak, gak sejauh itu.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:40:40.416"}
+[17:40:40.624] Gak, gak sejauh ini.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:40.679"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:41.023"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:40:41.054"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:40:41.056"}
+[17:40:41.060] Sentence:Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:40:41.061"} Nggak, nggak sejauh itu.
+
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:40:41.062"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:41.258"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:41.486"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:41.711"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:41.928"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:42.134"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:42.364"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:42.599"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:42.820"}
+Data client disconnected.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:43.035"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:43.230"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:43.435"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:43.640"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:43.807"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:43.974"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:44.173"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:44.376"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:44.572"}
+No clients connected, message not sent.
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:44.772"}
+No clients connected, message not sent.
+Data client connected
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:44.942"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:45.105"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:45.317"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:45.553"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:45.740"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:40:45.853"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:40:45.854"}
+[17:40:46.081] There'sBroadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:46.092"}
+[17:40:46.276] Test.[17:40:46.487] Até a próxima.Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:46.645"}
+[17:40:46.699] Test. Test.[17:40:46.914] Test. Test.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:40:46.966"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:40:47.005"}
+[17:40:47.123] Test testBroadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:47.130"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:40:47.136"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:40:47.265"}
+[17:40:47.348] Test... test...[17:40:47.561] Tes tes satuBroadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:47.590"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:40:47.774"}
+[17:40:47.790] Tes tes 1 2&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:40:47.836"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:40:47.984"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:40:48.035"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:48.038"}
+[17:40:48.080] Tes tes 1 2&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:40:48.226"}
+[17:40:48.352] Tes, tes 1, 2, 3Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:48.396"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:48.749"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:40:48.829"}
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:40:48.831"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:40:48.831"}
+[17:40:48.857] Sentence: Tes, tes, satu, dua, tiga.
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:40:48.857"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:49.007"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:49.246"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:49.436"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:49.652"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:49.883"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:50.097"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:50.279"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:50.492"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:50.716"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:50.934"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:51.169"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:51.391"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:51.612"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:51.830"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:52.057"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:52.283"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:52.509"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:52.734"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:52.969"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:53.190"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:53.422"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:53.641"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:53.866"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:54.064"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:54.288"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:54.454"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709."}, "timestamp": "2025-06-24 17:40:54.674"}
+Broadcasting message: {"type": "realtime", "text": "Gak, gak sejauh ini.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709\u8fd9\u4e48\u8fdc."}, "timestamp": "2025-06-24 17:40:54.896"}
+Broadcasting message: {"type": "fullSentence", "text": "Nggak, nggak sejauh itu.", "translation": {"language": "zho_Hans", "text": "\u6ca1\u6709,\u6ca1\u6709\u90a3\u4e48\u8fdc."}, "timestamp": "2025-06-24 17:40:55.144"}
+Broadcasting message: {"type": "realtime", "text": "There's", "translation": {"language": "zho_Hans", "text": "\u8fd9\u91cc\u6709"}, "timestamp": "2025-06-24 17:40:55.269"}
+Broadcasting message: {"type": "realtime", "text": "Test.", "translation": {"language": "zho_Hans", "text": "\u6d4b\u8bd5."}, "timestamp": "2025-06-24 17:40:55.409"}
+Broadcasting message: {"type": "realtime", "text": "At\u00e9 a pr\u00f3xima.", "translation": {"language": "zho_Hans", "text": "\u63a5\u4e0b\u6765\u4f1a\u89c1\u4f60."}, "timestamp": "2025-06-24 17:40:55.644"}
+Broadcasting message: {"type": "realtime", "text": "Test. Test.", "translation": {"language": "zho_Hans", "text": "\u6d4b\u8bd5,\u6d4b\u8bd5."}, "timestamp": "2025-06-24 17:40:55.832"}
+Broadcasting message: {"type": "realtime", "text": "Test. Test.", "translation": {"language": "zho_Hans", "text": "\u6d4b\u8bd5,\u6d4b\u8bd5."}, "timestamp": "2025-06-24 17:40:56.029"}
+Broadcasting message: {"type": "realtime", "text": "Test test", "translation": {"language": "zho_Hans", "text": "\u6d4b\u8bd5\u6d4b\u8bd5"}, "timestamp": "2025-06-24 17:40:56.190"}
+Broadcasting message: {"type": "realtime", "text": "Test... test...", "translation": {"language": "zho_Hans", "text": "\u6d4b\u8bd5...\u6d4b\u8bd5..."}, "timestamp": "2025-06-24 17:40:56.393"}
+Broadcasting message: {"type": "realtime", "text": "Tes tes satu", "translation": {"language": "zho_Hans", "text": "\u4e00\u4e2a\u4e00\u4e2a"}, "timestamp": "2025-06-24 17:40:56.562"}
+Broadcasting message: {"type": "realtime", "text": "Tes tes 1 2", "translation": {"language": "zho_Hans", "text": "\u8003\u8bd51 2"}, "timestamp": "2025-06-24 17:40:56.728"}
+Broadcasting message: {"type": "realtime", "text": "Tes tes 1 2", "translation": {"language": "zho_Hans", "text": "\u8003\u8bd51 2"}, "timestamp": "2025-06-24 17:40:56.884"}
+Broadcasting message: {"type": "realtime", "text": "Tes, tes 1, 2, 3", "translation": {"language": "zho_Hans", "text": "\u4e00,\u4e8c,\u4e09"}, "timestamp": "2025-06-24 17:40:57.115"}
+Broadcasting message: {"type": "fullSentence", "text": "Tes, tes, satu, dua, tiga.", "translation": {"language": "zho_Hans", "text": "\u4e00\u6b21,\u4e09\u6b21,\u4e09\u6b21,\u4e09\u6b21."}, "timestamp": "2025-06-24 17:40:57.591"}
+Data client disconnected.
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:51:55.821"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:51:55.822"}
+[17:51:56.042] Slate.[17:51:56.278] Selamat malam.[17:51:56.486] Selamat!Broadcasting message: {"type": "realtime", "text": "Slate.", "translation": {"language": "zho_Hans", "text": "\u5b50."}, "timestamp": "2025-06-24 17:51:56.577"}
+[17:51:56.724] Selamat pagi.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:51:56.923"}
+Broadcasting message: {"type": "realtime", "text": "Selamat malam.", "translation": {"language": "zho_Hans", "text": "\u795d\u4f60\u4e00\u4e2a\u597d\u65e5\u5b50."}, "timestamp": "2025-06-24 17:51:56.959"}
+[17:51:57.004] Selamat pagi.Broadcasting message: {"type": "realtime", "text": "Selamat!", "translation": {"language": "zho_Hans", "text": "\u606d\u559c\u4f60!"}, "timestamp": "2025-06-24 17:51:57.130"}
+Broadcasting message: {"type": "realtime", "text": "Selamat pagi.", "translation": {"language": "zho_Hans", "text": "\u795d\u4f60\u65e9\u4e0a."}, "timestamp": "2025-06-24 17:51:57.459"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:51:57.538"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:51:57.541"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:51:57.543"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:51:57.544"}
+[17:51:57.545] Sentence: Selamat pagi.
+
+Broadcasting message: {"type": "realtime", "text": "Selamat pagi.", "translation": {"language": "zho_Hans", "text": "\u795d\u4f60\u65e9\u4e0a."}, "timestamp": "2025-06-24 17:51:57.657"}
+Broadcasting message: {"type": "fullSentence", "text": "Selamat pagi.", "translation": {"language": "zho_Hans", "text": "\u60a8\u597d,\u60a8\u597d,\u60a8\u597d."}, "timestamp": "2025-06-24 17:51:58.080"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:52:01.920"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:52:01.920"}
+[17:52:02.126] Hi.[17:52:02.337] Hari ini,[17:52:02.528] Hari iniBroadcasting message: {"type": "realtime", "text": "Hi.", "translation": {"language": "zho_Hans", "text": "\u60a8\u597d."}, "timestamp": "2025-06-24 17:52:02.611"}
+[17:52:02.733] Hari ini,[17:52:02.941] Hari ini,Broadcasting message: {"type": "realtime", "text": "Hari ini,", "translation": {"language": "zho_Hans", "text": "\u4eca\u5929,"}, "timestamp": "2025-06-24 17:52:02.946"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:52:03.030"}
+[17:52:03.156] Hari ini...Broadcasting message: {"type": "realtime", "text": "Hari ini", "translation": {"language": "zho_Hans", "text": "\u4eca\u5929"}, "timestamp": "2025-06-24 17:52:03.180"}
+Broadcasting message: {"type": "realtime", "text": "Hari ini,", "translation": {"language": "zho_Hans", "text": "\u4eca\u5929,"}, "timestamp": "2025-06-24 17:52:03.427"}
+Broadcasting message: {"type": "realtime", "text": "Hari ini,", "translation": {"language": "zho_Hans", "text": "\u4eca\u5929,"}, "timestamp": "2025-06-24 17:52:03.587"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:52:03.638"}
+
+[17:52:03.643] Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:52:03.644"}Sentence: Hari ini...
+
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:52:03.647"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:52:03.648"}
+Broadcasting message: {"type": "realtime", "text": "Hari ini...", "translation": {"language": "zho_Hans", "text": "\u4eca\u5929..."}, "timestamp": "2025-06-24 17:52:03.752"}
+Broadcasting message: {"type": "fullSentence", "text": "Hari ini...", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e00\u5929..."}, "timestamp": "2025-06-24 17:52:04.086"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:52:04.799"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:52:04.799"}
+[17:52:05.007] Aku...[17:52:05.236] Aku...Broadcasting message: {"type": "realtime", "text": "Aku...", "translation": {"language": "zho_Hans", "text": "\u6211..."}, "timestamp": "2025-06-24 17:52:05.253"}
+[17:52:05.469] Aku...Broadcasting message: {"type": "realtime", "text": "Aku...", "translation": {"language": "zho_Hans", "text": "\u6211..."}, "timestamp": "2025-06-24 17:52:05.557"}
+[17:52:05.702] Aku...Broadcasting message: {"type": "realtime", "text": "Aku...", "translation": {"language": "zho_Hans", "text": "\u6211..."}, "timestamp": "2025-06-24 17:52:05.869"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:52:05.915"}
+[17:52:05.934] Aku...Broadcasting message: {"type": "realtime", "text": "Aku...", "translation": {"language": "zho_Hans", "text": "\u6211..."}, "timestamp": "2025-06-24 17:52:06.015"}
+Broadcasting message: {"type": "realtime", "text": "Aku...", "translation": {"language": "zho_Hans", "text": "\u6211..."}, "timestamp": "2025-06-24 17:52:06.210"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:52:06.518"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:52:06.519"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:52:06.520"}
+[17:52:06.523] Sentence: Aku...
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:52:06.524"}
+Broadcasting message: {"type": "fullSentence", "text": "Aku...", "translation": {"language": "zho_Hans", "text": "\u6211\u6ca1\u6709..."}, "timestamp": "2025-06-24 17:52:06.738"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:52:06.781"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:52:06.782"}
+[17:52:06.985] EnglishBroadcasting message: {"type": "realtime", "text": "English", "translation": {"language": "zho_Hans", "text": "\u82f1\u8bed"}, "timestamp": "2025-06-24 17:52:07.211"}
+[17:52:07.212] Amen.[17:52:07.491] Yên nghìn.Broadcasting message: {"type": "realtime", "text": "Amen.", "translation": {"language": "zho_Hans", "text": "\u613f\u610f."}, "timestamp": "2025-06-24 17:52:07.663"}
+[17:52:07.774] Terima kasih.Broadcasting message: {"type": "realtime", "text": "Y\u00ean ngh\u00ecn.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u662f\u4e00\u5343\u4e07."}, "timestamp": "2025-06-24 17:52:07.946"}
+[17:52:08.058] Ingin terbangBroadcasting message: {"type": "realtime", "text": "Terima kasih.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:52:08.248"}
+[17:52:08.353] Ingin terbang tinggiBroadcasting message: {"type": "realtime", "text": "Ingin terbang", "translation": {"language": "zho_Hans", "text": "\u60f3\u98de\u7fd4"}, "timestamp": "2025-06-24 17:52:08.537"}
+[17:52:08.678] Ingin terbang tinggi&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:52:08.698"}
+Broadcasting message: {"type": "realtime", "text": "Ingin terbang tinggi", "translation": {"language": "zho_Hans", "text": "\u60f3\u98de\u9ad8"}, "timestamp": "2025-06-24 17:52:08.776"}
+[17:52:09.042] Ingin terbang tinggiBroadcasting message: {"type": "realtime", "text": "Ingin terbang tinggi", "translation": {"language": "zho_Hans", "text": "\u60f3\u98de\u9ad8"}, "timestamp": "2025-06-24 17:52:09.138"}
+Broadcasting message: {"type": "realtime", "text": "Ingin terbang tinggi", "translation": {"language": "zho_Hans", "text": "\u60f3\u98de\u9ad8"}, "timestamp": "2025-06-24 17:52:09.311"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:52:09.321"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:52:09.322"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:52:09.324"}
+[17:52:09.326] Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:52:09.326"}Sentence:
+ Want to fly high.'
+
+Broadcasting message: {"type": "fullSentence", "text": "Want to fly high.'", "translation": {"language": "zho_Hans", "text": "\u60f3\u98de\u5f97\u66f4\u9ad8."}, "timestamp": "2025-06-24 17:52:09.698"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:52:11.066"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:52:11.066"}
+[17:52:11.320] Вот так.[17:52:11.566] Malin.Broadcasting message: {"type": "realtime", "text": "\u0412\u043e\u0442 \u0442\u0430\u043a.", "translation": {"language": "zho_Hans", "text": "\u8fd9\u5c31\u662f\u8fd9\u6837."}, "timestamp": "2025-06-24 17:52:11.573"}
+[17:52:11.822] Melintasi.Broadcasting message: {"type": "realtime", "text": "Malin.", "translation": {"language": "zho_Hans", "text": "\u9a6c\u6797."}, "timestamp": "2025-06-24 17:52:11.908"}
+[17:52:12.039] Melintasi&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:52:12.218"}
+[17:52:12.260] MelintasiBroadcasting message: {"type": "realtime", "text": "Melintasi.", "translation": {"language": "zho_Hans", "text": "\u6885\u6797\u5854\u897f."}, "timestamp": "2025-06-24 17:52:12.278"}
+Broadcasting message: {"type": "realtime", "text": "Melintasi", "translation": {"language": "zho_Hans", "text": "\u6885\u6797\u5854\u897f"}, "timestamp": "2025-06-24 17:52:12.434"}
+Broadcasting message: {"type": "realtime", "text": "Melintasi", "translation": {"language": "zho_Hans", "text": "\u6885\u6797\u5854\u897f"}, "timestamp": "2025-06-24 17:52:12.717"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:52:12.828"}
+[17:52:13.042] Melintasi.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:52:13.279"}
+[17:52:13.294] Melintasi langit.Broadcasting message: {"type": "realtime", "text": "Melintasi.", "translation": {"language": "zho_Hans", "text": "\u6885\u6797\u5854\u897f."}, "timestamp": "2025-06-24 17:52:13.346"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:52:13.490"}
+Broadcasting message: {"type": "realtime", "text": "Melintasi langit.", "translation": {"language": "zho_Hans", "text": "\u6885\u6797\u5854\u897f\u5929\u5802."}, "timestamp": "2025-06-24 17:52:13.863"}
+[17:52:13.877] Melintasi langit&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:52:13.916"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:52:13.952"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:52:14.037"}
+[17:52:14.163] Melintasi langit biru.Broadcasting message: {"type": "realtime", "text": "Melintasi langit", "translation": {"language": "zho_Hans", "text": "\u6885\u6797\u5854\u897f\u5929"}, "timestamp": "2025-06-24 17:52:14.220"}
+Broadcasting message: {"type": "realtime", "text": "Melintasi langit biru.", "translation": {"language": "zho_Hans", "text": "\u6885\u6797\u5854\u897f\u5929\u84dd."}, "timestamp": "2025-06-24 17:52:14.647"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:52:14.668"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:52:14.670"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:52:14.671"}
+[17:52:14.674] Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:52:14.675"}Sentence:
+ Melintasi langit biru.'
+
+Broadcasting message: {"type": "fullSentence", "text": "Melintasi langit biru.'", "translation": {"language": "zho_Hans", "text": "\u6885\u6797\u5854\u897f\u7684\u5929\u7a7a\u662f\u84dd\u8272\u7684."}, "timestamp": "2025-06-24 17:52:15.196"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:52:16.006"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:52:16.007"}
+[17:52:16.362] The[17:52:16.560] The guyBroadcasting message: {"type": "realtime", "text": "The", "translation": {"language": "zho_Hans", "text": "\u5176\u4ed6\u56fd\u5bb6"}, "timestamp": "2025-06-24 17:52:16.642"}
+[17:52:16.772] BagaïkBroadcasting message: {"type": "realtime", "text": "The guy", "translation": {"language": "zho_Hans", "text": "\u8fd9\u4e2a\u4eba"}, "timestamp": "2025-06-24 17:52:16.963"}
+[17:52:16.996] Багайка.[17:52:17.221] Bagaica&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:52:17.262"}
+Broadcasting message: {"type": "realtime", "text": "Baga\u00efk", "translation": {"language": "zho_Hans", "text": "\u5df4\u52a0\u4f0a\u514b"}, "timestamp": "2025-06-24 17:52:17.310"}
+[17:52:17.460] בגייכן.Broadcasting message: {"type": "realtime", "text": "\u0411\u0430\u0433\u0430\u0439\u043a\u0430.", "translation": {"language": "zho_Hans", "text": "\u4e00\u4e2a\u5b50."}, "timestamp": "2025-06-24 17:52:17.582"}
+Broadcasting message: {"type": "realtime", "text": "Bagaica", "translation": {"language": "zho_Hans", "text": "\u5df4\u52a0\u4f0a\u5361"}, "timestamp": "2025-06-24 17:52:17.806"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:52:17.888"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:52:17.891"}
+[17:52:17.891] Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:52:17.892"}Sentence:
+ בגייכן...
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:52:17.893"}
+Broadcasting message: {"type": "realtime", "text": "\u05d1\u05d2\u05d9\u05d9\u05db\u05df.", "translation": {"language": "zho_Hans", "text": "\u5728\u623f\u95f4\u91cc."}, "timestamp": "2025-06-24 17:52:17.992"}
+Broadcasting message: {"type": "fullSentence", "text": "\u05d1\u05d2\u05d9\u05d9\u05db\u05df...", "translation": {"language": "zho_Hans", "text": "\u8fd9\u5c31\u662f\u4e3a\u4ec0\u4e48..."}, "timestamp": "2025-06-24 17:52:18.255"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:52:20.165"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:52:20.166"}
+[17:52:20.386] Yeah.[17:52:20.609] Радио.Broadcasting message: {"type": "realtime", "text": "Yeah.", "translation": {"language": "zho_Hans", "text": "\u662f\u7684,\u662f\u7684."}, "timestamp": "2025-06-24 17:52:20.795"}
+[17:52:20.828] Рачева.[17:52:21.077] Рачевали.Broadcasting message: {"type": "realtime", "text": "\u0420\u0430\u0434\u0438\u043e.", "translation": {"language": "zho_Hans", "text": "\u6536\u97f3\u673a."}, "timestamp": "2025-06-24 17:52:21.163"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:52:21.272"}
+[17:52:21.294] Raja WaliBroadcasting message: {"type": "realtime", "text": "\u0420\u0430\u0447\u0435\u0432\u0430.", "translation": {"language": "zho_Hans", "text": "\u62c9\u5207\u74e6."}, "timestamp": "2025-06-24 17:52:21.455"}
+Broadcasting message: {"type": "realtime", "text": "\u0420\u0430\u0447\u0435\u0432\u0430\u043b\u0438.", "translation": {"language": "zho_Hans", "text": "\u5df2\u7ecf\u8fc7\u53bb\u4e86."}, "timestamp": "2025-06-24 17:52:21.740"}
+&&& stt_server on_turn_detection_stopBroadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:52:21.889"}
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:52:21.893"}
+[17:52:21.893] Sentence: Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:52:21.894"}Raja Wali.
+
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:52:21.895"}
+Broadcasting message: {"type": "realtime", "text": "Raja Wali", "translation": {"language": "zho_Hans", "text": "\u62c9\u8d3e\u74e6\u5229"}, "timestamp": "2025-06-24 17:52:21.932"}
+Broadcasting message: {"type": "fullSentence", "text": "Raja Wali.", "translation": {"language": "zho_Hans", "text": "\u62c9\u8d3e\u00b7\u74e6\u5229."}, "timestamp": "2025-06-24 17:52:22.242"}
+Data client disconnected.
+Data client connected
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:56:56.735"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:56:56.736"}
+[17:56:56.981] Thank you.[17:56:57.246] Thank you.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:56:57.345"}
+[17:56:57.497] Teşekkür ederim.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:56:57.706"}
+[17:56:57.758] Check, check, have a look at that.Broadcasting message: {"type": "realtime", "text": "Te\u015fekk\u00fcr ederim.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:56:58.015"}
+[17:56:58.075] Jack, Jack, happy birthday to you.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:56:58.328"}
+Broadcasting message: {"type": "realtime", "text": "Check, check, have a look at that.", "translation": {"language": "zho_Hans", "text": "\u67e5\u770b,\u67e5\u770b,\u770b\u770b\u770b."}, "timestamp": "2025-06-24 17:56:58.440"}
+[17:56:58.541] Tak, tak, ha' det godt i dag, hallo, hallo.Broadcasting message: {"type": "realtime", "text": "Jack, Jack, happy birthday to you.", "translation": {"language": "zho_Hans", "text": "\u6770\u514b,\u6770\u514b,\u795d\u4f60\u751f\u65e5\u5feb\u4e50."}, "timestamp": "2025-06-24 17:56:58.895"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:56:58.942"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:56:58.946"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:56:58.947"}
+[17:56:58.949] Sentence: Hello, hello, hello.
+
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:56:58.950"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:56:59.070"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:56:59.070"}
+[17:56:59.307] Yeah.Broadcasting message: {"type": "realtime", "text": "Tak, tak, ha' det godt i dag, hallo, hallo.", "translation": {"language": "zho_Hans", "text": "\u63a5\u7740,\u63a5\u7740,\u597d\u597d,\u597d,\u597d,\u597d."}, "timestamp": "2025-06-24 17:56:59.399"}
+[17:56:59.532] Check.[17:56:59.784] Check check[17:57:00.007] Check check&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:57:00.190"}
+Broadcasting message: {"type": "fullSentence", "text": "Hello, hello, hello.", "translation": {"language": "zho_Hans", "text": "\u4f60\u597d,\u4f60\u597d,\u4f60\u597d."}, "timestamp": "2025-06-24 17:57:00.209"}
+[17:57:00.225] Check checkBroadcasting message: {"type": "realtime", "text": "Yeah.", "translation": {"language": "zho_Hans", "text": "\u662f\u7684,\u662f\u7684."}, "timestamp": "2025-06-24 17:57:00.397"}
+Broadcasting message: {"type": "realtime", "text": "Check.", "translation": {"language": "zho_Hans", "text": "\u652f\u7968."}, "timestamp": "2025-06-24 17:57:00.686"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:57:00.795"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:57:00.796"}
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:57:00.797"}
+[17:57:00.799] Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:57:00.800"}Sentence:
+ Check, check.
+
+Broadcasting message: {"type": "realtime", "text": "Check check", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5"}, "timestamp": "2025-06-24 17:57:00.891"}
+Broadcasting message: {"type": "realtime", "text": "Check check", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5"}, "timestamp": "2025-06-24 17:57:01.083"}
+Broadcasting message: {"type": "realtime", "text": "Check check", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5\u68c0\u67e5"}, "timestamp": "2025-06-24 17:57:01.245"}
+Broadcasting message: {"type": "fullSentence", "text": "Check, check.", "translation": {"language": "zho_Hans", "text": "\u68c0\u67e5,\u68c0\u67e5."}, "timestamp": "2025-06-24 17:57:01.556"}
+Broadcasting message: {"type": "vad_detect_stop", "timestamp": "2025-06-24 17:57:02.672"}
+Broadcasting message: {"type": "recording_start", "timestamp": "2025-06-24 17:57:02.673"}
+[17:57:02.894] Thank you.[17:57:03.104] Thank you.[17:57:03.309] Obrigada.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:57:03.393"}
+[17:57:03.528] Thank you.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:57:03.758"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:57:03.773"}
+[17:57:03.791] Thank you.&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:57:03.851"}
+&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:57:03.887"}
+&&& stt_server on_turn_detection_stop
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:57:03.894"}
+Broadcasting message: {"type": "realtime", "text": "Obrigada.", "translation": {"language": "zho_Hans", "text": "\u5f3a\u8feb."}, "timestamp": "2025-06-24 17:57:03.971"}
+[17:57:04.110] Obrigada.Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:57:04.334"}
+[17:57:04.403] Terima kasih.&&& stt_server on_turn_detection_start
+Broadcasting message: {"type": "start_turn_detection", "timestamp": "2025-06-24 17:57:04.432"}
+Broadcasting message: {"type": "realtime", "text": "Thank you.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:57:04.637"}
+[17:57:04.773] 1, 2, 3Broadcasting message: {"type": "realtime", "text": "Obrigada.", "translation": {"language": "zho_Hans", "text": "\u5f3a\u8feb."}, "timestamp": "2025-06-24 17:57:04.905"}
+Broadcasting message: {"type": "recording_stop", "timestamp": "2025-06-24 17:57:05.039"}&&& stt_server on_turn_detection_stop
+
+[17:57:05.043] Sentence: 123.
+
+Broadcasting message: {"type": "transcription_start", "timestamp": "2025-06-24 17:57:05.044"}
+Broadcasting message: {"type": "stop_turn_detection", "timestamp": "2025-06-24 17:57:05.045"}
+Broadcasting message: {"type": "vad_detect_start", "timestamp": "2025-06-24 17:57:05.046"}
+Broadcasting message: {"type": "realtime", "text": "Terima kasih.", "translation": {"language": "zho_Hans", "text": "\u8c22\u8c22\u4f60."}, "timestamp": "2025-06-24 17:57:05.079"}
+Broadcasting message: {"type": "realtime", "text": "1, 2, 3", "translation": {"language": "zho_Hans", "text": "\u4e00,\u4e8c,\u4e09"}, "timestamp": "2025-06-24 17:57:05.288"}
+Broadcasting message: {"type": "fullSentence", "text": "123.", "translation": {"language": "zho_Hans", "text": "\u4e00\u767e\u4e8c\u5341\u4e09."}, "timestamp": "2025-06-24 17:57:05.587"}
+Data client disconnected.
+/home/zhouzhencheng/miniconda3/envs/realtimestt/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 25 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
